@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/barkadawebsite/static/css/main.facc27bd.chunk.css",
+    "main.js": "/barkadawebsite/static/js/main.6bb92216.chunk.js",
+    "main.js.map": "/barkadawebsite/static/js/main.6bb92216.chunk.js.map",
+    "runtime~main.js": "/barkadawebsite/static/js/runtime~main.18f66382.js",
+    "runtime~main.js.map": "/barkadawebsite/static/js/runtime~main.18f66382.js.map",
+    "static/js/2.dd2bb267.chunk.js": "/barkadawebsite/static/js/2.dd2bb267.chunk.js",
+    "static/js/2.dd2bb267.chunk.js.map": "/barkadawebsite/static/js/2.dd2bb267.chunk.js.map",
+    "index.html": "/barkadawebsite/index.html",
+    "precache-manifest.fd387aea7c120bc8f9043781c2fd0859.js": "/barkadawebsite/precache-manifest.fd387aea7c120bc8f9043781c2fd0859.js",
+    "service-worker.js": "/barkadawebsite/service-worker.js",
+    "static/css/main.facc27bd.chunk.css.map": "/barkadawebsite/static/css/main.facc27bd.chunk.css.map",
+    "static/media/banner.png": "/barkadawebsite/static/media/banner.f33822b0.png",
+    "static/media/logo.png": "/barkadawebsite/static/media/logo.3197f49e.png",
+    "static/media/logo1.png": "/barkadawebsite/static/media/logo1.92e247f3.png",
+    "static/media/maria_clara.jpg": "/barkadawebsite/static/media/maria_clara.a0f4ef7d.jpg",
+    "static/media/maria_clara1.jpg": "/barkadawebsite/static/media/maria_clara1.7d3fde9a.jpg",
+    "static/media/modern.jpg": "/barkadawebsite/static/media/modern.14f465fd.jpg",
+    "static/media/mountain.jpg": "/barkadawebsite/static/media/mountain.c1460b26.jpg",
+    "static/media/mountain1.jpg": "/barkadawebsite/static/media/mountain1.83c3bece.jpg",
+    "static/media/muslim.jpg": "/barkadawebsite/static/media/muslim.762ff942.jpg",
+    "static/media/muslim1.jpg": "/barkadawebsite/static/media/muslim1.3ebd7394.jpg",
+    "static/media/muslim2.jpg": "/barkadawebsite/static/media/muslim2.8e6dd84e.jpg",
+    "static/media/rural.jpg": "/barkadawebsite/static/media/rural.84053730.jpg",
+    "static/media/suite_banner.jpg": "/barkadawebsite/static/media/suite_banner.6a916176.jpg",
+    "static/media/tribal.jpg": "/barkadawebsite/static/media/tribal.26741502.jpg"
+  }
+}
