@@ -28,7 +28,7 @@ class Suite extends Component{
                         <img src={muslim} style={{float: "right", marginRight: "2.5%", width: "40%", height: "auto"}} />
                         */}
 
-                        <div style={{ width:"auto", height:"25%" }} >
+                        <div style={{ width:"auto", height:"25%", marginBottom:"10px" }} >
                             
                                 <img src={mountain} style={{marginTop: "10px", marginLeft: "auto", width: "auto", marginRight:"10px", height: "100%"}}/>
                                 
@@ -37,13 +37,13 @@ class Suite extends Component{
 
                             <div style={{width:"100%", height:"25%", marginTop:"10px"}} >
                             
-                                <img src={mariaclara1} style={{marginLeft: "5%", width: "auto", marginRight:"10px", height: "100%"}}/>
+                                <img src={mariaclara1} style={{marginTop: "10px", marginLeft: "5%", width: "auto", marginRight:"10px", height: "100%"}}/>
                                 <img src={mariaclara} style={{marginRight: "5%", width: "auto", height: "100%"}}/>
                                 
                             </div>
                             <div style={{marginTop: "10px", width:"auto", height:"25%"}} >
                             
-                                <img src={muslim} style={{marginLeft: "auto", width: "auto", marginRight:"10px", height: "100%"}}/>
+                                <img src={muslim} style={{marginTop: "10px", marginLeft: "auto", width: "auto", marginRight:"10px", height: "100%"}}/>
                                 
                                 <img src={muslim1} style={{marginRight: "auto", width: "auto", height: "100%"}}/>
                             </div>

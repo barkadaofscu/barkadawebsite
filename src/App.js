@@ -16,7 +16,7 @@ class App extends Component {
 	render() {
 		return (
 			<ParallaxProvider>
-				<div style={{ width: "100%", height: "100%", position: "relative", top: 0, left: 0 }}>
+				<div style={{ width: "100%", height: "100%", position: "relative", top: 0, left: 0, overflow: "auto" }}>
 
 					<ParallaxBanner
 						style={{
