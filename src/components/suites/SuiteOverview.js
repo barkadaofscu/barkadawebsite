@@ -8,17 +8,37 @@ import rural from './assets/rural.jpg';
 import tribal from './assets/tribal.jpg'
 import './styles.css';
 
-class SuiteOverview extends Component{
-    render(){
+const SuiteOverview = (props) =>{
 
         return(
-            <div style={{width: "100%", height:"1200px"}}>
-                <Parallax>
-                    
-                </Parallax>
+            <div style={{width: "100%", height:"100%"}}>
+                    <ParallaxBanner
+                    style={{
+                        height: '100vh',
+                    }}
+                    layers={[
+                        {
+                            children: (
+                                <div style={{position: "relative", width:"100%", height: "100vh",backgroundSize: 'cover', overflow:'auto', backgroundColor: "red"}}>
+
+                                </div>
+                            ),
+                            amount: 0.2,
+                            expanded: false
+                        },
+                        {
+                            children: (
+                                <div style={{}}>
+                                </div>
+                            ),
+                            amount: 0.5,
+                            expanded: false
+                        },
+                    ]}
+                >
+                </ParallaxBanner>
             </div>
-        )
-    }
+    )
 }
 
 export default SuiteOverview;

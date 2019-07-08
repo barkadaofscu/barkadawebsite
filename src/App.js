@@ -3,9 +3,13 @@ import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-paralla
 import banner from './assets/banner.png'
 import navBar from './components/menubar/navBar'
 import SuiteOverview from './components/suites/SuiteOverview'
+import SuiteGroupTitle from './components/suites/SuiteGroupTitle'
+import SuiteInfo from './components/suites/SuiteInfo'
 import About from './components/info/about'
 import Suite from './components/suites/Suite'
 import SuiteBanner from './components/suites/SuiteBanner'
+import mountain from './components/suites/assets/mountain.jpg'
+import mariaclara from './components/suites/assets/maria_clara.jpg'
 import barkadaLogo from './assets/logo.png'
 import barkadaLogo1 from './assets/logo1.png'
 import menuicon from './assets/menuicon.png'
@@ -16,7 +20,7 @@ class App extends Component {
 	render() {
 		return (
 			<ParallaxProvider>
-				<div style={{ width: "100%", height: "100%", position: "relative", top: 0, left: 0, overflow: "auto" }}>
+				<div style={{ width: "100%", height: "100%", position: "relative", top: 0, left: 0, overflow: "hidden" }}>
 
 					<ParallaxBanner
 						style={{
@@ -34,9 +38,14 @@ class App extends Component {
 							},
 						]}
 					/>
-					<About />
-					<SuiteBanner />
-					<Suite />
+                    <About />
+
+                    <SuiteOverview />
+                    <SuiteGroupTitle title="Maria Clara"/>
+                    <SuiteInfo title="Mantones De Seda" background={mariaclara}/>
+                    <SuiteGroupTitle title="Mountain"/>
+                    <SuiteInfo title="Budong" background={mountain}/>
+                    <SuiteGroupTitle title="Maria Clara"/>
 				</div>
 			</ParallaxProvider>
 

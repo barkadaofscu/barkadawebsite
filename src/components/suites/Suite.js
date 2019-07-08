@@ -26,7 +26,6 @@ class Suite extends Component{
                         <img src={mariaclara} style={{float: "right", marginRight: "2.5%", width: "40%", height: "auto"}} />
                         <img src={modern} style={{float: "left", marginLeft: "2.5%", width: "40%", height: "auto"}} />
                         <img src={muslim} style={{float: "right", marginRight: "2.5%", width: "40%", height: "auto"}} />
-                        */}
 
                         <div style={{ width:"auto", height:"25%", marginBottom:"10px" }} >
                             
@@ -47,6 +46,7 @@ class Suite extends Component{
                                 
                                 <img src={muslim1} style={{marginRight: "auto", width: "auto", height: "100%"}}/>
                             </div>
+                            */}
 				</div>
 			</Parallax>
 		)
