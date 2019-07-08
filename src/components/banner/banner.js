@@ -1,27 +1,47 @@
 import React, { Component } from 'react';
 import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import styles from './banner.css'
-import modern from '../suites/assets/modern.jpg'
+import barkadaLogo from './logo.png'
 
 class Banner extends Component {
     render() {
 
         return (
             <div>
-                <ParallaxBanner
+          <ParallaxBanner
+            style={{
+              height: "100vh"
+            }}
+            layers={[
+              {
+                children: (
+                  <div
                     style={{
-                        height: '100vh',
+                      position: "relative",
+                      width: "100%",
+                      height: "100vh",
+                      backgroundSize: "cover",
+                      overflow: "hidden",
+                      backgroundImage: `url(${banner})`
                     }}
-                    layers={[{
-                        children: (
-                            <div style={{ width: "100%", height: "100%", backgroundColor: "black"}}>
-                            </div>
-                        ),
-                        amount: 0.2,
-                        expanded: false
-                    }]}>
-
-                </ParallaxBanner>
+                  >
+                    <img
+                      src={barkadaLogo}
+                      style={{
+                        marginLeft: "10px",
+                        marginTop: "30px",
+                        position: "relative",
+                        width: "200px",
+                        height: "auto"
+                      }}
+                    />
+                  </div>
+                ),
+                amount: 0.6,
+                expanded: false
+              }
+            ]}
+          />
 
             </div>
         )

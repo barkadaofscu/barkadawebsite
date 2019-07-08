@@ -5,20 +5,17 @@ import {
   ParallaxBanner
 } from "react-scroll-parallax";
 import banner from "./assets/banner.png";
-import navBar from "./components/menubar/navBar";
 import SuiteOverview from "./components/suites/SuiteOverview";
 import SuiteGroupTitle from "./components/suites/SuiteGroupTitle";
 import SuiteInfo from "./components/suites/SuiteInfo";
 import About from "./components/info/about";
-import Suite from "./components/suites/Suite";
-import SuiteBanner from "./components/suites/SuiteBanner";
+import mariaclara from './components/suites/assets/maria_clara.jpg'
 import mountain from "./components/suites/assets/mountain.jpg";
 import modern from './components/suites/assets/modern.jpg'
 import tribal from './components/suites/assets/tribal.jpg'
 import muslim from './components/suites/assets/muslim.jpg'
 import rural from './components/suites/assets/rural.jpg'
 import barkadaLogo from "./assets/logo.png";
-import Banner from "./components/banner/banner";
 import "./App.css";
 
 class App extends Component {
@@ -73,7 +70,7 @@ class App extends Component {
 
           <SuiteOverview />
           <SuiteGroupTitle title="Maria Clara" />
-          <SuiteInfo title="Mantones " background={mountain} />
+          <SuiteInfo title="Mantones " background={mariaclara} />
           <SuiteGroupTitle title="Mountain" />
           <SuiteInfo title="Budong" background={mountain} />
           <SuiteGroupTitle title="Modern" />

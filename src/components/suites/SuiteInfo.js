@@ -4,7 +4,6 @@ import {
   Parallax,
   ParallaxBanner
 } from "react-scroll-parallax";
-import mountain1 from "./assets/mountain.jpg";
 import "./styles.css";
 
 const SuiteInfo = props => {
@@ -17,13 +16,6 @@ const SuiteInfo = props => {
         textAlign: "center"
       }}
     >
-      {/**
-						
-						                        <img src={mountain} style={{float: "left", marginLeft: "2.5%", width: "40%", height: "auto"}} />
-                        <img src={mariaclara} style={{float: "right", marginRight: "2.5%", width: "40%", height: "auto"}} />
-                        <img src={modern} style={{float: "left", marginLeft: "2.5%", width: "40%", height: "auto"}} />
-                        <img src={muslim} style={{float: "right", marginRight: "2.5%", width: "40%", height: "auto"}} />
-                        */}
       <ParallaxBanner
         style={{
           height: "100vh"
@@ -48,19 +40,7 @@ const SuiteInfo = props => {
               <div
                 style={{ width: "100%", height: "100%", textAlign: "right" }}
               >
-                <p
-                  style={{
-                    fontSize: "60px",
-                    float: "right",
-                    marginRight: "5%",
-                    width: "auto",
-                    height: "25%",
-                    marginTop: "20%",
-                    color: "white"
-                  }}
-                >
-                  {props.title}
-                </p>
+                <p className="suiteInfoTitle">{props.title}</p>
               </div>
             ),
             amount: 0.5,
