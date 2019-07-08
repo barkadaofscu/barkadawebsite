@@ -13,9 +13,11 @@ import About from "./components/info/about";
 import Suite from "./components/suites/Suite";
 import SuiteBanner from "./components/suites/SuiteBanner";
 import mountain from "./components/suites/assets/mountain.jpg";
+import modern from './components/suites/assets/modern.jpg'
+import tribal from './components/suites/assets/tribal.jpg'
+import muslim from './components/suites/assets/muslim.jpg'
+import rural from './components/suites/assets/rural.jpg'
 import barkadaLogo from "./assets/logo.png";
-import barkadaLogo1 from "./assets/logo1.png";
-import menuicon from "./assets/menuicon.png";
 import Banner from "./components/banner/banner";
 import "./App.css";
 
@@ -74,7 +76,15 @@ class App extends Component {
           <SuiteInfo title="Mantones " background={mountain} />
           <SuiteGroupTitle title="Mountain" />
           <SuiteInfo title="Budong" background={mountain} />
-          <SuiteGroupTitle title="Maria Clara" />
+          <SuiteGroupTitle title="Modern" />
+          <SuiteInfo title="What's Luv?" background={modern} />
+          <SuiteGroupTitle title="Tribal" />
+          <SuiteInfo title="Dumadel" background={tribal} />
+          <SuiteGroupTitle title="Muslim" />
+          <SuiteInfo title="Singkil" background={muslim} />
+          <SuiteGroupTitle title="Rural" />
+          <SuiteInfo title="Tinikling" background={rural} />
+
         </div>
       </ParallaxProvider>
     );

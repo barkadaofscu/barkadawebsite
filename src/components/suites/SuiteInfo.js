@@ -45,7 +45,9 @@ const SuiteInfo = props => {
           },
           {
             children: (
-              <div style={{ textAlign: "right" }}>
+              <div
+                style={{ width: "100%", height: "100%", textAlign: "right" }}
+              >
                 <p
                   style={{
                     fontSize: "60px",
@@ -66,14 +68,16 @@ const SuiteInfo = props => {
           },
           {
             children: (
-              <div style={{ textAlign: "right" }}>
+              <div
+                style={{ width: "100%", height: "100%", textAlign: "right" }}
+              >
                 <p
                   style={{
                     fontSize: "20px",
                     float: "right",
                     marginRight: "5%",
-                    width: "25%",
-                    height: "25%",
+                    width: "30%",
+                    height: "30%",
                     marginTop: "25%",
                     color: "white"
                   }}
