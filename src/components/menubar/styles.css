@@ -1,0 +1,9 @@
+.navigation{
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    top: 0; 
+    left: 0;
+    width: 97.5%;
+    height: 3%;
+}
