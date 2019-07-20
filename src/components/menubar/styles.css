@@ -2,8 +2,9 @@
     z-index: 2;
     position: absolute;
     display: inline-block;
+    background-color: white;
     top: 0; 
     left: 0;
     width: 97.5%;
-    height: 3%;
+    height: 40px;
 }

@@ -1,0 +1,23 @@
+.header{
+    font-size: 70px;
+    padding-top: 40px;
+    color: black;
+    overflow: hidden;
+}
+
+.content{
+    color: black; 
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    z-index: -4;
+}

@@ -10,6 +10,7 @@ class AboutPage extends Component {
           height: "100vh",
           backgroundColor: "white",
           textAlign: "center",
+          paddingBottom: "40px"
         }}
       >
         <h1 className="header">About</h1>
@@ -24,8 +25,40 @@ class AboutPage extends Component {
           that our historical past shapes our identity today. We explore the
           generational and cultural differences we face within our community. By
           acknowledging our differences, we are better able to embrace our
-          identities and embrace others, bridging our communities together.{" "}
+          identities and embrace others, bridging our communities together.
         </p>
+        <div style={{ width: "100%", height: "50%" }}>
+          <div
+            style={{
+              width: "33.33%",
+              height: "100%",
+              float: "left",
+              backgroundColor: "blue"
+            }}
+          >
+            <h1 style={{ color: "white" }}>Test Area</h1>
+          </div>
+          <div
+            style={{
+              width: "33.33%",
+              height: "100%",
+              float: "left",
+              backgroundColor: "red"
+            }}
+          >
+            <h1 style={{ color: "white" }}>Test Area</h1>
+          </div>
+          <div
+            style={{
+              width: "33.33%",
+              height: "100%",
+              float: "left",
+              backgroundColor: "green"
+            }}
+          >
+            <h1 style={{ color: "white" }}>Test Area</h1>
+          </div>
+        </div>
       </div>
     );
   }
