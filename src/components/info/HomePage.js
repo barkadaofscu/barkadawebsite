@@ -53,9 +53,9 @@ class HomePage extends Component {
             />
           </ParallaxLayer>
           <ParallaxLayer
-            offset={2.75}
+            offset={2.5}
             factor={1}
-            speed={0.5}
+            speed={0.25}
             style={{
               width: "97.5%"
             }}

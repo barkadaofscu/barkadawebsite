@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Spring} from 'react-spring/renderprops'
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
 import director1 from "./assets/Colman Lin.jpeg";
@@ -30,15 +31,16 @@ class DirectorPage extends Component {
         <div style={{ width: "100%", height: "50%" }}>
           <div
             style={{
-              width: "33.33%",
+              width: "25%",
               height: "100%",
-              float: "left"
+              float: "left",
+              marginLeft: "12.5%"
             }}
           >
             <img
               src={director1}
               style={{
-                width: "50%",
+                width: "60%",
                 height: "auto",
                 borderRadius: "50%"
               }}
@@ -47,7 +49,7 @@ class DirectorPage extends Component {
           </div>
           <div
             style={{
-              width: "33.33%",
+              width: "25%",
               height: "100%",
               float: "left"
             }}
@@ -55,8 +57,7 @@ class DirectorPage extends Component {
             <img
               src={director2}
               style={{
-                marginTop: "%",
-                width: "50%",
+                width: "60%",
                 height: "auto",
                 borderRadius: "50%"
               }}
@@ -65,7 +66,7 @@ class DirectorPage extends Component {
           </div>
           <div
             style={{
-              width: "33.33%",
+              width: "25%",
               height: "100%",
               float: "left"
             }}
@@ -73,8 +74,7 @@ class DirectorPage extends Component {
             <img
               src={director3}
               style={{
-                marginTop: "%",
-                width: "50%",
+                width: "60%",
                 height: "auto",
                 borderRadius: "50%"
               }}
