@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
-import { Transition, animated, Spring } from "react-spring/renderprops";
-import { Route, Link, Redirect } from "react-router-dom";
+import {  animated } from "react-spring/renderprops";
 import AboutPage from "./AboutPage";
 import DirectorPage from "../directors/DirectorPage";
 import SuiteOverview from "../suites/SuiteOverview";
@@ -27,7 +26,8 @@ class HomePage extends Component {
             }}
           >
             <img
-              src={about}
+                src={about}
+                alt="About parallax"
               style={{ overflow: "hidden", height: "auto", width: "100%" }}
             />
           </ParallaxLayer>
@@ -39,7 +39,8 @@ class HomePage extends Component {
             }}
           >
             <img
-              src={directors}
+                src={directors}
+                alt="Directors parallax"
               style={{ overflow: "hidden", height: "auto", width: "100%" }}
             />
           </ParallaxLayer>
@@ -52,7 +53,8 @@ class HomePage extends Component {
             }}
           >
             <img
-              src={suiteBanner}
+                src={suiteBanner}
+                alt="Suite Banner"
               style={{ width: "100%", height: "auto", overflow: "hidden" }}
             />
           </ParallaxLayer>
@@ -66,7 +68,8 @@ class HomePage extends Component {
             }}
           >
             <img
-              src={banner}
+                src={banner}
+                alt="Home Banner"
               style={{ overflow: "hidden", height: "auto", width: "100%" }}
             />
           </ParallaxLayer>

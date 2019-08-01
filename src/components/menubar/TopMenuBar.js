@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import barkadaLogo from "./logo1.png";
 import { useSpring, animated } from "react-spring";
 import "./styles.css";
@@ -13,10 +13,7 @@ const TopMenuBar = () => {
   });
   return (
     <div className="navigation" onClick={() => setToggle(!isToggled)}>
-      <animated.div
-        onClick={() => setToggle(!isToggled)}
-        style={fade}
-      >
+      <animated.div onClick={() => setToggle(!isToggled)} style={fade}>
         <h1
           style={{
             display: "inline-block",
@@ -29,13 +26,14 @@ const TopMenuBar = () => {
         </h1>
         <img
           src={barkadaLogo}
+          alt="Barkada Logo"
           style={{
             display: "inline-block",
             float: "right",
             height: "50px",
-              width: "auto",
-              marginLeft:'auto',
-            marginRight: '47.5%'
+            width: "auto",
+            marginLeft: "auto",
+            marginRight: "47.5%"
           }}
         />
       </animated.div>

@@ -10,8 +10,6 @@ import {
 } from "react-router-dom";
 import TopMenuBar from "./components/menubar/TopMenuBar";
 import HomePage from "./components/info/HomePage";
-import mountainSuite from "./components/suites/mountain";
-import SuiteSpotlight from "./components/suites/SuiteSpotlight";
 import "./App.css";
 
 class App extends Component {

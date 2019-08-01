@@ -31,7 +31,7 @@ export default class Grid extends React.Component {
   };
   static defaultProps = {
     occupySpace: true,
-    columns: 3,
+    columns: 2,
     margin: 0,
     heights: 400,
     lockScroll: false,
@@ -112,7 +112,7 @@ export default class Grid extends React.Component {
         object: child
       };
     });
-    const overflow = lockScroll ? (open ? "hidden" : "auto") : "auto";
+    const overflow = lockScroll ? (open ? "hidden" : "hidden") : "hidden";
     const height = Math.max(...columnHeights) + margin;
     return (
       <Measure

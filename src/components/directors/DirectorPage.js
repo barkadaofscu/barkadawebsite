@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import {Spring} from 'react-spring/renderprops'
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
 import director1 from "./assets/Colman Lin.jpeg";
 import director2 from "./assets/Dana Militante.jpeg";
 import director3 from "./assets/Janine Bautista.jpeg";
@@ -39,6 +36,7 @@ class DirectorPage extends Component {
           >
             <img
               src={director1}
+              alt="Director 1"
               style={{
                 width: "60%",
                 height: "auto",
@@ -56,6 +54,7 @@ class DirectorPage extends Component {
           >
             <img
               src={director2}
+              alt="Director 2"
               style={{
                 width: "60%",
                 height: "auto",
@@ -73,6 +72,7 @@ class DirectorPage extends Component {
           >
             <img
               src={director3}
+              alt="Director 2"
               style={{
                 width: "60%",
                 height: "auto",

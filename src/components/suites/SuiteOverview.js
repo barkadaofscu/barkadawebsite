@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import { Transition, animated, Spring, config } from "react-spring/renderprops";
-import mountain from "./assets/mountain.jpg";
-import mariaclara from "./assets/maria_clara.jpg";
-import modern from "./assets/modern.jpg";
-import muslim from "./assets/muslim.jpg";
-import rural from "./assets/rural.jpg";
-import tribal from "./assets/tribal.jpg";
+import { config } from "react-spring/renderprops";
 import Grid from "../grid/Grid";
 import { Slug, Fade } from "../grid/Primitives";
 import data from "../grid/data";
@@ -14,11 +8,15 @@ import { Icon } from "antd";
 
 class Cell extends Component {
   render() {
-    const { toggle, name, image, description, css, active } = this.props;
+    const { toggle, name, dance, image, description, active } = this.props;
     return (
       <div
         className="cell"
-        style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", cursor: !active ? "pointer" : "auto" }}
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundSize: "cover",
+          cursor: !active ? "pointer" : "auto"
+        }}
         onClick={!active ? toggle : undefined}
       >
         <Fade show={active} delay={active ? 500 : 0}>
@@ -27,12 +25,14 @@ class Cell extends Component {
               <div className="close">
                 <Icon
                   type="close"
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", color: "white" }}
                   onClick={toggle}
                 />
               </div>
-              <h1>{name}</h1>
-              <p>{description}</p>
+              <div className="danceDescription">
+                <h1>{dance}</h1>
+                <p>{description}</p>
+              </div>
             </Slug>
           </div>
         </Fade>
@@ -44,7 +44,9 @@ class Cell extends Component {
           delay={active ? 0 : 400}
         >
           <div className="default">
-            <div style={{ zIndex: 1, fontSize: 40, color: "white" }}>{name}</div>
+            <div style={{ zIndex: 1, fontSize: 40, color: "white" }}>
+              {name}
+            </div>
           </div>
         </Fade>
       </div>
