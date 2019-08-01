@@ -13,7 +13,7 @@ class AboutPage extends Component {
           paddingBottom: "40px"
         }}
       >
-        <h1 className="header">About</h1>
+        <h1 className="pageTitle">About</h1>
 
         <p className="content">
           Philippino Culture Night is the largest student run culture show
@@ -26,7 +26,16 @@ class AboutPage extends Component {
           generational and cultural differences we face within our community. By
           acknowledging our differences, we are better able to embrace our
           identities and embrace others, bridging our communities together.
-        </p>
+      </p>
+
+      <p className="content">
+          A two-night celebration of rich Filipino culture.
+          The largest student-run cultural production at Santa Clara University.
+          - 29th annual Pilipino Cultural Night
+          - 15 traditional folk dances, 3 modern dances
+          - Skit highlighting Filipino identiy and understanding perspectives
+          - Collaborating with world-renowed Filipino folk dancers and musicians
+      </p>
         <div style={{ width: "100%", height: "50%" }}>
           <div
             style={{

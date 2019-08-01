@@ -32,7 +32,7 @@ const TopMenuBar = () => {
           style={{
             display: "inline-block",
             float: "right",
-            height: "40px",
+            height: "50px",
               width: "auto",
               marginLeft:'auto',
             marginRight: '47.5%'

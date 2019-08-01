@@ -18,7 +18,7 @@ class DirectorPage extends Component {
           textAlign: "center"
         }}
       >
-        <h1 className="header">From the Directors</h1>
+        <h1 className="pageTitle">From the Directors</h1>
         <p className="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           ac pretium nunc. Integer efficitur libero purus, et hendrerit ligula

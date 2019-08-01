@@ -1,39 +1,48 @@
-import React, { Component } from 'react';
-import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
-import mountain1 from './assets/mountain.jpg';
+import React, { Component } from "react";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
+import { Transition, animated, Spring } from "react-spring/renderprops";
+import { Route, Link, Redirect } from "react-router-dom";
+import mountain1 from "./assets/mountain.jpg";
 
-const mountain = (props) => {
-    return(
-        <div style={{width:"100%", height:"100%"}}>
-            <ParallaxBanner
-                    style={{
-                        height: '100vh',
-                    }}
-                    layers={[
-                        {
-                            children: (
-                                <div style={{width:"100%", height: "100vh", backgroundImage: `url(${mountain1})`}}>
-
-                                </div>
-                            ),
-                            amount: 0.2,
-                            expanded: false
-                        },
-                        {
-                            children: (
-                                <div style={{}}>
-                                    <p style={{fontSize: "20px", float: "right", marginRight: "100px", width:"25%", height:"25%", marginTop: "25%", color:"white"}}>Budong refers to the peace pact, or peace council, used in the province of Kalinga in the northern part of the Philippines. In this dance, male members of different tribes come together to form a peace pact or some type of allyship.</p>
-                                </div>
-                            ),
-                            amount: 0.5,
-                            expanded: false
-                        },
-                    ]}
-                >
-                </ParallaxBanner>    
+const mountainSuite = style => {
+  return (
+    <animated.div style={{ ...style, overflowY: "hidden" }}>
+      <Link push to="/pcn">
+        <div
+          style={{
+            width: "50px",
+            height: "50px",
+            position: "sticky",
+            zIndex: "10",
+            marginTop: "10%",
+            marginRight: "10%",
+            float: "right",
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          X
         </div>
-        
-    )
-}
+      </Link>
+      <Parallax pages={3}>
+        <ParallaxLayer
+          offset={0}
+          speed={1}
+          style={{ backgroundColor: "#243B4A" }}
+        ></ParallaxLayer>
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          style={{ backgroundColor: "#805E73" }}
+        ></ParallaxLayer>
+        <ParallaxLayer
+          offset={2}
+          speed={1}
+          style={{ backgroundColor: "#87BCDE" }}
+        ></ParallaxLayer>
+      </Parallax>
+    </animated.div>
+  );
+};
 
-export default mountain;
+export default mountainSuite;

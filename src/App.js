@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
+import { Transition, animated, Spring } from "react-spring/renderprops";
 import {
   HashRouter as Router,
   Switch,
@@ -8,7 +9,9 @@ import {
   Redirect
 } from "react-router-dom";
 import TopMenuBar from "./components/menubar/TopMenuBar";
-import HomePage from './components/info/HomePage';
+import HomePage from "./components/info/HomePage";
+import mountainSuite from "./components/suites/mountain";
+import SuiteSpotlight from "./components/suites/SuiteSpotlight";
 import "./App.css";
 
 class App extends Component {
@@ -16,11 +19,40 @@ class App extends Component {
     return (
       <Router basename="/">
         <div className="App">
-          <TopMenuBar />
           <div className="leftSideMenu"></div>
-              <div className="rightSideMenu"></div>
-                <HomePage />
-              
+          <div className="rightSideMenu"></div>
+          <Route
+            render={({ location, ...rest }) => (
+              <div className="App">
+                <TopMenuBar />
+                <Transition
+                  native
+                  items={location}
+                  keys={location.pathname.split("/")[1]}
+                  from={{
+                    position: "absolute",
+                    opacity: "0",
+                    width: "80%",
+                    marginLeft: "10%"
+                  }}
+                  enter={[
+                    { opacity: "1" },
+                    { width: "100%", marginLeft: "0%" }
+                  ]}
+                  leave={{ opacity: "0" }}
+                >
+                  {(loc, state) => style => (
+                    <Route
+                      exact
+                      path="/"
+                      render={props => <HomePage {...props} style={style} />}
+                    />
+                  )}
+                </Transition>
+              </div>
+            )}
+          />
+
           <div
             style={{
               width: "100%",
