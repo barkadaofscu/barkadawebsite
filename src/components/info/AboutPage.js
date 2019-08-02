@@ -35,7 +35,10 @@ class AboutPage extends Component {
           dances - Skit highlighting Filipino identiy and understanding
           perspectives - Collaborating with world-renowed Filipino folk dancers
           and musicians
-        </p>
+      </p>
+      <p className="content">
+          85 cast members, 19 alumni teachers, 353 days to make this production come to life
+      </p>
       </div>
     );
   }
