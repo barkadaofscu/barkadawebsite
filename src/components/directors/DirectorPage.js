@@ -12,7 +12,8 @@ class DirectorPage extends Component {
           width: "100%",
           height: "100vh",
           backgroundColor: "white",
-          textAlign: "center"
+          textAlign: "center",
+          overflow: "hidden"
         }}
       >
         <h1 className="pageTitle">From the Directors</h1>
@@ -25,7 +26,7 @@ class DirectorPage extends Component {
           malesuada orci sit amet, fermentum enim. Pellentesque pulvinar mauris
           at dolor pulvinar aliquet sit amet non dolor.
         </p>
-        <div style={{ width: "100%", height: "50%" }}>
+        <div style={{ width: "100%", height: "50%", marginTop: "48px" }}>
           <div
             style={{
               width: "25%",

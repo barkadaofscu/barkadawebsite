@@ -55,40 +55,44 @@ class Cell extends Component {
 }
 
 const SuiteOverview = () => (
-  <div style={{ width: "100%", minHeight: "100vh" }}>
-    <h1 className="pageTitle">Suites</h1>
-    <p className="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac
-      pretium nunc. Integer efficitur libero purus, et hendrerit ligula
-      imperdiet vitae. Maecenas eu interdum est. Quisque a mauris ac dui
-      vestibulum pretium. Aenean ac posuere orci, a luctus tellus. Maecenas
-      vestibulum vitae massa vel auctor. Nullam id risus ullamcorper, malesuada
-      orci sit amet, fermentum enim. Pellentesque pulvinar mauris at dolor
-      pulvinar aliquet sit amet non dolor.
-    </p>
-    <Grid
-      className="grid"
-      // Arbitrary data, should contain keys, possibly heights, etc.
-      data={data}
-      // Key accessor, instructs grid on how to fet individual keys from the data set
-      keys={d => d.name}
-      // Can be a fixed value or an individual data accessor
-      heights={d => d.height}
-      // Number of columns
-      columns={2}
-      // Space between elements
-      margin={0}
-      // Removes the possibility to scroll away from a maximized element
-      lockScroll={true}
-      // Delay when active elements (blown up) are minimized again
-      closeDelay={500}
-      // Regular react-spring configs
-      config={config.default}
-    >
-      {(data, active, toggle) => (
-        <Cell {...data} active={active} toggle={toggle} />
-      )}
-    </Grid>
+  <div style={{ width: "100%", height: "150vh" }}>
+    <div style={{ width: "100%", height: "50vh" }}>
+      <h1 className="pageTitle">Suites</h1>
+      <p className="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac
+        pretium nunc. Integer efficitur libero purus, et hendrerit ligula
+        imperdiet vitae. Maecenas eu interdum est. Quisque a mauris ac dui
+        vestibulum pretium. Aenean ac posuere orci, a luctus tellus. Maecenas
+        vestibulum vitae massa vel auctor. Nullam id risus ullamcorper,
+        malesuada orci sit amet, fermentum enim. Pellentesque pulvinar mauris at
+        dolor pulvinar aliquet sit amet non dolor.
+      </p>
+    </div>
+    <div style={{ width: "100%", minHeight: "100vh" }}>
+      <Grid
+        className="grid"
+        // Arbitrary data, should contain keys, possibly heights, etc.
+        data={data}
+        // Key accessor, instructs grid on how to fet individual keys from the data set
+        keys={d => d.name}
+        // Can be a fixed value or an individual data accessor
+        heights={d => d.height}
+        // Number of columns
+        columns={3}
+        // Space between elements
+        margin={0}
+        // Removes the possibility to scroll away from a maximized element
+        lockScroll={true}
+        // Delay when active elements (blown up) are minimized again
+        closeDelay={500}
+        // Regular react-spring configs
+        config={config.default}
+      >
+        {(data, active, toggle) => (
+          <Cell {...data} active={active} toggle={toggle} />
+        )}
+      </Grid>
+    </div>
   </div>
 );
 

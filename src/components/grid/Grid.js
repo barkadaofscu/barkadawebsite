@@ -7,10 +7,8 @@ const styles = {
   outer: { position: "relative", width: "100%", height: "100%" },
   inner: {
     position: "relative",
-    width: "97.5%",
-    marginLeft: "2.5%",
-    overflow: "hidden",
-    height: "auto"
+    width: "100%",
+    height: "100%"
   },
   cell: {
     position: "absolute",

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import castPhoto from "./assets/fullCast.jpeg";
 import "./styles.css";
 
 class AboutPage extends Component {
@@ -9,36 +10,53 @@ class AboutPage extends Component {
           width: "100%",
           height: "100vh",
           backgroundColor: "white",
-          textAlign: "center",
-          paddingBottom: "40px"
+          overflow: "hidden"
         }}
       >
         <h1 className="pageTitle">About</h1>
 
-        <p className="content">
-          Philippino Culture Night is the largest student run culture show
-          hosted by Barkada of Santa Clara University. Our title, Pagyakap Sa
-          Pananaw: Embracing Perspectives, explores the different outlooks of
-          what it means to grow up Pilipino, whether that was in the
-          Philippines, the struggles to come to America, and what this means for
-          the following generations of Pilipino Americans. This skit reminds us
-          that our historical past shapes our identity today. We explore the
-          generational and cultural differences we face within our community. By
-          acknowledging our differences, we are better able to embrace our
-          identities and embrace others, bridging our communities together.
+        <p className="tagLine">
+          The <h2>largest</h2> student-run cultural production at Santa Clara
+          University.
         </p>
-
-        <p className="content">
-          A two-night celebration of rich Filipino culture. The largest
-          student-run cultural production at Santa Clara University. - 29th
-          annual Pilipino Cultural Night - 15 traditional folk dances, 3 modern
-          dances - Skit highlighting Filipino identiy and understanding
-          perspectives - Collaborating with world-renowed Filipino folk dancers
-          and musicians
-      </p>
-      <p className="content">
-          85 cast members, 19 alumni teachers, 353 days to make this production come to life
-      </p>
+        <div className="row">
+          <div className="column">
+            <p className="content">
+              <span>
+                <h2>29th</h2> annual Pilipino Cultural Night{" "}
+              </span>
+              <span>
+                <h2>15</h2> traditional folk dances, <h2>3</h2> modern dances
+              </span>
+              <span>
+                Skit highlighting Filipino identity and understanding
+                perspectives
+              </span>
+              <span>
+                Collaborating with world-renowed Filipino folk dancers and
+                musicians
+              </span>
+            </p>
+          </div>
+          <div className="column">
+            <p className="content">
+              <span>
+                <h2>85</h2> cast members
+              </span>
+              <span>
+                <h2>19</h2> alumni teachers
+              </span>
+              <span>
+                <h2>353</h2> days to make this production come to life
+              </span>
+            </p>
+            <img
+              src={castPhoto}
+              alt="cast"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
       </div>
     );
   }

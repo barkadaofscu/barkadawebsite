@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import TopMenuBar from "./components/menubar/TopMenuBar";
 import HomePage from "./components/info/HomePage";
+import Footer from "./components/info/Footer"
 import "./App.css";
 
 class App extends Component {
@@ -30,13 +31,10 @@ class App extends Component {
                   from={{
                     position: "absolute",
                     opacity: "0",
-                    width: "80%",
-                    marginLeft: "10%"
+                    width: "97.5%",
+                    marginLeft: "1.25%"
                   }}
-                  enter={[
-                    { opacity: "1" },
-                    { width: "100%", marginLeft: "0%" }
-                  ]}
+                  enter={[{ opacity: "1" }]}
                   leave={{ opacity: "0" }}
                 >
                   {(loc, state) => style => (
@@ -50,7 +48,6 @@ class App extends Component {
               </div>
             )}
           />
-
           <div
             style={{
               width: "100%",
