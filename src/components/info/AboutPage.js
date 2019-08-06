@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import castPhoto from "./assets/fullCast.jpeg";
+import castPhoto1 from "./assets/fullCast1.png";
 import "./styles.css";
 
 class AboutPage extends Component {
@@ -8,33 +9,30 @@ class AboutPage extends Component {
       <div
         style={{
           width: "100%",
-          height: "100vh",
+          minHeight: "100vh",
           backgroundColor: "white",
           overflow: "hidden"
         }}
       >
-        <h1 className="pageTitle">About</h1>
+        <div className="row">
+          <h1 className="pageTitle">About</h1>
 
-        <p className="tagLine">
-          The <h2>largest</h2> student-run cultural production at Santa Clara
-          University.
-        </p>
+          <p className="tagLine">
+            The <h2>largest</h2> student-run cultural production at Santa Clara
+            University.
+          </p>
+        </div>
         <div className="row">
           <div className="column">
             <p className="content">
               <span>
-                <h2>29th</h2> annual Pilipino Cultural Night{" "}
+                <h2>29th</h2> annual Pilipino Cultural Night
               </span>
               <span>
-                <h2>15</h2> traditional folk dances, <h2>3</h2> modern dances
+                <h2>15</h2> traditional folk dances
               </span>
               <span>
-                Skit highlighting Filipino identity and understanding
-                perspectives
-              </span>
-              <span>
-                Collaborating with world-renowed Filipino folk dancers and
-                musicians
+                <h2>3</h2> modern dances
               </span>
             </p>
           </div>
@@ -50,12 +48,14 @@ class AboutPage extends Component {
                 <h2>353</h2> days to make this production come to life
               </span>
             </p>
-            <img
-              src={castPhoto}
-              alt="cast"
-              style={{ width: "100%", height: "auto" }}
-            />
           </div>
+        </div>
+        <div style={{ width: "70%", height: "20%", marginLeft: "15%" }}>
+          <img
+            src={castPhoto1}
+            alt="cast"
+            style={{ width: "100%", height: "auto", paddingBottom: "40px" }}
+          />
         </div>
       </div>
     );
