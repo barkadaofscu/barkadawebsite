@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import castPhoto from "./assets/fullCast.jpeg";
 import castPhoto1 from "./assets/fullCast1.png";
-import "../info/styles.css";
+import "./styles.css";
 
 class AboutPage extends Component {
   render() {
