@@ -7,25 +7,27 @@ import "./styles.css";
 const TopMenuBar = () => {
   return (
     <div className="navigation">
-      <Link to="/">
+      <Link to="/" style={{color: "black"}}>
         <h1
           style={{
             display: "inline-block",
             marginLeft: "2.5%",
             float: "left",
-            fontSize: "18px"
+            fontSize: "18px",
+            textDecoration: "none"
           }}
         >
           Barkada of SCU
         </h1>
       </Link>
-      <Link to="/pcn">
+      <Link to="/pcn" style={{color: "black"}}>
         <h1
           style={{
             display: "inline-block",
             marginRight: "1.25%",
             float: "right",
-            fontSize: "18px"
+            fontSize: "18px",
+            textDecoration: "none"
           }}
         >
           PCN
