@@ -9,8 +9,8 @@ import {
   Redirect
 } from "react-router-dom";
 import TopMenuBar from "./components/menubar/TopMenuBar";
-import HomePage from "./components/info/HomePage";
-import Footer from "./components/info/Footer"
+import HomePage from "./components/home/HomePage";
+import PcnHomePage from "./components/pcn/PcnHomePage";
 import "./App.css";
 
 class App extends Component {
@@ -30,19 +30,29 @@ class App extends Component {
                   keys={location.pathname.split("/")[1]}
                   from={{
                     position: "absolute",
-                    opacity: "0",
                     width: "97.5%",
-                    marginLeft: "1.25%"
+                    marginLeft: "100%"
                   }}
-                  enter={[{ opacity: "1" }]}
-                  leave={{ opacity: "0" }}
+                  enter={[{ marginLeft: "1.25%" }]}
+                  leave={{ marginLeft: "-100%" }}
                 >
                   {(loc, state) => style => (
-                    <Route
-                      exact
-                      path="/"
-                      render={props => <HomePage {...props} style={style} />}
-                    />
+                    <Switch location={state === "update" ? location : loc}>
+                      <Route
+                        exact
+                        path="/"
+                        render={props => (
+                          <HomePage {...props} style={style} />
+                        )}
+                      />
+                      <Route
+                        exact
+                        path="/pcn"
+                        render={props => (
+                          <PcnHomePage {...props} style={style} />
+                        )}
+                      />
+                    </Switch>
                   )}
                 </Transition>
               </div>
