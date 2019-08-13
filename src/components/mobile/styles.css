@@ -1,0 +1,74 @@
+.mobile{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mobileTitle{
+    font-size: 48px;
+    position: absolute;
+    display: block;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.mobile .content{
+    color: black; 
+    font-size: 16px;
+    margin-right: 15%;
+    text-align: left;
+    line-height: 125%;
+}
+
+.mobSpan{
+    display: block;
+    font-size: 16px;
+    margin: 0;
+}
+
+.content h2{
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+}
+
+.content span h2{
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    z-index: -4;
+}
+
+.mobile .row{
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.columnMobile{
+    width: 100%;
+    height: 50%;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.mobileTagLine{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.mobileTagLine h2{
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+}

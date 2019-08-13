@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
+import MediaQuery from "react-responsive";
 import AboutPage from "./AboutPage";
+import MobileAboutPage from "../mobile/MobileAboutPage";
 import DirectorPage from "../directors/DirectorPage";
 import SuiteOverview from "../suites/SuiteOverview";
 import Footer from "../info/Footer";
 import about from "./assets/about.jpg";
+import aboutVertical from "./assets/about_v.jpeg"
 import directors from "./assets/directors.jpg";
 import suiteBanner from "../suites/assets/suite_banner.jpg";
 import banner from "./assets/banner.png";
+import verticalBanner from "./assets/home_vertical1.png";
 import "./styles.css";
 
 class HomePage extends Component {
@@ -27,11 +31,20 @@ class HomePage extends Component {
               marginLeft: "1.25%"
             }}
           >
-            <img
-              src={about}
-              alt="About parallax"
-              style={{ overflow: "hidden", height: "auto", width: "100%" }}
-            />
+            <MediaQuery minWidth={1224}>
+              <img
+                src={about}
+                alt="About Banner"
+                style={{ overflow: "hidden", height: "auto", width: "100%" }}
+              />
+            </MediaQuery>
+            <MediaQuery maxWidth={1224}>
+              <img
+                src={aboutVertical}
+                alt="About Mobile Banner"
+                style={{ overflow: "hidden", height: "100vh", width: "100%" }}
+              />
+            </MediaQuery>
           </ParallaxLayer>
           <ParallaxLayer
             offset={1.5}
@@ -77,11 +90,20 @@ class HomePage extends Component {
               marginLeft: "1.25%"
             }}
           >
-            <img
-              src={banner}
-              alt="Home Banner"
-              style={{ overflow: "hidden", height: "auto", width: "100%" }}
-            />
+            <MediaQuery minWidth={1224}>
+              <img
+                src={banner}
+                alt="Home Banner"
+                style={{ overflow: "hidden", height: "auto", width: "100%" }}
+              />
+            </MediaQuery>
+            <MediaQuery maxWidth={1224}>
+              <img
+                src={verticalBanner}
+                alt="Home Banner"
+                style={{ overflow: "hidden", height: "auto", width: "100%" }}
+              />
+            </MediaQuery>
           </ParallaxLayer>
           <ParallaxLayer
             factor={1}
@@ -93,7 +115,12 @@ class HomePage extends Component {
               marginLeft: "1.25%"
             }}
           >
-            <AboutPage />
+            <MediaQuery minWidth={1224}>
+              <AboutPage/>
+            </MediaQuery>
+            <MediaQuery maxWidth={1224}>
+              <MobileAboutPage/>
+            </MediaQuery>
           </ParallaxLayer>
           <ParallaxLayer
             factor={1}
