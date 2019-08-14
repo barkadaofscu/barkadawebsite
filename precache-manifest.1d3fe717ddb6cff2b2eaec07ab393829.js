@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0136fc2b48fa6115fa1d6ff5fd53892",
+    "revision": "46b80cadd89ab7ffc55e2a5f8038e1e8",
     "url": "/barkadawebsite/index.html"
   },
   {
-    "revision": "954f844d99d4583eb222",
-    "url": "/barkadawebsite/static/css/main.5b70a2a8.chunk.css"
+    "revision": "8b3ac20f88499a62a4be",
+    "url": "/barkadawebsite/static/css/main.6a32b8f5.chunk.css"
   },
   {
-    "revision": "7fe1b9b0f00bb1cd9fbc",
-    "url": "/barkadawebsite/static/js/2.bb1f89e9.chunk.js"
+    "revision": "db5c4e5ec9e32d077afb",
+    "url": "/barkadawebsite/static/js/2.7c3f3bf0.chunk.js"
   },
   {
-    "revision": "954f844d99d4583eb222",
-    "url": "/barkadawebsite/static/js/main.d4a87cf5.chunk.js"
+    "revision": "8b3ac20f88499a62a4be",
+    "url": "/barkadawebsite/static/js/main.d7a999e1.chunk.js"
   },
   {
     "revision": "230a4597eec1da1b5e57",
@@ -78,6 +78,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32064d3e9081efc13078a564f023ce65",
     "url": "/barkadawebsite/static/media/muslim.32064d3e.jpg"
+  },
+  {
+    "revision": "091b94f45bc36b65ad9312bfe9981f45",
+    "url": "/barkadawebsite/static/media/photo0.091b94f4.jpg"
+  },
+  {
+    "revision": "887c640aae78713bb4a1f7f09fea3fa6",
+    "url": "/barkadawebsite/static/media/photo1.887c640a.jpg"
+  },
+  {
+    "revision": "a1b643ef265af36cd4ae47227d2f4648",
+    "url": "/barkadawebsite/static/media/photo2.a1b643ef.jpg"
+  },
+  {
+    "revision": "ecfeecd7058f8967f761a9a6730d7ad0",
+    "url": "/barkadawebsite/static/media/photo3.ecfeecd7.jpg"
   },
   {
     "revision": "d8fa27c185aae9bb21a39db5ba0602d8",
