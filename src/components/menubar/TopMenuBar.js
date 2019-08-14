@@ -6,8 +6,13 @@ import "./styles.css";
 
 const TopMenuBar = () => {
   return (
-    <div className="navigation">
-      <Link to="/" style={{color: "black"}}>
+    <div
+      className="navigation"
+      style={{
+        backgroundImage: `url(${barkadaLogo})`,
+      }}
+    >
+      <Link to="/" style={{ color: "black" }}>
         <h1
           style={{
             display: "inline-block",
@@ -20,32 +25,19 @@ const TopMenuBar = () => {
           Barkada of SCU
         </h1>
       </Link>
-      <Link to="/pcn" style={{color: "black"}}>
+      <Link to="/pcn" style={{ color: "black" }}>
         <h1
           style={{
             display: "inline-block",
-            marginRight: "1.25%",
             float: "right",
             fontSize: "18px",
-            textDecoration: "none"
+            textDecoration: "none",
+            marginRight: "2.5%"
           }}
         >
           PCN
         </h1>
       </Link>
-      <img
-        src={barkadaLogo}
-        alt="Barkada Logo"
-        style={{
-          display: "inline-block",
-          float: "right",
-          height: "50px",
-          width: "auto",
-          marginLeft: "auto",
-          marginRight: "42.5%",
-          zIndex: "2"
-        }}
-      />
     </div>
   );
 };

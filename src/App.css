@@ -1,6 +1,7 @@
 html, body, #app, #app>div {
   top: 0;
   left: 0;
+  bottom: 0;
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -30,22 +31,29 @@ html, body, #app, #app>div {
     position: absolute;
     display: block;
     width: 2.5%;
-    margin-top: -3%;
-    height: 101%;
+    min-height: 100vh;
     float: left;
     background-color: white;
-    z-index: 10;
+    z-index: 2;
 }
 .rightSideMenu{
     position: absolute;
     display: block;
     width: 2.5%;
-    margin-top: -3%;
     margin-left: 97.5%;
-    height: 101%;
+    min-height: 100vh;
     float: right;
     background-color: white;
-    z-index: 10;
+    z-index: 2;
+}
+.bottomSideMenu{
+    position: fixed;
+    width: 100vw;
+    height: 2.5vw;
+    background-color: white;
+    bottom: 0;
+    z-index: 2;
+    
 }
 .App-header {
   background-color: #282c34;
