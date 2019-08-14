@@ -30,20 +30,19 @@ class App extends Component {
                   keys={location.pathname.split("/")[1]}
                   from={{
                     position: "absolute",
-                    width: "97.5%",
+                    opacity: 0,
                     marginLeft: "100%"
                   }}
-                  enter={[{ marginLeft: "1.25%" }]}
-                  leave={{ marginLeft: "-100%" }}
+                  enter={[{ opacity: 1 }, { marginLeft: "0%" }]}
+                  leave={{ marginLeft: "100%" }}
+                  delay={200}
                 >
                   {(loc, state) => style => (
                     <Switch location={state === "update" ? location : loc}>
                       <Route
                         exact
                         path="/"
-                        render={props => (
-                          <HomePage {...props} style={style} />
-                        )}
+                        render={props => <HomePage {...props} style={style} />}
                       />
                       <Route
                         exact
@@ -58,15 +57,7 @@ class App extends Component {
               </div>
             )}
           />
-          <div
-            style={{
-              width: "100%",
-              height: "40px",
-              position: "fixed",
-              bottom: "0",
-              backgroundColor: "white"
-            }}
-          ></div>
+          <div className="bottomSideMenu"></div>
         </div>
       </Router>
     );
