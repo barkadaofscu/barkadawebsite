@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46b80cadd89ab7ffc55e2a5f8038e1e8",
+    "revision": "251e3a2799a8cd731bbc408ceda2d455",
     "url": "/barkadawebsite/index.html"
   },
   {
-    "revision": "8b3ac20f88499a62a4be",
-    "url": "/barkadawebsite/static/css/main.6a32b8f5.chunk.css"
+    "revision": "fd6ef01eed4816a35455",
+    "url": "/barkadawebsite/static/css/main.e4e5ad81.chunk.css"
   },
   {
-    "revision": "db5c4e5ec9e32d077afb",
-    "url": "/barkadawebsite/static/js/2.7c3f3bf0.chunk.js"
+    "revision": "1bb73aac1eec2b40fb55",
+    "url": "/barkadawebsite/static/js/2.71bb3f43.chunk.js"
   },
   {
-    "revision": "8b3ac20f88499a62a4be",
-    "url": "/barkadawebsite/static/js/main.d7a999e1.chunk.js"
+    "revision": "fd6ef01eed4816a35455",
+    "url": "/barkadawebsite/static/js/main.1caa67c5.chunk.js"
   },
   {
     "revision": "230a4597eec1da1b5e57",
