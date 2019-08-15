@@ -11,7 +11,7 @@ const ImageFade = () => {
     leave: { opacity: 0 },
     delay: 500,
     config: config.molasses,
-    trail: 500
+    trail: 500,
   });
   useEffect(
     () => void setInterval(() => set(state => (state + 1) % 4), 2000),

@@ -23,7 +23,7 @@ class App extends Component {
           <Route
             render={({ location, ...rest }) => (
               <div className="App">
-                <TopMenuBar />
+                <TopMenuBar location={location} />
                 <Transition
                   native
                   items={location}
@@ -31,11 +31,10 @@ class App extends Component {
                   from={{
                     position: "absolute",
                     opacity: 0,
-                    marginLeft: "100%"
+                    marginLeft: location.pathname === "/" ? "-110%" : "110%"
                   }}
                   enter={[{ opacity: 1 }, { marginLeft: "0%" }]}
-                  leave={{ marginLeft: "100%" }}
-                  delay={200}
+                  leave={{ marginLeft: location.pathname === "/" ? "110%" : "-110%" }}
                 >
                   {(loc, state) => style => (
                     <Switch location={state === "update" ? location : loc}>
