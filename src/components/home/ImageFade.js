@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
 import photoArr from "./HomePhotos";
-import "./styles.css";
+import "./main.css";
 
 const ImageFade = () => {
   const [index, set] = useState(0);
@@ -9,23 +9,23 @@ const ImageFade = () => {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    delay: 500,
     config: config.molasses,
-    trail: 500,
   });
   useEffect(
-    () => void setInterval(() => set(state => (state + 1) % 4), 2000),
+    () => void setInterval(() => set(state => (state + 1) % 4), 5000),
     []
   );
-  return transitions.map(({ item, props, key }) => (
+    return transitions.map(({ item, props, key }) => (
+        <div >
     <animated.div
       key={key}
-      class="bg"
+      className="bg"
       style={{
         ...props,
         backgroundImage: `url(${item.image}`
       }}
-    />
+  />
+  </div>
   ));
 };
 

@@ -1,0 +1,54 @@
+.pageTitle{
+    font-size: 81px;
+    position: absolute;
+    display: block;
+    color: black;
+    margin-top: 36px;
+}
+
+.content{
+    color: black; 
+    font-size: 24px;
+    text-align: left;
+    line-height: 150%;
+}
+
+.content h2{
+    display: inline-block;
+    font-size: 30px;
+    margin: 0;
+}
+
+.colSpan{
+    display: block;
+    margin-top: 24px;
+}
+
+.row{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    display: block;
+}
+
+.column{
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.tagLine{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.tagLine h2{
+    display: inline-block;
+    font-size: 32px;
+    margin: 0;
+}

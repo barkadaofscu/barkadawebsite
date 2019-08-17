@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
-import { animated } from "react-spring/renderprops";
+import { Transition, animated } from "react-spring/renderprops";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
 import ImageFade from "./ImageFade";
+import About from "./about/About";
 
 class HomePage extends Component {
   render() {
@@ -9,47 +10,38 @@ class HomePage extends Component {
       <animated.div
         style={{
           ...this.props.style,
-          height: "100vh",
+          height: "100%",
           overflowY: "scroll",
           zIndex: 3,
           padding: 0
         }}
       >
         <ImageFade />
+        <About />
         <div
           style={{
-            marginTop: "100vh",
-            width: "100vw",
-            minHeight: "100vh",
-            backgroundColor: "blue",
-            textAlign: "center",
-            overflow: "hidden"
-          }}
-        >
-          <h1 style={{ color: "white" }}>About</h1>
-        </div>
-        <div
-          style={{
+            marginTop: "200vh",
             width: "100vw",
             minHeight: "100vh",
             backgroundColor: "red",
             textAlign: "center",
             overflow: "hidden"
           }}
-      >
-          <h1 style={{ color: "white" }}>KAA</h1>
-      </div>
+        >
+            <h1 style={{ color: "white" }}>Events/Programs</h1>
+          <Link to="/events">Events</Link>
+        </div>
         <div
           style={{
             width: "100vw",
-            minHeight: "100vh",
+            height: "100vh",
             backgroundColor: "green",
             textAlign: "center",
             overflow: "hidden"
           }}
-      >
+        >
           <h1 style={{ color: "white" }}>Community Outreach</h1>
-      </div>
+        </div>
       </animated.div>
     );
   }

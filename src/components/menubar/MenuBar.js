@@ -31,7 +31,7 @@ class TopMenuBar extends Component {
                   display: "inline-block",
                   marginLeft: "2.5%",
                   float: "left",
-                  fontSize: "18px",
+                  fontSize: "20px",
                   textDecoration: "none"
                 }}
               >
@@ -43,7 +43,7 @@ class TopMenuBar extends Component {
                 style={{
                   display: "inline-block",
                   float: "right",
-                  fontSize: "18px",
+                  fontSize: "20px",
                   textDecoration: "none",
                   marginRight: "2.5%"
                 }}
