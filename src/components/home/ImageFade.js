@@ -9,23 +9,23 @@ const ImageFade = () => {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    config: config.molasses,
+    config: config.molasses
   });
   useEffect(
     () => void setInterval(() => set(state => (state + 1) % 4), 5000),
     []
   );
-    return transitions.map(({ item, props, key }) => (
-        <div >
-    <animated.div
-      key={key}
-      className="bg"
-      style={{
-        ...props,
-        backgroundImage: `url(${item.image}`
-      }}
-  />
-  </div>
+  return transitions.map(({ item, props, key }) => (
+    <div style={{height: "100%", position: "fixed", zIndex: -99}}>
+      <animated.div
+        key={key}
+        className="bg"
+        style={{
+          ...props,
+          backgroundImage: `url(${item.image}`
+        }}
+      />
+    </div>
   ));
 };
 

@@ -11,7 +11,8 @@ class AboutPage extends Component {
           width: "100%",
           minHeight: "100vh",
           backgroundColor: "white",
-          overflow: "hidden"
+          overflow: "hidden",
+          textAlign: "center"
         }}
       >
         <div className="row">

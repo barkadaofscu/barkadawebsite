@@ -11,7 +11,7 @@ import {
 import MenuBar from "./components/menubar/MenuBar";
 import Main from "./components/home/Main";
 import HomePage from "./components/home/HomePage";
-import PcnHomePage from "./components/pcn/PcnHomePage";
+import Pcn from "./components/pcn/Pcn";
 import Events from "./components/home/events/Events";
 import {getAnimatedFrom, getAnimatedTo, getAnimatedEnter} from "./components/home/animation"
 import "./App.css";
@@ -50,7 +50,7 @@ class App extends Component {
                       <Route
                         path="/pcn"
                         render={props => (
-                          <PcnHomePage {...props} style={style} />
+                          <Pcn {...props} style={style} />
                         )}
                       />
                     </Switch>

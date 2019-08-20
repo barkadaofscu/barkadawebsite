@@ -9,7 +9,7 @@ const About = () => (
     style={{
       marginTop: "100vh",
       width: "100vw",
-      height: "100%",
+      height: "80vh",
       backgroundColor: "white",
       position: "absolute"
     }}
@@ -59,7 +59,7 @@ const About = () => (
             width: "50%",
             height: "100%",
             float: "right",
-            marginTop: "24px]",
+            marginTop: "24px",
             backgroundImage: `url(${about1})`,
             backgroundSize: "cover",
             backgroundPosition: "center"
