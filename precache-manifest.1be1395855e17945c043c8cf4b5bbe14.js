@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "251e3a2799a8cd731bbc408ceda2d455",
+    "revision": "39ce8599833eb2a7f6a13ee95c9186aa",
     "url": "/barkadawebsite/index.html"
   },
   {
-    "revision": "fd6ef01eed4816a35455",
-    "url": "/barkadawebsite/static/css/main.e4e5ad81.chunk.css"
+    "revision": "3d1a34be78de244e759d",
+    "url": "/barkadawebsite/static/css/main.2efa797e.chunk.css"
   },
   {
-    "revision": "1bb73aac1eec2b40fb55",
-    "url": "/barkadawebsite/static/js/2.71bb3f43.chunk.js"
+    "revision": "dfc62de5fd6a269f0d3d",
+    "url": "/barkadawebsite/static/js/2.6d8ff938.chunk.js"
   },
   {
-    "revision": "fd6ef01eed4816a35455",
-    "url": "/barkadawebsite/static/js/main.1caa67c5.chunk.js"
+    "revision": "3d1a34be78de244e759d",
+    "url": "/barkadawebsite/static/js/main.a5ff56ce.chunk.js"
   },
   {
     "revision": "230a4597eec1da1b5e57",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barkadawebsite/static/media/about.3d4a584a.jpg"
   },
   {
+    "revision": "50d46b19bee919dc760d7f2eb5a7a0b6",
+    "url": "/barkadawebsite/static/media/about1.50d46b19.JPG"
+  },
+  {
     "revision": "e5f5e9dcc6c6285c05c398ac36b69cb6",
     "url": "/barkadawebsite/static/media/about_v.e5f5e9dc.jpeg"
   },
@@ -48,6 +52,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barkadawebsite/static/media/directors.42d67fcb.jpg"
   },
   {
+    "revision": "6d032516492c08d59f59d72085fb9acf",
+    "url": "/barkadawebsite/static/media/eotyd.6d032516.JPG"
+  },
+  {
+    "revision": "12fc5db019f47c10b29f3dc4f33626e2",
+    "url": "/barkadawebsite/static/media/fg.12fc5db0.JPG"
+  },
+  {
     "revision": "724e222829da50623d018fd14b9388ca",
     "url": "/barkadawebsite/static/media/fullCast.724e2228.jpeg"
   },
@@ -58,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d0b851c75009a6e3dab19c87e544c169",
     "url": "/barkadawebsite/static/media/home_vertical1.d0b851c7.png"
+  },
+  {
+    "revision": "c6d68ca607a6272daf5fee382018b2cc",
+    "url": "/barkadawebsite/static/media/kaa.c6d68ca6.JPG"
   },
   {
     "revision": "92e247f373b0d4ce96151a7e8e8f34fd",
