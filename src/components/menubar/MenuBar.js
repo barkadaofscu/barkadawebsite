@@ -9,22 +9,18 @@ class TopMenuBar extends Component {
     return (
       <Spring
         from={{
-          // Start invisible and offscreen
-          height: this.props.location.path === "/pcn" ? 40 : 0,
-          color: this.props.location.path === "/pcn" ? "black" : "white",
+            // Start invisible and offscreen
+            opacity: 0,
+            position: "sticky",
+            top: 0
         }}
         to={{
-          // End fully visible and in the middle of the screen
-          height: this.props.location.path === "/pcn" ? 40 : 0,
-          color: this.props.location.path === "/pcn" ? "black" : "white",
+            // End fully visible and in the middle of the screen
+            opacity: 1
         }}
       >
         {props => (
-          <div
-            className="navigation"
-            style={{...props,
-            }}
-          >
+          <div className="navigation" style={{ ...props, zIndex: 4 }}>
             <Link to="/" style={{ color: "black" }}>
               <h1
                 style={{
@@ -50,8 +46,12 @@ class TopMenuBar extends Component {
               >
                 PCN
               </h1>
-          </Link>
-          <img src={barkadaLogo} className="center" style={{width: "auto", height:"40px"}}/>
+            </Link>
+            <img
+              src={barkadaLogo}
+              className="center"
+              style={{ width: "auto", height: "40px" }}
+            />
           </div>
 
           // The actual box that slides down

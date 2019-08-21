@@ -7,7 +7,8 @@ const Card = props => {
         width: "25vw",
         height: "60vh",
         float: "left",
-        marginLeft: 16
+        marginLeft: "2.5vw",
+        marginRight: "2.5vw"
       }}
     >
       <div
@@ -28,7 +29,16 @@ const Card = props => {
           fontSize: 24
         }}
       >
-          <p style={{ position: "relative", marginTop: 0,color: "white", top: "25%" }}>{props.name}</p>
+        <p
+          style={{
+            position: "relative",
+            marginTop: 0,
+            color: "white",
+            top: "25%"
+          }}
+        >
+          {props.name}
+        </p>
       </div>
     </div>
   );

@@ -12,7 +12,9 @@ class EventDetails extends Component {
           minHeight: "100vh",
           backgroundColor: "pink"
         }}
-      ></animated.div>
+    >
+        
+    </animated.div>
     );
   }
 }
