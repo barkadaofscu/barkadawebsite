@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/barkadawebsite/precache-manifest.d9ea990a054251ab15b83eec796d3121.js"
+  "/barkadawebsite/precache-manifest.654323c11191c97587b394ef79a8f1fd.js"
 );
 
 self.addEventListener('message', (event) => {
