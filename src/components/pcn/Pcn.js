@@ -7,6 +7,7 @@ import MobileAboutPage from "./mobile/MobileAboutPage";
 import DirectorPage from "./directors/DirectorPage";
 import SuiteOverview from "./suites/SuiteOverview";
 import Footer from "./info/Footer";
+import MenuBar from "../menubar/MenuBar";
 import about from "./assets/about.jpg";
 import aboutVertical from "./assets/about_v.jpeg";
 import directors from "./assets/directors.jpg";
@@ -22,6 +23,7 @@ class PcnHomePage extends Component {
         className="box"
         style={{ ...this.props.style, overflow: "hidden" }}
       >
+        <MenuBar />
         <Parallax ref="parallax" pages={5}>
           <ParallaxLayer offset={0.75} speed={0.5}>
             <div
