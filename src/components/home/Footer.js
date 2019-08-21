@@ -1,24 +1,22 @@
 import React from "react";
+import { Row, Column } from "./Primitives";
 import { Icon } from "antd";
-import { Row } from "../Primitives";
 
 const footerStyle = {
-  width: "100%",
-  height: "240px",
-  backgroundColor: "white",
-  bottom: "0",
-  position: "absolute",
-  display: "inlineBlock",
+  width: "100vw",
+  height: "200px",
+  backgroundColor: "#1D2A36",
+  position: "relative",
   textAlign: "center",
   overflow: "hidden"
 };
 
 const iconStyle = {
-  color: "black",
-  fontSize: "42px",
+  color: "white",
+  fontSize: "32px"
 };
 
-function Footer() {
+const Footer = () => {
   return (
     <div style={footerStyle}>
       <Row>
@@ -71,10 +69,10 @@ function Footer() {
         </div>
       </Row>
       <Row>
-        <p style={{ fontSize: "16px", color: "black" }}>Designed by Ian Cho</p>
+        <p style={{ fontSize: "16px", color: "white" }}>Designed by Ian Cho</p>
       </Row>
     </div>
   );
-}
+};
 
 export default Footer;

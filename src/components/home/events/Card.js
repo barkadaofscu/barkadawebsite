@@ -1,20 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+import { device } from "../../device";
+
+const Picture = styled.div`
+  width: 90vw;
+  height: 95vw;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+  float: left;
+  @media ${device.laptop} {
+    width: 25vw;
+    height: 60vh;
+  }
+`;
 
 const Card = props => {
   return (
-    <div
-      style={{
-        width: "25vw",
-        height: "60vh",
-        float: "left",
-        marginLeft: "2.5vw",
-        marginRight: "2.5vw"
-      }}
-    >
+    <Picture>
       <div
         style={{
           width: "100%",
-          height: "70%",
+          height: "85%",
           backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
           backgroundPosition: "center"
@@ -23,7 +29,7 @@ const Card = props => {
       <div
         style={{
           width: "100%",
-          height: "30%",
+          height: "15%",
           textAlign: "center",
           backgroundColor: "#34495E",
           fontSize: 24
@@ -40,7 +46,7 @@ const Card = props => {
           {props.name}
         </p>
       </div>
-    </div>
+    </Picture>
   );
 };
 

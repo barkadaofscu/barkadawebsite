@@ -1,19 +1,11 @@
 import React, { Component } from "react";
 import { Transition, animated } from "react-spring/renderprops";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
-import { PageTitle, PageTag, PageSpan, Row, Column } from "../Primitives";
+import { Page, PageTitle, PageTag, PageSpan, Row, Column } from "../Primitives";
 
 const Membership = () => {
   return (
-    <animated.div
-      style={{
-        zIndex: 4,
-        width: "100vw",
-        height: "40vh",
-        marginTop: "75vh",
-        backgroundColor: "white"
-      }}
-    >
+    <Page>
       <div
         style={{
           width: "100vw",
@@ -39,7 +31,7 @@ const Membership = () => {
           the End of the Year Dinner.
         </PageSpan>
       </div>
-    </animated.div>
+    </Page>
   );
 };
 

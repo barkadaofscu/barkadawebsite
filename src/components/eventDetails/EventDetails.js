@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
+import { Icon } from "antd";
 
 class EventDetails extends Component {
   render() {
@@ -28,7 +30,21 @@ class EventDetails extends Component {
             offset={0}
             speed={1}
             style={{ backgroundColor: "#243B4A" }}
-          />
+          >
+            <div
+              style={{ marginTop: "20%", float: "left", marginLeft: "24px" }}
+            >
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>
+                  Back to home
+                </p>
+                <Icon
+                  type="left"
+                  style={{ color: "white", fontSize: "36px" }}
+                />
+              </Link>
+            </div>
+          </ParallaxLayer>
           <ParallaxLayer
             offset={1}
             speed={1}
@@ -39,15 +55,6 @@ class EventDetails extends Component {
             speed={1}
             style={{ backgroundColor: "#87BCDE" }}
           />
-
-          <ParallaxLayer
-            offset={0}
-            speed={0.5}
-            style={styles}
-            onClick={() => this.refs.parallax.scrollTo(1)}
-          >
-            Click!
-          </ParallaxLayer>
 
           <ParallaxLayer
             offset={1}

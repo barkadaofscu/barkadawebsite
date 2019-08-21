@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 import { config } from "react-spring/renderprops";
+import {
+  PageTitle,
+  PageTag,
+  BoldTag,
+  PageSpan,
+  Container,
+  BoldHeader,
+  Column
+} from "../Primitives";
 import Grid from "../grid/Grid";
 import { Slug, Fade } from "../grid/Primitives";
 import data from "../grid/data";
@@ -56,9 +65,11 @@ class Cell extends Component {
 
 const SuiteOverview = () => (
   <div style={{ width: "100%", height: "150vh" }}>
-    <div style={{ width: "100%", height: "25vh" }}>
-      <h1 className="pageTitle">Suites</h1>
-      <p className="content">
+    <Container>
+      <PageTitle>Suites</PageTitle>
+    </Container>
+    <Container>
+      <PageSpan>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac
         pretium nunc. Integer efficitur libero purus, et hendrerit ligula
         imperdiet vitae. Maecenas eu interdum est. Quisque a mauris ac dui
@@ -66,9 +77,9 @@ const SuiteOverview = () => (
         vestibulum vitae massa vel auctor. Nullam id risus ullamcorper,
         malesuada orci sit amet, fermentum enim. Pellentesque pulvinar mauris at
         dolor pulvinar aliquet sit amet non dolor.
-      </p>
-    </div>
-    <div style={{ width: "100%", minHeight: "100vh" }}>
+      </PageSpan>
+    </Container>
+    <div style={{ width: "95%", minHeight: "100vh", marginLeft: "2.5%" }}>
       <Grid
         className="grid"
         // Arbitrary data, should contain keys, possibly heights, etc.

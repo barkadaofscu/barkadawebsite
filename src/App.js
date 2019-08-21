@@ -21,8 +21,6 @@ class App extends Component {
     return (
       <Router basename="/">
         <div className="App">
-          <div className="leftSideMenu"></div>
-          <div className="rightSideMenu"></div>
           <Route
             render={({ location, ...rest }) => (
               <div className="App">
@@ -30,6 +28,7 @@ class App extends Component {
                   native
                   items={location}
                   keys={location.pathname.split("/")[1]}
+                  initial={{position: "absolute", opacity: 0}}
                   from={getAnimatedFrom(location.pathname)}
                   enter={getAnimatedEnter(location.pathname)}
                   leave={getAnimatedTo(location.pathname)}
@@ -58,7 +57,6 @@ class App extends Component {
               </div>
             )}
           />
-          <div className="bottomSideMenu"></div>
         </div>
       </Router>
     );

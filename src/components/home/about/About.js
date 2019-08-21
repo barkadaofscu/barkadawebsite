@@ -1,30 +1,22 @@
 import React, { Component } from "react";
 import { Transition, animated } from "react-spring/renderprops";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
-import { PageTitle, PageTag, PageSpan, Row, Column } from "../Primitives";
+import { Page, PageTitle, PageTag, PageSpan, Row, Column } from "../Primitives";
 import styled from "styled-components";
 import about1 from "./about1.JPG";
 
 const About = () => (
-  <div
-    style={{
-      width: "100vw",
-      height: "75vh",
-      backgroundColor: "white",
-      zIndex: 4,
-      textAlign: "left",
-      position: "absolute"
-    }}
-  >
+  <Page>
     <div
       style={{
-        width: "100vw",
+        width: "80%",
         height: "68px",
         marginTop: "24px",
-        marginBottom: "24px"
+        marginBottom: "24px",
+        marginLeft: "10%"
       }}
     >
-      <PageTitle style={{ float: "left", marginLeft: "10%" }}>About</PageTitle>
+      <PageTitle float="left">About</PageTitle>
     </div>
     <div
       style={{
@@ -53,12 +45,12 @@ const About = () => (
         <Column style={{ overflow: "hidden" }}>
           <img
             src={about1}
-            style={{ width: "90%", height: "auto", marginLeft: "10%" }}
+            style={{ width: "90%", height: "auto", marginLeft: "5%" }}
           />
         </Column>
       </Row>
     </div>
-  </div>
+  </Page>
 );
 
 export default About;

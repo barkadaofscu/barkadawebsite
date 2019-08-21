@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Transition, animated } from "react-spring/renderprops";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
-import { PageTitle, PageTag, PageSpan, Row, Column } from "./Primitives";
+import { PageTitle, Logo, PageTag, PageSpan, Row, Column } from "./Primitives";
 import ImageFade from "./ImageFade";
 import Card from "./events/Card";
 import About from "./about/About";
 import Events from "./events/Events";
 import Membership from "./membership/Membership";
 import Outreach from "./outreach/Outreach";
+import Footer from "./Footer"
 import Masonry from "./masonry/Masonry";
 import about1 from "./assets/about1.JPG";
 import logo from "./assets/logo.png";
@@ -20,19 +21,18 @@ class Home extends Component {
       <animated.div
         style={{
           ...this.props.style,
-          height: "100%",
+          height: "100vh",
           overflowY: "scroll",
           zIndex: 3,
           padding: 0
         }}
       >
-        <div style={{ height: "100%" }}>
+        <div style={{ height: "100vh", width: "100vw" }}>
           <ImageFade />
           <div style={{ width: "100%", height: "100%", zIndex: 4 }}>
             <div style={{ width: "50%", height: "50%", marginLeft: "25%", marginRight: "25%" }}>
-              <img
+              <Logo
                 src={logo}
-                style={{ width: "40vw", height: "auto", marginTop: "12.5%" }}
               />
             </div>
             <Row style={{ marginTop: "15%" }}>
@@ -59,6 +59,7 @@ class Home extends Component {
         <Membership />
         <Events />
         <Outreach />
+        <Footer />
       </animated.div>
     );
   }

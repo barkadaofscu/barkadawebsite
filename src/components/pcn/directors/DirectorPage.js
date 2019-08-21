@@ -1,4 +1,13 @@
 import React, { Component } from "react";
+import {
+  PageTitle,
+  PageTag,
+  BoldTag,
+  PageSpan,
+  Row,
+  BoldHeader,
+  Container
+} from "../Primitives";
 import director1 from "./assets/Colman Lin.jpeg";
 import director2 from "./assets/Dana Militante.jpeg";
 import director3 from "./assets/Janine Bautista.jpeg";
@@ -15,17 +24,21 @@ class DirectorPage extends Component {
           textAlign: "center",
           overflow: "hidden"
         }}
-      >
-        <h1 className="pageTitle">From the Directors</h1>
-        <p className="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          ac pretium nunc. Integer efficitur libero purus, et hendrerit ligula
-          imperdiet vitae. Maecenas eu interdum est. Quisque a mauris ac dui
-          vestibulum pretium. Aenean ac posuere orci, a luctus tellus. Maecenas
-          vestibulum vitae massa vel auctor. Nullam id risus ullamcorper,
-          malesuada orci sit amet, fermentum enim. Pellentesque pulvinar mauris
-          at dolor pulvinar aliquet sit amet non dolor.
-        </p>
+    >
+        <Container>
+            <PageTitle>From the Directors</PageTitle>
+        </Container>
+        <Container>
+          <PageSpan>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque ac pretium nunc. Integer efficitur libero purus, et
+            hendrerit ligula imperdiet vitae. Maecenas eu interdum est. Quisque
+            a mauris ac dui vestibulum pretium. Aenean ac posuere orci, a luctus
+            tellus. Maecenas vestibulum vitae massa vel auctor. Nullam id risus
+            ullamcorper, malesuada orci sit amet, fermentum enim. Pellentesque
+            pulvinar mauris at dolor pulvinar aliquet sit amet non dolor.
+          </PageSpan>
+        </Container>
         <div style={{ width: "100%", height: "50%", marginTop: "48px" }}>
           <div
             style={{
@@ -44,7 +57,7 @@ class DirectorPage extends Component {
                 borderRadius: "50%"
               }}
             />
-            <h2>Colman Lin</h2>
+            <BoldTag>Colman Lin</BoldTag>
           </div>
           <div
             style={{
@@ -62,7 +75,7 @@ class DirectorPage extends Component {
                 borderRadius: "50%"
               }}
             />
-            <h2>Dana Militante</h2>
+            <BoldTag>Dana Militante</BoldTag>
           </div>
           <div
             style={{
@@ -80,7 +93,7 @@ class DirectorPage extends Component {
                 borderRadius: "50%"
               }}
             />
-            <h2>Janine Bautista</h2>
+            <BoldTag>Janine Bautista</BoldTag>
           </div>
         </div>
       </div>

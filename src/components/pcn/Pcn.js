@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import AboutPage from "./info/AboutPage";
 import MobileAboutPage from "./mobile/MobileAboutPage";
@@ -14,6 +15,7 @@ import directors from "./assets/directors.jpg";
 import suiteBanner from "./suites/assets/suite_banner.jpg";
 import banner from "./assets/banner.png";
 import verticalBanner from "./assets/home_vertical1.png";
+import { Icon } from "antd";
 import "./styles.css";
 
 class PcnHomePage extends Component {
@@ -23,7 +25,6 @@ class PcnHomePage extends Component {
         className="box"
         style={{ ...this.props.style, overflow: "hidden" }}
       >
-        <MenuBar />
         <Parallax ref="parallax" pages={5}>
           <ParallaxLayer offset={0.75} speed={0.5}>
             <div
@@ -50,10 +51,15 @@ class PcnHomePage extends Component {
           ></ParallaxLayer>
           <ParallaxLayer factor={1} offset={0} speed={1}>
             <MediaQuery minWidth={1224}>
-              <div
-                className="bg"
-                style={{ backgroundImage: `url(${banner})` }}
-              ></div>
+              <div className="bg" style={{ backgroundImage: `url(${banner})` }}>
+                <div
+                  style={{
+                    background: `rgba(0,0,0,0.1)`,
+                    height: "100%",
+                    overflow: "hidden"
+                  }}
+                ></div>
+              </div>
             </MediaQuery>
             <MediaQuery maxWidth={1224}>
               <div
@@ -61,6 +67,19 @@ class PcnHomePage extends Component {
                 style={{ backgroundImage: `url(${verticalBanner})` }}
               ></div>
             </MediaQuery>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0.4} speed={0.5}>
+            <div style={{ float: "left", marginLeft: "24px" }}>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>
+                  Back to home
+                </p>
+                <Icon
+                  type="left"
+                  style={{ color: "white", fontSize: "36px" }}
+                />
+              </Link>
+            </div>
           </ParallaxLayer>
           <ParallaxLayer factor={1} offset={1} speed={1}>
             <MediaQuery minWidth={1224}>
