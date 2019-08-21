@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39ce8599833eb2a7f6a13ee95c9186aa",
+    "revision": "0b1778bb18f2f33cb1b107b2ffc4102c",
     "url": "/barkadawebsite/index.html"
   },
   {
-    "revision": "3d1a34be78de244e759d",
-    "url": "/barkadawebsite/static/css/main.2efa797e.chunk.css"
+    "revision": "7690bfece9df856e9aac",
+    "url": "/barkadawebsite/static/css/main.a9e0abf8.chunk.css"
   },
   {
-    "revision": "dfc62de5fd6a269f0d3d",
-    "url": "/barkadawebsite/static/js/2.6d8ff938.chunk.js"
+    "revision": "f6341be6f37347744a1c",
+    "url": "/barkadawebsite/static/js/2.09fdb16d.chunk.js"
   },
   {
-    "revision": "3d1a34be78de244e759d",
-    "url": "/barkadawebsite/static/js/main.a5ff56ce.chunk.js"
+    "revision": "7690bfece9df856e9aac",
+    "url": "/barkadawebsite/static/js/main.171f630d.chunk.js"
   },
   {
     "revision": "230a4597eec1da1b5e57",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c6d68ca607a6272daf5fee382018b2cc",
     "url": "/barkadawebsite/static/media/kaa.c6d68ca6.JPG"
+  },
+  {
+    "revision": "d8a76d196b4316d1d836de354e3a346c",
+    "url": "/barkadawebsite/static/media/logo.d8a76d19.png"
   },
   {
     "revision": "92e247f373b0d4ce96151a7e8e8f34fd",
