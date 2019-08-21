@@ -10,9 +10,9 @@ import {
 } from "react-router-dom";
 import MenuBar from "./components/menubar/MenuBar";
 import Main from "./components/home/Main";
-import HomePage from "./components/home/HomePage";
+import Home from "./components/home/Home";
 import Pcn from "./components/pcn/Pcn";
-import Events from "./components/home/events/Events";
+import EventDetails from "./components/eventDetails/EventDetails";
 import {getAnimatedFrom, getAnimatedTo, getAnimatedEnter} from "./components/home/animation"
 import "./App.css";
 
@@ -26,7 +26,6 @@ class App extends Component {
           <Route
             render={({ location, ...rest }) => (
               <div className="App">
-                <MenuBar location={location} />
                 <Transition
                   native
                   items={location}
@@ -40,12 +39,12 @@ class App extends Component {
                       <Route
                         exact
                         path="/"
-                        render={props => <HomePage {...props} style={style} />}
+                        render={props => <Home {...props} style={style} />}
                       />
                       <Route
                         exact
                         path="/events"
-                        render={props => <Events {...props} style={style} />}
+                        render={props => <EventDetails {...props} style={style} />}
                       />
                       <Route
                         path="/pcn"

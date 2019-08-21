@@ -16,7 +16,7 @@ const ImageFade = () => {
     []
   );
   return transitions.map(({ item, props, key }) => (
-    <div style={{height: "100%", position: "fixed", zIndex: -99}}>
+    <div style={{ height: "100%", position: "fixed", zIndex: -99 }}>
       <animated.div
         key={key}
         className="bg"
@@ -24,7 +24,15 @@ const ImageFade = () => {
           ...props,
           backgroundImage: `url(${item.image}`
         }}
-      />
+      >
+        <div
+          style={{
+            background: `rgba(0,0,0,0.5)`,
+            height: "100%",
+            overflow: "hidden"
+          }}
+        ></div>
+      </animated.div>
     </div>
   ));
 };

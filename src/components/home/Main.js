@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Transition, animated } from "react-spring/renderprops";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
-import HomePage from "./HomePage";
+import Home from "./Home";
 import EventDetails from "./events/EventDetails";
 
 class Main extends Component {
@@ -31,7 +31,7 @@ class Main extends Component {
                     <Route
                       exact
                       path="/"
-                      render={props => <HomePage {...props} style={style} />}
+                      render={props => <Home {...props} style={style} />}
                     />
                     <Route
                       exact
