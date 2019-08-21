@@ -28,7 +28,6 @@ class App extends Component {
                   native
                   items={location}
                   keys={location.pathname.split("/")[1]}
-                  initial={{position: "absolute", opacity: 0}}
                   from={getAnimatedFrom(location.pathname)}
                   enter={getAnimatedEnter(location.pathname)}
                   leave={getAnimatedTo(location.pathname)}

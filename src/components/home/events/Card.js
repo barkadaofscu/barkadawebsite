@@ -14,6 +14,25 @@ const Picture = styled.div`
   }
 `;
 
+const Overlay = styled.div`
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+const Description = styled.p`
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  color: white;
+  font-size: 22px;
+  padding: 16px;
+`;
 const Card = props => {
   return (
     <Picture>
@@ -25,7 +44,11 @@ const Card = props => {
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
-      ></div>
+      >
+        <Overlay>
+          <Description>{props.description}</Description>
+        </Overlay>
+      </div>
       <div
         style={{
           width: "100%",

@@ -10,7 +10,6 @@ import {
 } from "../Primitives";
 import castPhoto from "./assets/fullCast.jpeg";
 import castPhoto1 from "./assets/fullCast1.png";
-import "./styles.css";
 
 class AboutPage extends Component {
   render() {
@@ -25,8 +24,8 @@ class AboutPage extends Component {
         }}
       >
         <Row style={{marginTop: 32}}>
-          <PageTitle>About</PageTitle>
-          <PageTag>
+          <PageTitle style={{textAlign: "center"}}>About</PageTitle>
+          <PageTag >
             The <BoldTag>largest</BoldTag> student-run cultural production at
             Santa Clara University.
           </PageTag>

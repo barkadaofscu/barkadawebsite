@@ -14,8 +14,8 @@ import {
 const Outreach = () => {
   return (
     <Page float="right">
-      <Container float="right">
-        <PageTitle >Outreach</PageTitle>
+      <Container >
+        <PageTitle float="right">Outreach</PageTitle>
       </Container>
       <Container>
         <PageTag>

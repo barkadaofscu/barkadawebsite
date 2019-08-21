@@ -13,7 +13,6 @@ import Masonry from "./masonry/Masonry";
 import about1 from "./assets/about1.JPG";
 import logo from "./assets/logo.png";
 import { Icon } from "antd";
-import "./home.css";
 
 class Home extends Component {
   render() {
@@ -30,12 +29,12 @@ class Home extends Component {
         <div style={{ height: "100vh", width: "100vw" }}>
           <ImageFade />
           <div style={{ width: "100%", height: "100%", zIndex: 4 }}>
-            <div style={{ width: "50%", height: "50%", marginLeft: "25%", marginRight: "25%" }}>
+            <div style={{ width: "100%", height: "50%" }}>
               <Logo
                 src={logo}
               />
             </div>
-            <Row style={{ marginTop: "15%" }}>
+            <Row style={{ marginTop: "10%" }}>
               <Column>
                 <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>Scroll down for more</p>
                 <Icon

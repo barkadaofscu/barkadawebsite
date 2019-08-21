@@ -17,12 +17,11 @@ export const Page = styled.div`
 export const PageTitle = styled.p`
   font-size: 60px;
   font-weight: bold;
-  color: black;
+  color: ${props => props.color ? props.color : "black"};
   margin: 0;
-  text-align: center;
-  text-align: inherit;
   @media ${device.laptop} {
     font-size: 68px;
+    text-align: ${props => props.float || "center"};
   }
 `;
 
@@ -39,20 +38,26 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 50vw;
+  width: 80vw;
   height: auto;
-  margin-top: 100%;
+  margin-top: 50%;
+  float: left;
+  margin-left: 10vw;
   @media ${device.laptop} {
-    margin-top: 12.5%;
+    width: 40vw;
+    margin-top: 5%;
+    margin-left: 30vw;
   }
 `;
 export const PageTag = styled.p`
   font-size: 24px;
+  color: ${props => props.color ? props.color : "black"};
   margin: 0;
   text-align: inherit;
 `;
 export const PageSpan = styled.p`
   font-size: 18px;
+  color: ${props => props.color ? props.color : "black"};
 `;
 export const Row = styled.div`
   width: 80%;

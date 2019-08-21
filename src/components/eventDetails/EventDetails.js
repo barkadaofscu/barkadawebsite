@@ -31,6 +31,7 @@ class EventDetails extends Component {
             speed={1}
             style={{ backgroundColor: "#243B4A" }}
           >
+            <h1 style={{color: "white"}}>Event details to be added</h1>
             <div
               style={{ marginTop: "20%", float: "left", marginLeft: "24px" }}
             >

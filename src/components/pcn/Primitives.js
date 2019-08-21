@@ -6,6 +6,7 @@ export const PageTitle = styled.p`
   font-weight: bold;
   color: black;
   margin: 0;
+  text-align: center;
 `;
 export const PageTag = styled.p`
   font-size: 24px;
@@ -39,6 +40,7 @@ export const Row = styled.div`
   display: inline-block;
   margin-left: 10%;
   margin-right: 10%;
+  text-align: inherit;
 `;
 export const Column = styled.div`
   width: 50%;
