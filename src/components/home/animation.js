@@ -5,17 +5,13 @@ export function getAnimatedFrom(path) {
       opacity: 0,
       marginLeft: "-110%"
     };
-  }
-
-  else if (path === "/pcn") {
+  } else if (path === "/pcn") {
     return {
       position: "absolute",
       opacity: 0,
       marginLeft: "110%"
     };
-  }
-
-  else {
+  } else {
     return {
       position: "absolute",
       opacity: 0,
@@ -39,17 +35,13 @@ export function getAnimatedTo(path) {
     return {
       marginLeft: "110%"
     };
-  }
-
-  else if (path === "/pcn") {
+  } else if (path === "/pcn") {
     return {
       marginLeft: "-110%"
     };
-  }
-  else {
+  } else {
     return {
       opacity: 0
     };
   }
 }
-

@@ -13,19 +13,20 @@ import {
 
 const Outreach = () => {
   return (
-    <Page float="right">
-      <Container >
+    <Page >
+      <Container>
         <PageTitle float="right">Outreach</PageTitle>
       </Container>
-      <Container>
+      <Container float="right">
         <PageTag>
           Barkada is proud to work with local communities in the bay area
         </PageTag>
         <PageSpan>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          ac pretium nunc. Integer efficitur libero purus, et hendrerit ligula
-          imperdiet vitae. Maecenas eu interdum est. Quisque a mauris ac dui
-          vestibulum pretium.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          accumsan sed arcu ut vehicula. Integer laoreet metus sit amet augue
+          placerat, quis imperdiet risus mollis. Fusce et sollicitudin metus, ut
+          semper eros. In sed purus lobortis, iaculis tellus pharetra, malesuada
+          sapien. Nam pharetra tellus suscipit scelerisque dapibus.
         </PageSpan>
       </Container>
     </Page>

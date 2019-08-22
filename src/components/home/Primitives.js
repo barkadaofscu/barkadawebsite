@@ -15,10 +15,11 @@ export const Page = styled.div`
   }
 `;
 export const PageTitle = styled.p`
-  font-size: 60px;
+  font-size: 58px;
   font-weight: bold;
-  color: ${props => props.color ? props.color : "black"};
+  color: ${props => (props.color ? props.color : "black")};
   margin: 0;
+  text-align: "center";
   @media ${device.laptop} {
     font-size: 68px;
     text-align: ${props => props.float || "center"};
@@ -31,9 +32,9 @@ export const Container = styled.div`
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 24px;
-  margin-bottom: 24px;
+  text-align: center;
   @media ${device.laptop} {
-    float: ${props => props.float || "none"};
+    text-align: ${props => props.float || "center"}
   }
 `;
 
@@ -50,14 +51,15 @@ export const Logo = styled.img`
   }
 `;
 export const PageTag = styled.p`
-  font-size: 24px;
-  color: ${props => props.color ? props.color : "black"};
-  margin: 0;
+  font-size: 28px;
+  color: ${props => (props.color ? props.color : "black")};
+  margin-top: 0;
+  margin-bottom: 24px;
   text-align: inherit;
 `;
 export const PageSpan = styled.p`
-  font-size: 18px;
-  color: ${props => props.color ? props.color : "black"};
+  font-size: 20px;
+  color: ${props => (props.color ? props.color : "black")};
 `;
 export const Row = styled.div`
   width: 80%;
@@ -68,8 +70,9 @@ export const Row = styled.div`
 `;
 export const Column = styled.div`
   margin: 0;
+  text-align: center;
   @media ${device.laptop} {
-    width: 50%;
+    width: ${props => (props.width ? props.width : "50%")};
     height: 100%;
     float: left;
     display: inline-block;
@@ -78,4 +81,11 @@ export const Column = styled.div`
     width: 100%;
     height: 50%;
   }
+`;
+export const ColumnOne = styled.div`
+  margin: 0;
+  width: ${props => (props.width ? props.width : "50%")};
+  height: 100%;
+  float: left;
+  display: inline-block;
 `;

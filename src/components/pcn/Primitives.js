@@ -40,13 +40,21 @@ export const Row = styled.div`
   display: inline-block;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 24px;
   text-align: inherit;
 `;
 export const Column = styled.div`
-  width: 50%;
+  width: {props => props.width ? props.width : "50%"};
   height: 100%;
-  margin-top: 0;
+  margin: 0;
   text-align: center;
+  display: inline-block;
+`;
+export const ColumnOne = styled.div`
+  margin: 0;
+  width: ${props => (props.width ? props.width : "50%")};
+  height: 100%;
+  float: left;
   display: inline-block;
 `;
 export const Container = styled.div`

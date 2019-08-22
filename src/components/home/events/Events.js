@@ -20,7 +20,7 @@ const events = [
         key: 1, 
         name: "KAA",
         image: kaa, 
-        description: "KAA, Kuya Ate Ading, is the largest big/little mentorship program on campus. For yuears, the KAA program has bgrough lifetime friendships, endless love, and unforgetable memories."
+        description: "KAA, Kuya Ate Ading, is the largest big/little mentorship program on campus. For years, the KAA program has bgrough lifetime friendships, endless love, and unforgetable memories."
     },
     {key: 2,
         image: fg,

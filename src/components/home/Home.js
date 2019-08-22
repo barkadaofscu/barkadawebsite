@@ -8,11 +8,12 @@ import About from "./about/About";
 import Events from "./events/Events";
 import Membership from "./membership/Membership";
 import Outreach from "./outreach/Outreach";
-import Footer from "./Footer"
+import Footer from "./Footer";
 import Masonry from "./masonry/Masonry";
 import about1 from "./assets/about1.JPG";
 import logo from "./assets/logo.png";
 import { Icon } from "antd";
+import "./home.css";
 
 class Home extends Component {
   render() {
@@ -21,7 +22,9 @@ class Home extends Component {
         style={{
           ...this.props.style,
           height: "100vh",
+          width: "100vw",
           overflowY: "scroll",
+          overflowX: "hidden",
           zIndex: 3,
           padding: 0
         }}
@@ -30,24 +33,26 @@ class Home extends Component {
           <ImageFade />
           <div style={{ width: "100%", height: "100%", zIndex: 4 }}>
             <div style={{ width: "100%", height: "50%" }}>
-              <Logo
-                src={logo}
-              />
+              <Logo src={logo} />
             </div>
             <Row style={{ marginTop: "10%" }}>
               <Column>
-                <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>Scroll down for more</p>
+                <p style={{ color: "white", fontSize: "20px", marginTop: 8 }}>
+                  Scroll down for more
+                </p>
                 <Icon
                   type="down"
-                  style={{ color: "white", fontSize: "36px" }}
+                  style={{ color: "white", fontSize: "32px" }}
                 />
               </Column>
               <Column>
-                <Link to="/pcn" style={{textDecoration: "none"}}>
-                  <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>PCN</p>
+                <Link to="/pcn" style={{ textDecoration: "none" }}>
+                  <p style={{ color: "white", fontSize: "20px", marginTop: 8 }}>
+                    PCN
+                  </p>
                   <Icon
                     type="right"
-                    style={{ color: "white", fontSize: "36px" }}
+                    style={{ color: "white", fontSize: "32px" }}
                   />
                 </Link>
               </Column>

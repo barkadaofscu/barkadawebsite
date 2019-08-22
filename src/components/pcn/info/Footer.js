@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "antd";
-import { Row } from "../Primitives";
+import { Row, ColumnOne } from "../Primitives";
 
 const footerStyle = {
   width: "100%",
@@ -22,52 +22,27 @@ function Footer() {
   return (
     <div style={footerStyle}>
       <Row>
-        <div
-          style={{
-            width: "80%",
-            marginLeft: "10%",
-            marginRight: "10%",
-            height: "auto",
-            display: "inline-block",
-            textAlign: "center",
-            marginTop: "50px"
-          }}
-        >
-          <div
-            style={{
-              width: "33%",
-              height: "100%",
-              display: "inline-block"
-            }}
-          >
+        <div style={{ width: "80%", height: "auto", marginTop: "50px", marginLeft: "10%" }}>
+          <ColumnOne width="25%">
             <a href="https://www.facebook.com/SCUBarkada/">
               <Icon type="facebook" style={iconStyle} />
             </a>
-          </div>
-          <div
-            style={{
-              width: "33%",
-              height: "100%",
-              display: "inline-block",
-              textAlign: "center"
-            }}
-          >
+          </ColumnOne>
+          <ColumnOne width="25%">
             <a href="https://twitter.com/SCUBarkada">
               <Icon type="twitter" style={iconStyle} />
             </a>
-          </div>
-          <div
-            style={{
-              width: "33%",
-              height: "100%",
-              display: "inline-block",
-              textAlign: "center"
-            }}
-          >
+          </ColumnOne>
+          <ColumnOne width="25%">
             <a href="https://www.instagram.com/scubarkada/">
               <Icon type="instagram" style={iconStyle} />
             </a>
-          </div>
+          </ColumnOne>
+          <ColumnOne width="25%">
+            <a href="https://www.youtube.com/user/barkadaofscu">
+              <Icon type="youtube" style={iconStyle} />
+            </a>
+          </ColumnOne>
         </div>
       </Row>
       <Row>

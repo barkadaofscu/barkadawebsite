@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import { Transition, animated } from "react-spring/renderprops";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
-import { Page, PageTitle, PageTag, PageSpan, Row, Column } from "../Primitives";
+import {
+  Page,
+  PageTitle,
+  PageTag,
+  PageSpan,
+  Container,
+  Row,
+  Column
+} from "../Primitives";
 import styled from "styled-components";
 import about1 from "./about1.JPG";
 
@@ -17,15 +25,10 @@ const About = () => (
   >
     <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
       <Column>
-        <div
-          style={{
-            width: "80%",
-            height: "auto",
-            marginLeft: "10%",
-            marginTop: "8%",
-          }}
-        >
-          <PageTitle color="white" float="left">About</PageTitle>
+        <Container float="left">
+          <PageTitle color="white" float="left">
+            About
+          </PageTitle>
           <PageTag color="white">
             Loosely translated, Barkada means: "a group of friends"
           </PageTag>
@@ -41,12 +44,16 @@ const About = () => (
             activities/events while upholding its heritage, traditions, and
             relationships.
           </PageSpan>
-        </div>
+        </Container>
       </Column>
-      <Column style={{ overflow: "hidden" }}>
+      <Column>
         <img
           src={about1}
-          style={{ width: "100%", height: "100%"}}
+          style={{
+            width: "100%",
+            height: "100%",
+            verticalAlign: "bottom"
+          }}
         />
       </Column>
     </div>

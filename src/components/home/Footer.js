@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Column } from "./Primitives";
+import { Row, Column, ColumnOne } from "./Primitives";
 import { Icon } from "antd";
 
 const footerStyle = {
@@ -23,53 +23,39 @@ const Footer = () => {
         <div
           style={{
             width: "80%",
-            marginLeft: "10%",
-            marginRight: "10%",
             height: "auto",
-            display: "inline-block",
-            textAlign: "center",
-            marginTop: "50px"
+            marginTop: "50px",
+            marginLeft: "10%"
           }}
         >
-          <div
-            style={{
-              width: "33%",
-              height: "100%",
-              display: "inline-block"
-            }}
-          >
+          <ColumnOne width="25%">
             <a href="https://www.facebook.com/SCUBarkada/">
               <Icon type="facebook" style={iconStyle} />
             </a>
-          </div>
-          <div
-            style={{
-              width: "33%",
-              height: "100%",
-              display: "inline-block",
-              textAlign: "center"
-            }}
-          >
+          </ColumnOne>
+          <ColumnOne width="25%">
             <a href="https://twitter.com/SCUBarkada">
               <Icon type="twitter" style={iconStyle} />
             </a>
-          </div>
-          <div
-            style={{
-              width: "33%",
-              height: "100%",
-              display: "inline-block",
-              textAlign: "center"
-            }}
-          >
+          </ColumnOne>
+          <ColumnOne width="25%">
             <a href="https://www.instagram.com/scubarkada/">
               <Icon type="instagram" style={iconStyle} />
             </a>
-          </div>
+          </ColumnOne>
+          <ColumnOne width="25%">
+            <a href="https://www.youtube.com/user/barkadaofscu">
+              <Icon type="youtube" style={iconStyle} />
+            </a>
+          </ColumnOne>
         </div>
       </Row>
       <Row>
-        <p style={{ fontSize: "16px", color: "white" }}>Designed by Ian Cho</p>
+        <div style={{ width: "100%", height: "auto", paddingTop: "25px" }}>
+          <p style={{ fontSize: "16px", color: "white" }}>
+            Designed by Ian Cho
+          </p>
+        </div>
       </Row>
     </div>
   );
