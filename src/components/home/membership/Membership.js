@@ -1,11 +1,9 @@
-import React, { Component } from "react";
-import { Transition, animated } from "react-spring/renderprops";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
-import { Page, PageTitle, PageTag, PageSpan, Row, Column } from "../Primitives";
+import React from "react";
+import { Page, PageTitle, PageSpan } from "../../shared/primitives/Primitives";
 
 const Membership = () => {
   return (
-    <Page>
+    <Page style={{ paddingTop: "4vh", paddingBottom: "4vh" }}>
       <div
         style={{
           width: "100vw",

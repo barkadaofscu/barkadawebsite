@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
-import photoArr from "./HomePhotos";
-import "./main.css";
+import photoArr from "../../home/assets/HomePhotos";
 
 const ImageFade = () => {
   const [index, set] = useState(0);

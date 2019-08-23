@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import { Transition, animated } from "react-spring/renderprops";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
-import { PageTitle, Logo, PageTag, PageSpan, Row, Column } from "./Primitives";
-import ImageFade from "./ImageFade";
-import Card from "./events/Card";
-import About from "./about/About";
-import Events from "./events/Events";
-import Membership from "./membership/Membership";
-import Outreach from "./outreach/Outreach";
-import Footer from "./Footer";
-import Masonry from "./masonry/Masonry";
-import about1 from "./assets/about1.JPG";
+import { animated } from "react-spring/renderprops";
+import { Link } from "react-router-dom";
+import { Logo, Row, FixedColumn } from "../shared/primitives/Primitives";
+import ImageFade from "../shared/imagefade/ImageFade";
+import About from "./about";
+import Events from "./events";
+import Membership from "./membership";
+import Outreach from "./outreach";
+import Footer from "./footer";
 import logo from "./assets/logo.png";
 import { Icon } from "antd";
 import "./home.css";
@@ -36,26 +33,48 @@ class Home extends Component {
               <Logo src={logo} />
             </div>
             <Row style={{ marginTop: "10%" }}>
-              <Column>
-                <p style={{ color: "white", fontSize: "20px", marginTop: 8 }}>
-                  Scroll down for more
-                </p>
-                <Icon
-                  type="down"
-                  style={{ color: "white", fontSize: "32px" }}
-                />
-              </Column>
-              <Column>
-                <Link to="/pcn" style={{ textDecoration: "none" }}>
+              <FixedColumn >
+                <div
+                  style={{
+                    width: "25vw",
+                    height: "100%",
+                    marginLeft: "5vw",
+                    display: "inline-block",
+                    float: "left"
+                  }}
+                >
                   <p style={{ color: "white", fontSize: "20px", marginTop: 8 }}>
-                    PCN
+                    Scroll
                   </p>
                   <Icon
-                    type="right"
+                    type="down"
                     style={{ color: "white", fontSize: "32px" }}
                   />
-                </Link>
-              </Column>
+                </div>
+              </FixedColumn>
+              <FixedColumn >
+                <div
+                  style={{
+                    width: "25vw",
+                    height: "100%",
+                    float: "right",
+                    display: "inline-block",
+                    marginRight: "5vw"
+                  }}
+                >
+                  <Link to="/pcn" style={{ textDecoration: "none" }}>
+                    <p
+                      style={{ color: "white", fontSize: "20px", marginTop: 8 }}
+                    >
+                      PCN
+                    </p>
+                    <Icon
+                      type="right"
+                      style={{ color: "white", fontSize: "32px" }}
+                    />
+                  </Link>
+                </div>
+              </FixedColumn>
             </Row>
           </div>
         </div>

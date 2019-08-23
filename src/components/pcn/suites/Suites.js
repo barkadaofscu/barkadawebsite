@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import { config } from "react-spring/renderprops";
 import {
   PageTitle,
-  PageTag,
-  BoldTag,
   PageSpan,
-  Container,
-  BoldHeader,
-  Column
-} from "../Primitives";
+    Container,
+    Row
+} from "../../shared/primitives";
 import Grid from "../grid/Grid";
 import { Slug, Fade } from "../grid/Primitives";
 import data from "../grid/data";
@@ -65,9 +62,9 @@ class Cell extends Component {
 
 const SuiteOverview = () => (
   <div style={{ width: "100%", height: "150vh" }}>
-    <Container>
+    <Row style={{marginTop: 32}}>
       <PageTitle>Suites</PageTitle>
-    </Container>
+    </Row >
     <Container>
       <PageSpan>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac

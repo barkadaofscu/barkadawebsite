@@ -1,19 +1,17 @@
 import React, { Component } from "react";
 import {
   PageTitle,
-  PageTag,
   BoldTag,
   PageSpan,
-  Row,
-  BoldHeader,
-  Container
-} from "../Primitives";
+    Container,
+    Row
+} from "../../shared/primitives";
 import director1 from "./assets/Colman Lin.jpeg";
 import director2 from "./assets/Dana Militante.jpeg";
 import director3 from "./assets/Janine Bautista.jpeg";
 import "./styles.css";
 
-class DirectorPage extends Component {
+class Directors extends Component {
   render() {
     return (
       <div
@@ -25,9 +23,9 @@ class DirectorPage extends Component {
           overflow: "hidden"
         }}
     >
-        <Container>
+        <Row style={{marginTop: 32}}>
             <PageTitle>From the Directors</PageTitle>
-        </Container>
+        </Row>
         <Container>
           <PageSpan>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -101,4 +99,4 @@ class DirectorPage extends Component {
   }
 }
 
-export default DirectorPage;
+export default Directors;

@@ -1,16 +1,11 @@
-import React, { Component } from "react";
-import { Transition, animated } from "react-spring/renderprops";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
+import React from "react";
 import {
-  Page,
   PageTitle,
   PageTag,
   PageSpan,
   Container,
-  Row,
   Column
-} from "../Primitives";
-import styled from "styled-components";
+} from "../../shared/primitives/Primitives";
 import about1 from "./about1.JPG";
 
 const About = () => (
@@ -25,7 +20,7 @@ const About = () => (
   >
     <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
       <Column>
-        <Container float="left">
+        <Container float="left" style={{ marginTop: "5%" }}>
           <PageTitle color="white" float="left">
             About
           </PageTitle>

@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 
 export const Page = styled.div`
   width: "100vw";
-  height: "auto";
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  height: "100%";
   background-color: white;
   position: relative;
   z-index: 4;
   @media ${device.laptop} {
     text-align: ${props => props.float || "center"};
     font-size: 68px;
+    height: auto;
   }
 `;
 export const PageTitle = styled.p`
@@ -31,10 +30,9 @@ export const Container = styled.div`
   height: auto;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 24px;
   text-align: center;
   @media ${device.laptop} {
-    text-align: ${props => props.float || "center"}
+    text-align: ${props => props.float || "center"};
   }
 `;
 
@@ -53,33 +51,53 @@ export const Logo = styled.img`
 export const PageTag = styled.p`
   font-size: 28px;
   color: ${props => (props.color ? props.color : "black")};
+  margin-top: 24px;
   margin-top: 0;
   margin-bottom: 24px;
   text-align: inherit;
+`;
+export const BoldHeader = styled.p`
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 150%;
+  margin: 0;
+`;
+export const BoldTag = styled.p`
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  @media ${device.laptop} {
+    font-size: 28px;
+    line-height: 150%;
+  }
 `;
 export const PageSpan = styled.p`
   font-size: 20px;
   color: ${props => (props.color ? props.color : "black")};
 `;
 export const Row = styled.div`
-  width: 80%;
+  width: 100%;
   height: auto;
   display: inline-block;
-  margin-left: 10%;
-  margin-right: 10%;
+  @media ${device.laptop} {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 `;
 export const Column = styled.div`
   margin: 0;
+  padding: 0;
   text-align: center;
+  float: left;
   @media ${device.laptop} {
     width: ${props => (props.width ? props.width : "50%")};
-    height: 100%;
-    float: left;
-    display: inline-block;
+    height: auto;
   }
   @media ${device.mobileL} {
-    width: 100%;
-    height: 50%;
+    width: ${props => (props.isFixed ? "50%" : "100%")};
+    height: 100%;
   }
 `;
 export const ColumnOne = styled.div`
@@ -89,3 +107,10 @@ export const ColumnOne = styled.div`
   float: left;
   display: inline-block;
 `;
+export const FixedColumn = styled.div`
+  margin: 0;
+  width: ${props => (props.width ? props.width : "50%")};
+  height: 100%;
+  float: left;
+  display: inline-block;
+`

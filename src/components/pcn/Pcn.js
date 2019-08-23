@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
-import AboutPage from "./info/AboutPage";
-import MobileAboutPage from "./mobile/MobileAboutPage";
-import DirectorPage from "./directors/DirectorPage";
-import SuiteOverview from "./suites/SuiteOverview";
-import Footer from "./info/Footer";
-import MenuBar from "../menubar/MenuBar";
+import About from "./about/About";
+import Directors from "./directors";
+import Suites from "./suites";
+import Footer from "./footer";
 import about from "./assets/about.jpg";
-import aboutVertical from "./assets/about_v.jpeg";
 import directors from "./assets/directors.jpg";
 import suiteBanner from "./suites/assets/suite_banner.jpg";
 import banner from "./assets/banner.png";
@@ -18,7 +15,7 @@ import verticalBanner from "./assets/home_vertical1.png";
 import { Icon } from "antd";
 import "./styles.css";
 
-class PcnHomePage extends Component {
+class Pcn extends Component {
   render() {
     return (
       <animated.div
@@ -82,15 +79,10 @@ class PcnHomePage extends Component {
             </div>
           </ParallaxLayer>
           <ParallaxLayer factor={1} offset={1} speed={1}>
-            <MediaQuery minWidth={1224}>
-              <AboutPage />
-            </MediaQuery>
-            <MediaQuery maxWidth={1224}>
-              <MobileAboutPage />
-            </MediaQuery>
+              <About />
           </ParallaxLayer>
           <ParallaxLayer factor={1} offset={2} speed={1}>
-            <DirectorPage />
+            <Directors />
           </ParallaxLayer>
           <ParallaxLayer
             offset={3}
@@ -101,7 +93,7 @@ class PcnHomePage extends Component {
               backgroundColor: "white"
             }}
           >
-            <SuiteOverview />
+            <Suites />
           </ParallaxLayer>
           <ParallaxLayer offset={4} speed={0.5}>
             <Footer />
@@ -112,4 +104,4 @@ class PcnHomePage extends Component {
   }
 }
 
-export default PcnHomePage;
+export default Pcn;

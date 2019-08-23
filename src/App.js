@@ -1,19 +1,14 @@
 import React, { Component } from "react";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
-import { Transition, animated, Spring } from "react-spring/renderprops";
+import { Transition } from "react-spring/renderprops";
 import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect
 } from "react-router-dom";
-import MenuBar from "./components/menubar/MenuBar";
-import Main from "./components/home/Main";
-import Home from "./components/home/Home";
-import Pcn from "./components/pcn/Pcn";
+import Home from "./components/home";
+import Pcn from "./components/pcn";
 import EventDetails from "./components/eventDetails/EventDetails";
-import {getAnimatedFrom, getAnimatedTo, getAnimatedEnter} from "./components/home/animation"
+import {getAnimatedFrom, getAnimatedTo, getAnimatedEnter} from "./components/shared/animation"
 import "./App.css";
 
 class App extends Component {

@@ -6,12 +6,11 @@ import {
   PageSpan,
   Row,
   BoldHeader,
-  Column
-} from "../Primitives";
-import castPhoto from "./assets/fullCast.jpeg";
+  FixedColumn
+} from "../../shared/primitives";
 import castPhoto1 from "./assets/fullCast1.png";
 
-class AboutPage extends Component {
+class About extends Component {
   render() {
     return (
       <div
@@ -24,16 +23,16 @@ class AboutPage extends Component {
         }}
       >
         <Row style={{marginTop: 32}}>
-          <PageTitle style={{textAlign: "center"}}>About</PageTitle>
+          <PageTitle>About</PageTitle>
           <PageTag >
             The <BoldTag>largest</BoldTag> student-run cultural production at
             Santa Clara University.
           </PageTag>
         </Row>
-        <Row style={{marginTop: 32, marginBottom: 32}}>
-          <Column>
+        <Row style={{marginBottom: 32}}>
+          <FixedColumn >
             <PageSpan>
-              <BoldHeader>29th</BoldHeader> annual Pilipino Cultural Night
+              <BoldHeader>29th</BoldHeader> Pilipino Cultural Night
             </PageSpan>
             <PageSpan>
               <BoldHeader>15</BoldHeader> traditional folk dances
@@ -41,8 +40,8 @@ class AboutPage extends Component {
             <PageSpan>
               <BoldHeader>3</BoldHeader> modern dances
             </PageSpan>
-          </Column>
-          <Column>
+          </FixedColumn>
+          <FixedColumn >
             <PageSpan>
               <BoldHeader>85</BoldHeader> cast members
             </PageSpan>
@@ -52,7 +51,7 @@ class AboutPage extends Component {
             <PageSpan>
               <BoldHeader>353</BoldHeader> days to make this production come to life
             </PageSpan>
-          </Column>
+          </FixedColumn>
         </Row>
         <div style={{ width: "75%", height: "20%", marginLeft: "15%" }}>
           <img
@@ -66,4 +65,4 @@ class AboutPage extends Component {
   }
 }
 
-export default AboutPage;
+export default About;

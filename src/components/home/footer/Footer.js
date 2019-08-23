@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Column, ColumnOne } from "./Primitives";
+import { Row, ColumnOne } from "../../shared/primitives/Primitives";
 import { Icon } from "antd";
 
 const footerStyle = {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "antd";
-import { Row, ColumnOne } from "../Primitives";
+import { Row, ColumnOne } from "../../shared/primitives";
 
 const footerStyle = {
   width: "100%",

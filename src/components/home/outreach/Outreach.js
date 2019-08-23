@@ -1,19 +1,15 @@
-import React, { Component } from "react";
-import { Transition, animated } from "react-spring/renderprops";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
+import React from "react";
 import {
   Page,
   PageTitle,
   PageTag,
   PageSpan,
-  Container,
-  Row,
-  Column
-} from "../Primitives";
+  Container
+} from "../../shared/primitives/Primitives";
 
 const Outreach = () => {
   return (
-    <Page >
+    <Page style={{ paddingTop: "4vh", paddingBottom: "4vh" }}>
       <Container>
         <PageTitle float="right">Outreach</PageTitle>
       </Container>
