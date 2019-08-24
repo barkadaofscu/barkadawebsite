@@ -8,6 +8,8 @@ import Events from "./events";
 import Membership from "./membership";
 import Outreach from "./outreach";
 import Footer from "./footer";
+import Kaa from "../kaa"
+import photoArr from "./assets/HomePhotos"
 import logo from "./assets/logo.png";
 import { Icon } from "antd";
 import "./home.css";
@@ -27,7 +29,7 @@ class Home extends Component {
         }}
       >
         <div style={{ height: "100vh", width: "100vw" }}>
-          <ImageFade />
+          <ImageFade data={photoArr}/>
           <div style={{ width: "100%", height: "100%", zIndex: 4 }}>
             <div style={{ width: "100%", height: "50%" }}>
               <Logo src={logo} />

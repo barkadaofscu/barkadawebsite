@@ -75,6 +75,13 @@ export const BoldTag = styled.p`
 export const PageSpan = styled.p`
   font-size: 20px;
   color: ${props => (props.color ? props.color : "black")};
+  font-weight: 300;
+`;
+export const BoldSpan = styled.p`
+font-size: 18px;
+font-weight: bold;
+display: inline-block;
+margin 0;
 `;
 export const Row = styled.div`
   width: 100%;
@@ -113,4 +120,5 @@ export const FixedColumn = styled.div`
   height: 100%;
   float: left;
   display: inline-block;
-`
+`;
+

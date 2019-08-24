@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
-import photoArr from "../../home/assets/HomePhotos";
 
-const ImageFade = () => {
+const ImageFade = (props) => {
+  const photoArr = props.data;
   const [index, set] = useState(0);
   const transitions = useTransition(photoArr[index], item => item.id, {
     from: { opacity: 0 },
@@ -26,7 +26,7 @@ const ImageFade = () => {
       >
         <div
           style={{
-            background: `rgba(0,0,0,0.5)`,
+            background: `rgba(0,0,0,0.3)`,
             height: "100%",
             overflow: "hidden"
           }}

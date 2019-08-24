@@ -8,6 +8,7 @@ import {
 import Home from "./components/home";
 import Pcn from "./components/pcn";
 import EventDetails from "./components/eventDetails/EventDetails";
+import Kaa from "./components/kaa"
 import {getAnimatedFrom, getAnimatedTo, getAnimatedEnter} from "./components/shared/animation"
 import "./App.css";
 
@@ -37,7 +38,7 @@ class App extends Component {
                       <Route
                         exact
                         path="/events"
-                        render={props => <EventDetails {...props} style={style} />}
+                        render={props => <Kaa {...props} style={style} />}
                       />
                       <Route
                         path="/pcn"
