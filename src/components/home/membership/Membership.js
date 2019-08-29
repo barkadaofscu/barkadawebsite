@@ -10,25 +10,33 @@ import {
 
 const Membership = () => {
   return (
-    <Page style={{ paddingTop: "4vh", paddingBottom: "4vh" }}>
+    <Page style={{ background: `linear-gradient(to right, #312AA9, #79ACD0)` }}>
       <div
         style={{
           width: "100vw",
-          textAlign: "center",
+          textAlign: "left",
           overflow: "hidden"
         }}
       >
-        <PageTitle>Membership</PageTitle>
+        <Row style={{ marginTop: "24px" }}>
+          <PageTitle color="white">Membership</PageTitle>
+        </Row>
       </div>
       <Row>
-        <FixedColumn width="33%">
-          <PageSpan>KAA</PageSpan>
+        <FixedColumn>
+          <PageSpan color="white" float="left">
+            One time membership fee for a "group of friends." General meetings
+            at the Shapell Lounge on Tuesdays at 7:40pm.{" "}
+          </PageSpan>
         </FixedColumn>
-        <FixedColumn width="33%">
-          <PageSpan>Discounted Events</PageSpan>
-        </FixedColumn>
-        <FixedColumn width="33%">
-          <PageSpan>Free Shirt</PageSpan>
+        <FixedColumn>
+          <PageSpan color="white" float="left">
+            <ul>
+              <li>Enterance to KAA</li>
+              <li>Discount to events</li>
+              <li>Free shirt</li>
+            </ul>
+          </PageSpan>
         </FixedColumn>
       </Row>
     </Page>

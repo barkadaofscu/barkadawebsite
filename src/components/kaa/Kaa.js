@@ -8,7 +8,6 @@ import {
   BoldSpan,
   PageTitle,
   Container,
-  Logo,
   Row,
   FixedColumn
 } from "../shared/primitives/Primitives";
@@ -16,19 +15,27 @@ import ImageFade from "../shared/imagefade/ImageFade";
 import kaamponents from "./assets/kaamponents.png";
 import photoArr from "./assets/data";
 import logo from "./assets/logo.png";
-import banner from "./assets/banner.png";
+import styled from "styled-components";
 
+const Title = styled.div`
+  width: 80vw;
+  height: auto;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background: linear-gradient(to right, #312aa9, #79acd0);
+`;
+
+
+const Content = styled.div`
+  width: 80vw;
+  height: auto;
+  margin-left: 10vw;
+  text-align: left;
+  textalign: center;
+  background: rgba(64, 64, 64, 0.9);
+`;
 class Kaa extends Component {
   render() {
-    const styles = {
-      fontFamily: "Menlo-Regular, Menlo, monospace",
-      fontSize: 14,
-      lineHeight: "10px",
-      color: "white",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
-    };
     return (
       <animated.div
         style={{
@@ -42,74 +49,62 @@ class Kaa extends Component {
         }}
       >
         <div style={{ height: "100vh", width: "100vw", overflowY: "hidden" }}>
-          <ImageFade data={photoArr} />
+          <ImageFade data={photoArr} interval={5000}/>
           <Parallax ref="parallax" pages={5}>
             <ParallaxLayer offset={0} speed={1}>
               <div
-                style={{ marginTop: "2%", float: "left", marginLeft: "24px" }}
+                style={{
+                  width: "100px",
+                  marginTop: "48px",
+                  float: "left",
+                  marginLeft: "24px"
+                }}
               >
-                <Link to="/" style={{ textDecoration: "none" }}>
-                  <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>
-                    Home
-                  </p>
-                  <Icon
-                    type="left"
-                    style={{ color: "white", fontSize: "36px" }}
-                  />
+                <Link
+                  to="/"
+                  style={{ textDecoration: "none", verticaAlign: "top" }}
+                >
+                  <Row>
+                    <FixedColumn>
+                      <Icon
+                        type="left"
+                        style={{ color: "white", fontSize: "28px" }}
+                      />
+                    </FixedColumn>
+                    <FixedColumn>
+                      <p
+                        style={{
+                          color: "white",
+                          fontSize: "24px",
+                          padding: 0,
+                          margin: 0
+                        }}
+                      >
+                        Home
+                      </p>
+                    </FixedColumn>
+                  </Row>
                 </Link>
               </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0.3} speed={1}>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginLeft: "10vw",
-                  marginRight: "10vw",
-                  background: `linear-gradient(to right, #312AA9, #79ACD0)`
-                }}
-              >
+              <Title>
                 <img
                   src={logo}
                   style={{ width: "auto", height: "5vh", padding: "2vh" }}
                 />
-              </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginLeft: "10vw",
-                  textAlign: "center",
-                  background: `rgba(64,64,64,0.9)`
-                }}
-              >
-                <PageTitle color="white" style={{ padding: "5%" }}>
+              </Title>
+              <Content>
+                <PageTitle color="white" style={{ textAlign: "center", padding: "5%" }}>
                   KAA 2018
                 </PageTitle>
-              </div>
+              </Content>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginLeft: "10vw",
-                  marginRight: "10vw",
-                  background: `linear-gradient(to right, #312AA9, #79ACD0)`
-                }}
-              >
+              <Title>
                 <h1 style={{ color: "white", padding: 24 }}>KAA What?</h1>
-              </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "80vh",
-                  marginTop: "5vh",
-                  marginLeft: "10vw",
-                  textAlign: "center",
-                  background: `rgba(64,64,64,0.9)`
-                }}
-              >
+              </Title>
+              <Content style={{ height: "80vh" }}>
                 <iframe
                   width="100%"
                   height="90%"
@@ -118,29 +113,21 @@ class Kaa extends Component {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-                <PageSpan color="white">
-                  <BoldSpan>KAA 2018</BoldSpan>
-                </PageSpan>
-              </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginTop: "10vh",
-                  marginLeft: "10vw",
-                  textAlign: "left",
-                  background: `rgba(64,64,64,0.9)`
-                }}
-              >
+                <Container float="center">
+                  <PageSpan color="white">
+                    <BoldSpan>KAA 2018</BoldSpan>
+                  </PageSpan>
+                </Container>
+              </Content>
+              <Content style={{ marginTop: "5vh" }}>
                 <div style={{ width: "90%", height: "90%", padding: "5%" }}>
                   <PageSpan color="white">
                     Welcome to the Kuya Ate Ading Program!
                   </PageSpan>
                   <PageSpan color="white">
-                    We're super excited for you to join the biggest big/little
-                    mentorship program at SCU. For years, the KAA program has
-                    brought lifetime friendships, endless love, and
-                    unforgettable memories.
+                    KAA is the biggest big/little mentorship program on campus.
+                    For years, the KAA program has brought lifetime friendships,
+                    endless love, and unforgettable memories.
                   </PageSpan>
                   <PageSpan color="white">
                     <BoldSpan>Kuya</BoldSpan> (KOO-yah) = Tagalog for big
@@ -154,34 +141,17 @@ class Kaa extends Component {
                   </PageSpan>
                   <PageSpan color="white">We are all family here.</PageSpan>
                 </div>
-              </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginLeft: "10vw",
-                  marginRight: "10vw",
-                  marginTop: "20vh",
-                  background: `linear-gradient(to right, #312AA9, #79ACD0)`
-                }}
-              >
+              </Content>
+              <Title style={{ marginTop: "10%" }}>
                 <h1 style={{ color: "white", padding: 24 }}>How to KAA:</h1>
-              </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginLeft: "10vw",
-                  textAlign: "left",
-                  background: `rgba(64,64,64,0.9)`
-                }}
-              >
+              </Title>
+              <Content>
                 <div style={{ width: "90%", height: "90%", padding: "5%" }}>
                   <PageSpan color="white">
-                    Come to
+                    Come to{" "}
                     <BoldSpan>
                       Barkada general meetings, every Tuesday at 7:40 PM
-                    </BoldSpan>
+                    </BoldSpan>{" "}
                     in Shapell Lounge (MCC)!
                   </PageSpan>
                   <PageSpan color="white">
@@ -191,21 +161,12 @@ class Kaa extends Component {
                     on your applications and potential compatibility.
                   </PageSpan>
                 </div>
-              </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginLeft: "10vw",
-                  marginRight: "10vw",
-                  marginTop: "20vh",
-                  background: `linear-gradient(to right, #312AA9, #79ACD0)`
-                }}
-              >
+              </Content>
+              <Title style={{ marginTop: "10%" }}>
                 <h1 style={{ color: "white", padding: 24 }}>
                   KAAmponents of KAA:
                 </h1>
-              </div>
+              </Title>
               <div
                 style={{
                   width: "80vw",
@@ -219,16 +180,7 @@ class Kaa extends Component {
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
-              <div
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  marginTop: "5vh",
-                  marginLeft: "10vw",
-                  textAlign: "left",
-                  background: `rgba(64,64,64,0.9)`
-                }}
-              >
+              <Content style={{ marginTop: "5vh" }}>
                 <div style={{ width: "90%", padding: "5%" }}>
                   <PageSpan color="white">
                     There are 4 main components to the Kuya, Ate, Ading Program:
@@ -258,12 +210,6 @@ class Kaa extends Component {
                     an introduction letter to their future ading(s) and give a
                     little surprise with their letter.
                   </PageSpan>
-                  <PageSpan color="white">
-                    *Please let us know if you are unable to come to the meeting
-                    and coordinate with a Barkada board member to make sure your
-                    letter (and surprise, if you are a Kuya/Ate) is submitted in
-                    time. We don't want anyone empty-handed!
-                  </PageSpan>
                   <h2
                     style={{
                       textDecoration: "underline",
@@ -278,12 +224,6 @@ class Kaa extends Component {
                     except this time, the letter will be a response to your
                     Kuya/Ate or Ading(s).
                   </PageSpan>
-                  <PageSpan color="white">
-                    Again, please let any Barkada board member know if you are
-                    unable to come to the Week 6 general meeting on Tuesday at
-                    7:40 PM for second letters!
-                  </PageSpan>
-
                   <h2
                     style={{
                       textDecoration: "underline",
@@ -295,9 +235,7 @@ class Kaa extends Component {
                   </h2>
                   <PageSpan color="white">
                     Adings will be taken around campus to find clues about their
-                    future Kuya/Ate by performing different tasks. Kuyas/Ates
-                    are welcome to watch during Clue Night, which is on Friday,
-                    10/26.
+                    future Kuya/Ate by performing different tasks.{" "}
                   </PageSpan>
                   <h2
                     style={{
@@ -310,15 +248,17 @@ class Kaa extends Component {
                   </h2>
                   <PageSpan color="white">
                     This is the final event of the KAA season where families
-                    will be created and united through a grand reveal! We will
-                    meet at the Shapell Lounge (MCC) across the Bookstore at
-                    5:00 PM on Friday, 11/2.
+                    will be created and united through a grand reveal!{" "}
                   </PageSpan>
-                <PageSpan color="white" style={{padding: "24px"}} onClick={() => this.refs.parallax.scrollTo(0)}>
-                  Click to go back to top
-                </PageSpan>
+                  <PageSpan
+                    color="white"
+                    style={{ textAlign: "center", padding: "24px" }}
+                    onClick={() => this.refs.parallax.scrollTo(0)}
+                  >
+                    Click to go back to top
+                  </PageSpan>
                 </div>
-              </div>
+              </Content>
             </ParallaxLayer>
           </Parallax>
         </div>

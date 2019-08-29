@@ -8,7 +8,7 @@ const styles = {
   inner: {
     position: "relative",
     width: "100%",
-    height: "100%"
+    height: "100vh"
   },
   cell: {
     position: "absolute",
@@ -29,8 +29,8 @@ export default class Grid extends React.Component {
     closeDelay: PropTypes.number,
   }
   static defaultProps = {
-    occupySpace: true,
-    columns: 3,
+    occupySpace: false,
+    columns: 1,
     margin: 0,
     heights: 400,
     lockScroll: false,

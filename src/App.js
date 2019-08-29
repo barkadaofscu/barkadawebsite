@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import { Transition } from "react-spring/renderprops";
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home";
-import Pcn from "./components/pcn";
+import PcnTest from "./components/pcn";
 import EventDetails from "./components/eventDetails/EventDetails";
-import Kaa from "./components/kaa"
-import {getAnimatedFrom, getAnimatedTo, getAnimatedEnter} from "./components/shared/animation"
+import Kaa from "./components/kaa";
+import Fg from "./components/friendshipGames";
+import Barrio from "./components/barrio";
+import Eotyd from "./components/eotyd";
+import {
+  getAnimatedFrom,
+  getAnimatedTo,
+  getAnimatedEnter
+} from "./components/shared/animation";
 import "./App.css";
 
 class App extends Component {
@@ -38,13 +41,33 @@ class App extends Component {
                       <Route
                         exact
                         path="/events"
+                        render={props => (
+                          <EventDetails {...props} style={style} />
+                        )}
+                      />
+                      <Route
+                        exact
+                        path="/kaa"
                         render={props => <Kaa {...props} style={style} />}
                       />
                       <Route
+                        exact
+                        path="/fg"
+                        render={props => <Fg {...props} style={style} />}
+                      />
+                      <Route
+                        exact
+                        path="/barrio"
+                        render={props => <Barrio {...props} style={style} />}
+                      />
+                      <Route
+                        exact
+                        path="/eotyd"
+                        render={props => <Eotyd {...props} style={style} />}
+                      />
+                      <Route
                         path="/pcn"
-                        render={props => (
-                          <Pcn {...props} style={style} />
-                        )}
+                        render={props => <PcnTest {...props} style={style} />}
                       />
                     </Switch>
                   )}

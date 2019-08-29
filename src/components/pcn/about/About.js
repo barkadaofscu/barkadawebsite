@@ -16,14 +16,12 @@ class About extends Component {
       <div
         style={{
           width: "100%",
-          minHeight: "100vh",
-          backgroundColor: "white",
+          height: "auto",
           overflow: "hidden",
           textAlign: "center"
         }}
       >
         <Row style={{marginTop: 32}}>
-          <PageTitle>About</PageTitle>
           <PageTag >
             The <BoldTag>largest</BoldTag> student-run cultural production at
             Santa Clara University.
@@ -53,7 +51,7 @@ class About extends Component {
             </PageSpan>
           </FixedColumn>
         </Row>
-        <div style={{ width: "75%", height: "20%", marginLeft: "15%" }}>
+        <div style={{ width: "75%", height: "20%", marginLeft: "12.5%" }}>
           <img
             src={castPhoto1}
             alt="cast"

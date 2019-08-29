@@ -1,11 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { config } from "react-spring/renderprops";
-import {
-  PageTitle,
-  PageSpan,
-    Container,
-    Row
-} from "../../shared/primitives";
+import { PageTitle, PageSpan, Container, Row } from "../../shared/primitives";
+import MediaQuery from "react-responsive";
 import Grid from "../grid/Grid";
 import { Slug, Fade } from "../grid/Primitives";
 import data from "../grid/data";
@@ -59,49 +55,73 @@ class Cell extends Component {
     );
   }
 }
-
-const SuiteOverview = () => (
-  <div style={{ width: "100%", height: "150vh" }}>
-    <Row style={{marginTop: 32}}>
-      <PageTitle>Suites</PageTitle>
-    </Row >
-    <Container>
-      <PageSpan>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac
-        pretium nunc. Integer efficitur libero purus, et hendrerit ligula
-        imperdiet vitae. Maecenas eu interdum est. Quisque a mauris ac dui
-        vestibulum pretium. Aenean ac posuere orci, a luctus tellus. Maecenas
-        vestibulum vitae massa vel auctor. Nullam id risus ullamcorper,
-        malesuada orci sit amet, fermentum enim. Pellentesque pulvinar mauris at
-        dolor pulvinar aliquet sit amet non dolor.
-      </PageSpan>
-    </Container>
-    <div style={{ width: "95%", minHeight: "100vh", marginLeft: "2.5%" }}>
-      <Grid
-        className="grid"
-        // Arbitrary data, should contain keys, possibly heights, etc.
-        data={data}
-        // Key accessor, instructs grid on how to fet individual keys from the data set
-        keys={d => d.name}
-        // Can be a fixed value or an individual data accessor
-        heights={d => d.height}
-        // Number of columns
-        columns={3}
-        // Space between elements
-        margin={0}
-        // Removes the possibility to scroll away from a maximized element
-        lockScroll={true}
-        // Delay when active elements (blown up) are minimized again
-        closeDelay={500}
-        // Regular react-spring configs
-        config={config.default}
+class Suites extends Component {
+  render() {
+    return (
+      <div
+        style={{
+          width: "100%",
+          height: "auto",
+          paddingBottom: "24px",
+          overflow: "hidden"
+        }}
       >
-        {(data, active, toggle) => (
-          <Cell {...data} active={active} toggle={toggle} />
-        )}
-      </Grid>
-    </div>
-  </div>
-);
+        <Container>
+          <PageSpan>To be added</PageSpan>
+        </Container>
+        <MediaQuery query="(max-device-width: 1023px)">
+          <Grid
+            className="grid"
+            // Arbitrary data, should contain keys, possibly heights, etc.
+            data={data}
+            // Key accessor, instructs grid on how to fet individual keys from the data set
+            keys={d => d.name}
+            // Can be a fixed value or an individual data accessor
+            heights={150}
+            // Number of columns
+            columns={1}
+            // Space between elements
+            margin={0}
+            // Removes the possibility to scroll away from a maximized element
+            lockScroll={true}
+            // Delay when active elements (blown up) are minimized again
+            closeDelay={500}
+            // Regular react-spring configs
+            config={config.default}
+          >
+            {(data, active, toggle) => (
+              <Cell {...data} active={active} toggle={toggle} />
+            )}
+          </Grid>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 1024px)">
+          <Grid
+            className="grid"
+            // Arbitrary data, should contain keys, possibly heights, etc.
+            data={data}
+            // Key accessor, instructs grid on how to fet individual keys from the data set
+            keys={d => d.name}
+            // Can be a fixed value or an individual data accessor
+            heights={d => d.height}
+            // Number of columns
+            columns={3}
+            // Space between elements
+            margin={0}
+            // Removes the possibility to scroll away from a maximized element
+            lockScroll={true}
+            // Delay when active elements (blown up) are minimized again
+            closeDelay={500}
+            // Regular react-spring configs
+            config={config.default}
+          >
+            {(data, active, toggle) => (
+              <Cell {...data} active={active} toggle={toggle} />
+            )}
+          </Grid>
+        </MediaQuery>
+      </div>
+    );
+  }
+}
 
-export default SuiteOverview;
+export default Suites;

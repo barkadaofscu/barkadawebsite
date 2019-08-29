@@ -1,3 +1,3 @@
-import Pcn from "./Pcn"
+import PcnTest from "./PcnTest"
 
-export default Pcn;
+export default PcnTest;

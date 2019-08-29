@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import ImageFade from "../../shared/imagefade";
+import { Link } from "react-router-dom";
 import { device } from "../../device";
 
 const Picture = styled.div`
@@ -9,9 +11,18 @@ const Picture = styled.div`
   margin-bottom: 5vw;
   float: left;
   @media ${device.laptop} {
-    width: 25vw;
+    width: 21vw;
     height: 60vh;
+    margin-left: 3vw;
+    margin-right: 0vw;
   }
+`;
+
+const Title = styled.p`
+  font-size: 16px;
+  color: white;
+  padding: 18px;
+  margin: 0;
 `;
 
 const Overlay = styled.div`
@@ -29,9 +40,12 @@ const Description = styled.p`
   display: inline-block;
   position: relative;
   vertical-align: middle;
+  margin: 0;
+  padding: 0;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   padding: 16px;
+
 `;
 const Card = props => {
   return (
@@ -52,22 +66,13 @@ const Card = props => {
       <div
         style={{
           width: "100%",
-          height: "15%",
+          height: "auto",
           textAlign: "center",
-          backgroundColor: "#34495E",
-          fontSize: 24
         }}
       >
-        <p
-          style={{
-            position: "relative",
-            marginTop: 0,
-            color: "white",
-            top: "25%"
-          }}
-        >
-          {props.name}
-        </p>
+        <Link to={props.link} style={{ textDecoration: "none" }}>
+          <Title>{props.name}</Title>
+        </Link>
       </div>
     </Picture>
   );

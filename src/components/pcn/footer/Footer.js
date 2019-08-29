@@ -46,7 +46,7 @@ function Footer() {
         </div>
       </Row>
       <Row>
-        <p style={{ fontSize: "16px", color: "black" }}>Designed by Ian Cho</p>
+        <p style={{ fontSize: "9px", color: "black" }}>Designed by Ian Cho</p>
       </Row>
     </div>
   );

@@ -11,8 +11,8 @@ const ImageFade = (props) => {
     config: config.molasses
   });
   useEffect(
-    () => void setInterval(() => set(state => (state + 1) % 4), 5000),
-    []
+    () => void setInterval(() => set(state => (state + 1) % photoArr.length), props.interval),
+    [photoArr.length, props.interval]
   );
   return transitions.map(({ item, props, key }) => (
     <div style={{ height: "100%", position: "fixed", zIndex: -99 }}>

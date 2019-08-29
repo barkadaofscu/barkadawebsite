@@ -6,23 +6,25 @@ import MediaQuery from "react-responsive";
 import About from "./about/About";
 import Directors from "./directors";
 import Suites from "./suites";
+import Gallery from "../shared/gallery"
 import Footer from "./footer";
 import about from "./assets/about.jpg";
 import directors from "./assets/directors.jpg";
 import suiteBanner from "./suites/assets/suite_banner.jpg";
 import banner from "./assets/banner.png";
 import verticalBanner from "./assets/home_vertical1.png";
+import data from "./assets/gallery/data"
 import { Icon } from "antd";
 import "./styles.css";
 
-class Pcn extends Component {
+class PcnTest extends Component {
   render() {
     return (
       <animated.div
         className="box"
         style={{ ...this.props.style, overflow: "hidden" }}
       >
-        <Parallax ref="parallax" pages={5}>
+        <Parallax ref="parallax" pages={7}>
           <ParallaxLayer offset={0.75} speed={0.5}>
             <div
               className="bg"
@@ -86,16 +88,15 @@ class Pcn extends Component {
           </ParallaxLayer>
           <ParallaxLayer
             offset={3}
-            factor={1.5}
+            factor={1}
             speed={1}
-            style={{
-              minHeight: "100vh",
-              backgroundColor: "white"
-            }}
           >
             <Suites />
           </ParallaxLayer>
           <ParallaxLayer offset={4} speed={0.5}>
+            <Gallery data={data} />
+          </ParallaxLayer>
+          <ParallaxLayer offset={6} speed={0.5}>
             <Footer />
           </ParallaxLayer>
         </Parallax>
@@ -104,4 +105,4 @@ class Pcn extends Component {
   }
 }
 
-export default Pcn;
+export default PcnTest;

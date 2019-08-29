@@ -3,8 +3,9 @@ import {
   PageTitle,
   BoldTag,
   PageSpan,
-    Container,
-    Row
+  Container,
+  Row,
+  FixedColumn
 } from "../../shared/primitives";
 import director1 from "./assets/Colman Lin.jpeg";
 import director2 from "./assets/Dana Militante.jpeg";
@@ -17,35 +18,16 @@ class Directors extends Component {
       <div
         style={{
           width: "100%",
-          height: "100vh",
-          backgroundColor: "white",
+          height: "auto",
           textAlign: "center",
           overflow: "hidden"
         }}
-    >
-        <Row style={{marginTop: 32}}>
-            <PageTitle>From the Directors</PageTitle>
-        </Row>
+      >
         <Container>
-          <PageSpan>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque ac pretium nunc. Integer efficitur libero purus, et
-            hendrerit ligula imperdiet vitae. Maecenas eu interdum est. Quisque
-            a mauris ac dui vestibulum pretium. Aenean ac posuere orci, a luctus
-            tellus. Maecenas vestibulum vitae massa vel auctor. Nullam id risus
-            ullamcorper, malesuada orci sit amet, fermentum enim. Pellentesque
-            pulvinar mauris at dolor pulvinar aliquet sit amet non dolor.
-          </PageSpan>
+          <PageSpan>To be added</PageSpan>
         </Container>
-        <div style={{ width: "100%", height: "50%", marginTop: "48px" }}>
-          <div
-            style={{
-              width: "25%",
-              height: "100%",
-              float: "left",
-              marginLeft: "12.5%"
-            }}
-          >
+        <Row>
+          <FixedColumn width="33%">
             <img
               src={director1}
               alt="Director 1"
@@ -55,15 +37,9 @@ class Directors extends Component {
                 borderRadius: "50%"
               }}
             />
-            <BoldTag>Colman Lin</BoldTag>
-          </div>
-          <div
-            style={{
-              width: "25%",
-              height: "100%",
-              float: "left"
-            }}
-          >
+            <PageSpan>Colman Lin</PageSpan>
+          </FixedColumn>
+          <FixedColumn width="33%">
             <img
               src={director2}
               alt="Director 2"
@@ -73,15 +49,9 @@ class Directors extends Component {
                 borderRadius: "50%"
               }}
             />
-            <BoldTag>Dana Militante</BoldTag>
-          </div>
-          <div
-            style={{
-              width: "25%",
-              height: "100%",
-              float: "left"
-            }}
-          >
+            <PageSpan>Dana Militante</PageSpan>
+          </FixedColumn>
+          <FixedColumn width="33%">
             <img
               src={director3}
               alt="Director 2"
@@ -91,9 +61,9 @@ class Directors extends Component {
                 borderRadius: "50%"
               }}
             />
-            <BoldTag>Janine Bautista</BoldTag>
-          </div>
-        </div>
+            <PageSpan>Janine Bautista</PageSpan>
+          </FixedColumn>
+        </Row>
       </div>
     );
   }
