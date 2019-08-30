@@ -5,33 +5,16 @@ import { Icon } from "antd";
 import { Link } from "react-router-dom";
 import {
   PageSpan,
-  BoldSpan,
+  Content,
+  Title,
   PageTitle,
-  Container,
   Row,
   FixedColumn
 } from "../shared/primitives/Primitives";
 import logo from "../shared/images/logo.png";
 import ImageFade from "../shared/imagefade/ImageFade";
-import styled from "styled-components";
 import data from "./assets/data";
 
-const Title = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background: linear-gradient(to right, #312aa9, #79acd0);
-`;
-
-const Content = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  text-align: left;
-  textalign: center;
-  background: rgba(64, 64, 64, 0.9);
-`;
 class Barrio extends Component {
   render() {
     return (
@@ -86,36 +69,59 @@ class Barrio extends Component {
               </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0.3} speed={1}>
-              <Title>
+              <Title style={{ padding: "0px", marginTop: 0, marginBottom: 0 }}>
                 <img
                   src={logo}
                   style={{ width: "auto", height: "5vh", padding: "2vh" }}
                 />
               </Title>
-              <Content>
+              <Content style={{ marginTop: 0 }}>
                 <PageTitle
                   color="white"
                   style={{ textAlign: "center", padding: "5%" }}
                 >
-                  Barrio Fiesta 2018
+                  Barrio Fiesta
                 </PageTitle>
               </Content>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <Title>
-                <h1 style={{ color: "white", padding: 24 }}>
-                  What is Barrio Fiesta?
-                </h1>
-              </Title>
-              <Content style={{ marginTop: "5vh" }}>
+              <Title>What is Barrio Fiesta?</Title>
+              <Content>
                 <div float="center" style={{ padding: "5%" }}>
                   <PageSpan color="white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer nisi velit, dignissim eget fringilla ac, mattis at
-                    sem. Duis non tortor et mauris placerat facilisis.
-                    Pellentesque eget congue ante, quis auctor nulla. Vestibulum
-                    congue, est eget cursus ultricies, augue massa commodo
-                    velit, sed viverra libero erat ac purus.
+                    Barrio Fiesta means "neighborhood celebration," and is an
+                    annual Barkada dinner in which we celebrate the Filipino
+                    culture by coming together as a campus community to eat
+                    traditional Filipino food and watch peers perform acts
+                    ranging from singing, dancing, spoken word, yo-yo-ing and
+                    more!
+                  </PageSpan>
+                </div>
+              </Content>
+              <Content>
+                <div style={{ padding: "5%" }}>
+                  <PageSpan color="white">
+                    100% of the money we raise from Barrio Fiesta will go to
+                    Gawad Kalinga.
+                  </PageSpan>
+                  <PageSpan color="white">
+                    "Gawad Kalinga,” translated in English means to “give care”,
+                    is a Philippine-based movement that aims to end poverty by
+                    first restoring the dignity of the poor. It employs an
+                    integrated and holistic approach to empowerment with
+                    values-formation and leadership development at its core.
+                    Established in 2003, The Foundation currently works with
+                    over 2,000 communities and has been recognized as the 2006
+                    Ramon Magsaysay Awardee & 2012 Skoll Awardee for Social
+                    Entrepreneurship.
+                  </PageSpan>
+                  <PageSpan color="white">
+                    We are proud to support Gawad Kalinga every year through
+                    Barrio Fiesta. Also, be sure to check out their website for
+                    more information on their commitment to end poverty:{" "}
+                    <a style={{color: "white"}} href="http://www.gk1world.com/home">
+                      http://www.gk1world.com/home{" "}
+                    </a>
                   </PageSpan>
                 </div>
               </Content>

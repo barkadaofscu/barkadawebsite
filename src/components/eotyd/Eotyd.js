@@ -5,33 +5,18 @@ import { Icon } from "antd";
 import { Link } from "react-router-dom";
 import {
   PageSpan,
-  BoldSpan,
-  PageTitle,
   Container,
+  Content,
+  Title,
+  PageTitle,
   Row,
   FixedColumn
 } from "../shared/primitives/Primitives";
 import logo from "../shared/images/logo.png";
+import eotyd from "./assets/eotyd.png";
 import ImageFade from "../shared/imagefade/ImageFade";
-import styled from "styled-components";
 import data from "./assets/data";
 
-const Title = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background: linear-gradient(to right, #312aa9, #79acd0);
-`;
-
-const Content = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  text-align: left;
-  textalign: center;
-  background: rgba(64, 64, 64, 0.9);
-`;
 class Eotyd extends Component {
   render() {
     return (
@@ -86,36 +71,41 @@ class Eotyd extends Component {
               </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0.3} speed={1}>
-              <Title>
+              <Title style={{ padding: "0px", marginTop: 0, marginBottom: 0 }}>
                 <img
                   src={logo}
                   style={{ width: "auto", height: "5vh", padding: "2vh" }}
                 />
               </Title>
-              <Content>
+              <Content style={{ marginTop: 0 }}>
                 <PageTitle
                   color="white"
                   style={{ textAlign: "center", padding: "5%" }}
-              >
+                >
                   End of the Year Dinner
                 </PageTitle>
               </Content>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <Title>
-                <h1 style={{ color: "white", padding: 24 }}>
-                  What is Eotyd?
-                </h1>
-              </Title>
-              <Content style={{ marginTop: "5vh" }}>
+              <Title>What is EOTYD?</Title>
+              <Content>
+                <img src={eotyd} style={{ width: "100%", height: "100%" }} />
+                <Container>
+                  <PageSpan color="white" style={{ paddingBottom: "12px" }}>
+                    2019 Theme
+                  </PageSpan>
+                </Container>
+              </Content>
+              <Content>
                 <div float="center" style={{ padding: "5%" }}>
                   <PageSpan color="white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer nisi velit, dignissim eget fringilla ac, mattis at
-                    sem. Duis non tortor et mauris placerat facilisis.
-                    Pellentesque eget congue ante, quis auctor nulla. Vestibulum
-                    congue, est eget cursus ultricies, augue massa commodo
-                    velit, sed viverra libero erat ac purus.
+                    Come join Barkada on June 8th at our annual End of the Year
+                    Dinner where we celebrate the good times, new friendships,
+                    and old friendships as we eat together, and send off the
+                    graduating senior class. Bring your friends and Barkada fam
+                    for a fantastic night, where we will hand out superlative
+                    awards and senior awards as well as experience music,
+                    dancing, fun, and emotional moments together.{" "}
                   </PageSpan>
                 </div>
               </Content>

@@ -7,6 +7,8 @@ import {
   PageSpan,
   BoldSpan,
   PageTitle,
+  Title,
+  Content,
   Container,
   Row,
   FixedColumn
@@ -15,25 +17,7 @@ import ImageFade from "../shared/imagefade/ImageFade";
 import kaamponents from "./assets/kaamponents.png";
 import photoArr from "./assets/data";
 import logo from "./assets/logo.png";
-import styled from "styled-components";
 
-const Title = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background: linear-gradient(to right, #312aa9, #79acd0);
-`;
-
-
-const Content = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  text-align: left;
-  textalign: center;
-  background: rgba(64, 64, 64, 0.9);
-`;
 class Kaa extends Component {
   render() {
     return (
@@ -49,7 +33,7 @@ class Kaa extends Component {
         }}
       >
         <div style={{ height: "100vh", width: "100vw", overflowY: "hidden" }}>
-          <ImageFade data={photoArr} interval={5000}/>
+          <ImageFade data={photoArr} interval={5000} />
           <Parallax ref="parallax" pages={5}>
             <ParallaxLayer offset={0} speed={1}>
               <div
@@ -88,22 +72,23 @@ class Kaa extends Component {
               </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0.3} speed={1}>
-              <Title>
+              <Title style={{ padding: "0px", marginTop: 0, marginBottom: 0 }}>
                 <img
                   src={logo}
                   style={{ width: "auto", height: "5vh", padding: "2vh" }}
                 />
               </Title>
-              <Content>
-                <PageTitle color="white" style={{ textAlign: "center", padding: "5%" }}>
+              <Content style={{ marginTop: 0 }}>
+                <PageTitle
+                  color="white"
+                  style={{ textAlign: "center", padding: "5%" }}
+                >
                   KAA 2018
                 </PageTitle>
               </Content>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <Title>
-                <h1 style={{ color: "white", padding: 24 }}>KAA What?</h1>
-              </Title>
+              <Title>KAA What?</Title>
               <Content style={{ height: "80vh" }}>
                 <iframe
                   width="100%"
@@ -119,7 +104,7 @@ class Kaa extends Component {
                   </PageSpan>
                 </Container>
               </Content>
-              <Content style={{ marginTop: "5vh" }}>
+              <Content >
                 <div style={{ width: "90%", height: "90%", padding: "5%" }}>
                   <PageSpan color="white">
                     Welcome to the Kuya Ate Ading Program!
@@ -142,9 +127,7 @@ class Kaa extends Component {
                   <PageSpan color="white">We are all family here.</PageSpan>
                 </div>
               </Content>
-              <Title style={{ marginTop: "10%" }}>
-                <h1 style={{ color: "white", padding: 24 }}>How to KAA:</h1>
-              </Title>
+              <Title>How to KAA:</Title>
               <Content>
                 <div style={{ width: "90%", height: "90%", padding: "5%" }}>
                   <PageSpan color="white">
@@ -162,16 +145,13 @@ class Kaa extends Component {
                   </PageSpan>
                 </div>
               </Content>
-              <Title style={{ marginTop: "10%" }}>
-                <h1 style={{ color: "white", padding: 24 }}>
-                  KAAmponents of KAA:
-                </h1>
-              </Title>
+              <Title>KAAmponents of KAA:</Title>
               <div
                 style={{
                   width: "80vw",
                   height: "auto",
                   marginLeft: "10vw",
+                  marginTop: "5vh",
                   textAlign: "left"
                 }}
               >
@@ -180,7 +160,7 @@ class Kaa extends Component {
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
-              <Content style={{ marginTop: "5vh" }}>
+              <Content>
                 <div style={{ width: "90%", padding: "5%" }}>
                   <PageSpan color="white">
                     There are 4 main components to the Kuya, Ate, Ading Program:

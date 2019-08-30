@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import {
-  PageTitle,
   PageTag,
   BoldTag,
+  BoldSpan,
   PageSpan,
   Row,
-  BoldHeader,
+  Container,
   FixedColumn
 } from "../../shared/primitives";
 import castPhoto1 from "./assets/fullCast1.png";
@@ -18,40 +18,45 @@ class About extends Component {
           width: "100%",
           height: "auto",
           overflow: "hidden",
-          textAlign: "center"
+          textAlign: "left"
         }}
       >
-        <Row style={{marginTop: 32}}>
-          <PageTag >
-            The <BoldTag>largest</BoldTag> student-run cultural production at
-            Santa Clara University.
-          </PageTag>
+        <Row style={{ marginTop: 32 }}>
+          <Container float="left">
+            <PageTag>
+              The <BoldTag>largest</BoldTag> student-run cultural production at
+              Santa Clara University.
+            </PageTag>
+          </Container>
         </Row>
-        <Row style={{marginBottom: 32}}>
-          <FixedColumn >
-            <PageSpan>
-              <BoldHeader>29th</BoldHeader> Pilipino Cultural Night
-            </PageSpan>
-            <PageSpan>
-              <BoldHeader>15</BoldHeader> traditional folk dances
-            </PageSpan>
-            <PageSpan>
-              <BoldHeader>3</BoldHeader> modern dances
-            </PageSpan>
-          </FixedColumn>
-          <FixedColumn >
-            <PageSpan>
-              <BoldHeader>85</BoldHeader> cast members
-            </PageSpan>
-            <PageSpan>
-              <BoldHeader>19</BoldHeader> alumni teachers
-            </PageSpan>
-            <PageSpan>
-              <BoldHeader>353</BoldHeader> days to make this production come to life
-            </PageSpan>
-          </FixedColumn>
+        <Row style={{ marginBottom: 32 }}>
+          <Container float="left">
+            <FixedColumn>
+              <PageSpan>
+                <BoldSpan>29th</BoldSpan> Pilipino Cultural Night
+              </PageSpan>
+              <PageSpan>
+                <BoldSpan>15</BoldSpan> traditional folk dances
+              </PageSpan>
+              <PageSpan>
+                <BoldSpan>3</BoldSpan> modern dances
+              </PageSpan>
+            </FixedColumn>
+            <FixedColumn>
+              <PageSpan>
+                <BoldSpan>85</BoldSpan> cast members
+              </PageSpan>
+              <PageSpan>
+                <BoldSpan>19</BoldSpan> alumni teachers
+              </PageSpan>
+              <PageSpan>
+                <BoldSpan>353</BoldSpan> days to make this production come to
+                life
+              </PageSpan>
+            </FixedColumn>
+          </Container>
         </Row>
-        <div style={{ width: "75%", height: "20%", marginLeft: "12.5%" }}>
+        <div style={{ width: "80%", height: "20%", marginLeft: "10%" }}>
           <img
             src={castPhoto1}
             alt="cast"

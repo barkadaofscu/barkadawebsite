@@ -1,6 +1,7 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component, useRef, useState, useEffect } from "react";
 import { config } from "react-spring/renderprops";
 import { PageTitle, PageSpan, Container, Row } from "../../shared/primitives";
+import { useSprings, animated } from "react-spring";
 import MediaQuery from "react-responsive";
 import Grid from "../grid/Grid";
 import { Slug, Fade } from "../grid/Primitives";
@@ -55,6 +56,7 @@ class Cell extends Component {
     );
   }
 }
+
 class Suites extends Component {
   render() {
     return (
@@ -69,56 +71,50 @@ class Suites extends Component {
         <Container>
           <PageSpan>To be added</PageSpan>
         </Container>
-        <MediaQuery query="(max-device-width: 1023px)">
-          <Grid
-            className="grid"
-            // Arbitrary data, should contain keys, possibly heights, etc.
-            data={data}
-            // Key accessor, instructs grid on how to fet individual keys from the data set
-            keys={d => d.name}
-            // Can be a fixed value or an individual data accessor
-            heights={150}
-            // Number of columns
-            columns={1}
-            // Space between elements
-            margin={0}
-            // Removes the possibility to scroll away from a maximized element
-            lockScroll={true}
-            // Delay when active elements (blown up) are minimized again
-            closeDelay={500}
-            // Regular react-spring configs
-            config={config.default}
-          >
-            {(data, active, toggle) => (
-              <Cell {...data} active={active} toggle={toggle} />
-            )}
-          </Grid>
-        </MediaQuery>
-        <MediaQuery query="(min-device-width: 1024px)">
-          <Grid
-            className="grid"
-            // Arbitrary data, should contain keys, possibly heights, etc.
-            data={data}
-            // Key accessor, instructs grid on how to fet individual keys from the data set
-            keys={d => d.name}
-            // Can be a fixed value or an individual data accessor
-            heights={d => d.height}
-            // Number of columns
-            columns={3}
-            // Space between elements
-            margin={0}
-            // Removes the possibility to scroll away from a maximized element
-            lockScroll={true}
-            // Delay when active elements (blown up) are minimized again
-            closeDelay={500}
-            // Regular react-spring configs
-            config={config.default}
-          >
-            {(data, active, toggle) => (
-              <Cell {...data} active={active} toggle={toggle} />
-            )}
-          </Grid>
-        </MediaQuery>
+        <div style={{ width: "95%", height: "95%", margin: "auto" }}>
+          <MediaQuery query="(max-device-width: 1023px)">
+            <Grid
+              className="grid"
+              // Arbitrary data, should contain keys, possibly heights, etc.
+              data={data}
+              // Key accessor, instructs grid on how to fet individual keys from the data set
+              keys={d => d.name}
+              // Can be a fixed value or an individual data accessor
+              heights={150}
+              // Number of columns
+              columns={1}
+              // Space between elements
+              margin={0}
+              // Removes the possibility to scroll away from a maximized element
+              lockScroll={true}
+              // Delay when active elements (blown up) are minimized again
+              closeDelay={500}
+              // Regular react-spring configs
+              config={config.default}
+            >
+              {(data, active, toggle) => (
+                <Cell {...data} active={active} toggle={toggle} />
+              )}
+            </Grid>
+          </MediaQuery>
+          <MediaQuery query="(min-device-width: 1024px)">
+            <Grid
+              className="grid"
+              data={data}
+              keys={d => d.name}
+              heights={d => d.height}
+              columns={3}
+              margin={0}
+              lockScroll={true}
+              closeDelay={500}
+              config={config.default}
+            >
+              {(data, active, toggle) => (
+                <Cell {...data} active={active} toggle={toggle} />
+              )}
+            </Grid>
+          </MediaQuery>
+        </div>
       </div>
     );
   }

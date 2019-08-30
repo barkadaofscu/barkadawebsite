@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 import ImageFade from "../shared/imagefade";
 import MediaQuery from "react-responsive";
@@ -9,57 +10,20 @@ import About from "./about/About";
 import Directors from "./directors";
 import Suites from "./suites";
 import logo from "../home/assets/logo.png";
-import Gallery from "../shared/gallery";
-import Footer from "./footer";
-import about from "./assets/about.jpg";
-import directors from "./assets/directors.jpg";
-import suiteBanner from "./suites/assets/suite_banner.jpg";
-import banner from "./assets/banner.png";
-import verticalBanner from "./assets/home_vertical1.png";
 import data from "./assets/landingPhotos/data";
 import gallery from "./assets/gallery/data";
 import {
   PageSpan,
-  BoldSpan,
+  Title,
   PageTitle,
-  Container,
+  Content,
   SmallLogo,
   Row,
   FixedColumn
 } from "../shared/primitives/Primitives";
 import { Icon } from "antd";
 import "./styles.css";
-
-const Title = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background: linear-gradient(to right, #312aa9, #79acd0);
-`;
-
-const ContentWhite = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  text-align: left;
-  textalign: center;
-  background: rgba(255, 255, 255, 0.9);
-`;
-const Content = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  text-align: left;
-  textalign: center;
-  background: rgba(255, 255, 255, 0.9);
-`;
-const NavText = styled.div`
-  display: none;
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-`;
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 class PcnTest extends Component {
   render() {
@@ -155,10 +119,13 @@ class PcnTest extends Component {
               </PageTitle>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <Title>
-                <h1 style={{ color: "white", padding: 24 }}>PCN 2019 Recap</h1>
-              </Title>
-              <Content style={{ height: "80vh" }}>
+              <Title>PCN 2019 Recap</Title>
+              <Content
+                style={{
+                  height: "80vh",
+                  background: `rgba(255, 255, 255,0.9)`
+                }}
+              >
                 <iframe
                   width="100%"
                   height="100%"
@@ -168,32 +135,39 @@ class PcnTest extends Component {
                   allowfullscreen
                 ></iframe>
               </Content>
-              <Title style={{ marginTop: "10%" }}>
-                <h1 style={{ color: "white", padding: 24 }}>About</h1>
-              </Title>
-              <Content>
+              <Title>About</Title>
+              <Content style={{ background: `rgba(255, 255, 255,0.8)` }}>
                 <About />
               </Content>
-              <Title style={{ marginTop: "10%" }}>
-                <h1 style={{ color: "white", padding: 24 }}>
-                  From the Directors
-                </h1>
-              </Title>
-              <Content>
+              <Title>From the Directors</Title>
+              <Content style={{ background: `rgba(255, 255, 255,0.8)` }}>
                 <Directors />
               </Content>
-              <Title style={{ marginTop: "10%" }}>
-                <h1 style={{ color: "white", padding: 24 }}>
-                  Dance Suites of PCN
-                </h1>
-              </Title>
-              <Content>
+              <Title>Dance Suites of PCN</Title>
+              <Content style={{ background: `rgba(255, 255, 255,0.8)` }}>
                 <Suites />
               </Content>
-              <Title style={{ marginTop: "10%" }}>
-                <h1 style={{ color: "white", padding: 24 }}>Gallery</h1>
+              <Title
+                style={{
+                  marginTop: "10%"
+                }}
+              >
+                Gallery
               </Title>
-              <Content></Content>
+              <Content style={{ background: "none" }}>
+                <Carousel
+                  autoPlay
+                  swipeable
+                  axis="horizontal"
+                  showIndicators={false}
+                >
+                  {gallery.map((data, index) => (
+                    <div key={index}>
+                      <img src={data.image} />
+                    </div>
+                  ))}
+                </Carousel>
+              </Content>
             </ParallaxLayer>
           </Parallax>
         </div>

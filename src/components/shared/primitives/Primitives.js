@@ -50,9 +50,19 @@ export const Container = styled.div`
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     text-align: ${props => props.float || "center"};
   }
+`;
+export const Content = styled.div`
+  width: 80vw;
+  height: auto;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  text-align: left;
+  textalign: center;
+  color: "white";
+  background: rgba(64, 64, 64, 0.8);
 `;
 export const FixedColumn = styled.div`
   margin: 0;
@@ -128,4 +138,21 @@ export const SmallLogo = styled.img`
     width: 18vw;
   }
 `;
-
+export const Title = styled.div`
+  width: 80vw;
+  height: auto;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10%;
+  font-size: 28px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(to right, #312aa9, #79acd0);
+  @media ${device.tablet} {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 48px;
+  }
+`;

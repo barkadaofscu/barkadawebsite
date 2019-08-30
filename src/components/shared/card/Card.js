@@ -45,36 +45,35 @@ const Description = styled.p`
   color: white;
   font-size: 18px;
   padding: 16px;
-
 `;
 const Card = props => {
   return (
-    <Picture>
-      <div
-        style={{
-          width: "100%",
-          height: "85%",
-          backgroundImage: `url(${props.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <Overlay>
-          <Description>{props.description}</Description>
-        </Overlay>
-      </div>
-      <div
-        style={{
-          width: "100%",
-          height: "auto",
-          textAlign: "center",
-        }}
-      >
-        <Link to={props.link} style={{ textDecoration: "none" }}>
+    <Link to={props.link} style={{ textDecoration: "none" }}>
+      <Picture>
+        <div
+          style={{
+            width: "100%",
+            height: "85%",
+            backgroundImage: `url(${props.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        >
+          <Overlay>
+            <Description>{props.description}</Description>
+          </Overlay>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            height: "auto",
+            textAlign: "center"
+          }}
+        >
           <Title>{props.name}</Title>
-        </Link>
-      </div>
-    </Picture>
+        </div>
+      </Picture>
+    </Link>
   );
 };
 

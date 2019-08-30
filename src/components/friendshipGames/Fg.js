@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import {
   PageSpan,
   BoldSpan,
+  Content,
   PageTitle,
+  Title,
   Container,
-  Logo,
   Row,
   FixedColumn
 } from "../shared/primitives/Primitives";
@@ -17,22 +18,6 @@ import ImageFade from "../shared/imagefade/ImageFade";
 import styled from "styled-components";
 import data from "./assets/data";
 
-const Title = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background: linear-gradient(to right, #312aa9, #79acd0);
-`;
-
-const Content = styled.div`
-  width: 80vw;
-  height: auto;
-  margin-left: 10vw;
-  text-align: left;
-  textalign: center;
-  background: rgba(64, 64, 64, 0.9);
-`;
 class Fg extends Component {
   render() {
     return (
@@ -87,13 +72,13 @@ class Fg extends Component {
               </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0.3} speed={1}>
-              <Title>
+              <Title style={{ padding: "0px", marginTop: 0, marginBottom: 0 }}>
                 <img
                   src={logo}
                   style={{ width: "auto", height: "5vh", padding: "2vh" }}
                 />
               </Title>
-              <Content>
+              <Content style={{ marginTop: 0 }}>
                 <PageTitle
                   color="white"
                   style={{ textAlign: "center", padding: "5%" }}
@@ -103,11 +88,7 @@ class Fg extends Component {
               </Content>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <Title>
-                <h1 style={{ color: "white", padding: 24 }}>
-                  What is Friendship Games?
-                </h1>
-              </Title>
+              <Title>What is Friendship Games?</Title>
               <Content style={{ height: "80vh" }}>
                 <iframe
                   width="100%"
@@ -123,15 +104,71 @@ class Fg extends Component {
                   </PageSpan>
                 </Container>
               </Content>
-              <Content style={{ marginTop: "5vh" }}>
+              <Content>
                 <div float="center" style={{ padding: "5%" }}>
                   <PageSpan color="white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer nisi velit, dignissim eget fringilla ac, mattis at
-                    sem. Duis non tortor et mauris placerat facilisis.
-                    Pellentesque eget congue ante, quis auctor nulla. Vestibulum
-                    congue, est eget cursus ultricies, augue massa commodo
-                    velit, sed viverra libero erat ac purus.
+                    <BoldSpan>From the organizers:</BoldSpan> "Friendship Games
+                    began in 1985 and features over 40 Pilipino American Student
+                    organizations from college campuses representing California,
+                    Nevada, and Arizona that participate in a day of friendly
+                    but competitive picnic games, performances and to celebrate
+                    “S.P.U.F” – Spirit, Pride, Unity, and Friendship. Schools
+                    compete for 1st, 2nd, and 3rd place trophies."
+                    <a
+                      style={{ color: "white", textDecoration: "none" }}
+                      href="http://friendshipgames.net"
+                    >
+                      [Link]
+                    </a>
+                  </PageSpan>
+                  <PageSpan color="white">
+                      <BoldSpan> 10 Reasons to go to Friendship Games:</BoldSpan>
+                  </PageSpan>
+                  <PageSpan color="white">
+                    1) If you feel like you don't know enough people to
+                    go, that means you should go. You are guaranteed to create
+                    new friendships. I met my closest friends at FG and you will
+                    probably too! Life begins at the end of your comfort zone.
+                  </PageSpan>
+                  <PageSpan color="white">
+                    2) Your kuya and/or ate may be going...you can weed them out
+                    easier in a smaller group (and have fun while doing it too)
+                  </PageSpan>
+                  <PageSpan color="white">
+                    3) We're going to SoCal. And you know what that means? GOOD
+                    FOOD. You and your car can squeeze in mini foodie trip. how
+                    fun!
+                  </PageSpan>
+                  <PageSpan color="white">
+                    4) You worked hard for those midterms, so it's time you get
+                    a break and have a getaway. You definitely deserve it.
+                  </PageSpan>
+                  <PageSpan color="white">
+                    5) Oh wait..you're not done with midterms? 
+                    No.Problem. Study with buddies during the car ride. Study at
+                    the house we're staying in. And when you are not
+                    participating in field games, there's plenty of time to
+                    study at the Friendship Games! (if you still find it
+                    difficult to study, I'll make it a point to help you out!)
+                  </PageSpan>
+                  <PageSpan color="white">
+                    6) If you're a Disney lover, Downtown Disney is waiting for
+                    you....
+                  </PageSpan>
+                  <PageSpan color="white">
+                    7) Make new friends from other Filipino clubs of other
+                    universities! 
+                  </PageSpan>
+                  <PageSpan color="white">
+                    8) Get turnt at the club after Friendship Games.
+                  </PageSpan>
+                  <PageSpan color="white">
+                    9) Create amazing memories, post all the love on ur
+                    SC/IG/FB/etc. and bond with your club in an organic way
+                  </PageSpan>
+                  <PageSpan color="white">
+                    10) Show your love for Barkada and bring extreme team
+                    spirit! Other schools got nothin on us. Let's go!!!!
                   </PageSpan>
                 </div>
               </Content>

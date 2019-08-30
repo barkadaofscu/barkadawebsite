@@ -100,7 +100,7 @@ class Events extends Component {
           description={events[3].description}
         />
         <Container>
-          <PageSpan color="white">Click on card name for more information</PageSpan>
+          <PageSpan color="white">Click on cards for more information</PageSpan>
         </Container>
       </Page>
     );

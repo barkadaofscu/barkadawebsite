@@ -5,7 +5,7 @@ import { Icon } from "antd";
 const footerStyle = {
   width: "100vw",
   height: "200px",
-  backgroundColor: "#1D2A36",
+  background: `rgba(64,64,64,1)`,
   position: "relative",
   textAlign: "center",
   overflow: "hidden"
