@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "barkadascu.com",
+  "homepage": "https://barkadascu.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
