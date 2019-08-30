@@ -40,7 +40,7 @@ class PcnTest extends Component {
         }}
       >
         <div style={{ height: "100vh", width: "100vw", overflowY: "hidden" }}>
-          <ImageFade data={data} interval={3000} />
+          <ImageFade data={data} interval={5000} />
           <Parallax ref="parallax" pages={5}>
             <ParallaxLayer offset={0} speed={1}>
               <div
@@ -156,7 +156,6 @@ class PcnTest extends Component {
               </Title>
               <Content style={{ background: "none" }}>
                 <Carousel
-                  autoPlay
                   swipeable
                   axis="horizontal"
                   showIndicators={false}
