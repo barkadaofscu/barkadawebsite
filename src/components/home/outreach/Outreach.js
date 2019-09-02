@@ -93,7 +93,8 @@ const Outreach = () => {
                 width: "100%",
                 height: "auto",
                 position: "relative",
-                marginTop: "24px"
+                  marginTop: "24px",
+                  paddingBottom: "48px"
               }}
             >
               <p

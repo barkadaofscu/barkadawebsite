@@ -28,10 +28,10 @@ export const Column = styled.div`
   padding: 0;
   text-align: center;
   float: left;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     width: ${props => (props.width ? props.width : "50%")};
     height: auto;
-  }
+  tablet}
   @media ${device.mobileL} {
     width: ${props => (props.isFixed ? "50%" : "100%")};
     height: 100%;
@@ -74,10 +74,10 @@ export const FixedColumn = styled.div`
 export const Logo = styled.img`
   width: 80vw;
   height: auto;
-  margin-top: 50%;
+  margin-top: 30%;
   float: left;
   margin-left: 10vw;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     width: 40vw;
     margin-top: 5%;
     margin-left: 30vw;

@@ -24,7 +24,7 @@ class Directors extends Component {
         }}
       >
         <Container>
-          <PageSpan>To be added</PageSpan>
+          <PageSpan>Letter from directors to be added</PageSpan>
         </Container>
         <Row>
           <FixedColumn width="33%">

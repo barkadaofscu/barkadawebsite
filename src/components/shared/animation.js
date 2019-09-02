@@ -2,20 +2,17 @@ export function getAnimatedFrom(path) {
   if (path === "/") {
     return {
       position: "absolute",
-      opacity: 0,
-      marginLeft: "-110%"
+      opacity: 0
     };
   } else if (path === "/pcn") {
     return {
       position: "absolute",
-      opacity: 0,
-      marginLeft: "110%"
+      opacity: 0
     };
   } else {
     return {
       position: "absolute",
-      opacity: 0,
-      marginLeft: "100%"
+      opacity: 0
     };
   }
 }
@@ -33,11 +30,11 @@ export function getAnimatedEnter(path) {
 export function getAnimatedTo(path) {
   if (path === "/") {
     return {
-      marginLeft: "110%"
+      opacity: 0
     };
   } else if (path === "/pcn") {
     return {
-      marginLeft: "-110%"
+      opacity: 0
     };
   } else {
     return {

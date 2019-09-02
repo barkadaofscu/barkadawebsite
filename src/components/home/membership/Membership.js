@@ -22,26 +22,28 @@ const Membership = () => {
         </Row>
       </div>
       <Row>
-        <PageSpan color="white">
-          One time membership fee for a "group of friends." General meetings at
-          the Shapell Lounge on Tuesdays at 7:40pm.{" "}
-        </PageSpan>
-        <div
-          style={{
-            width: "250px",
-            height: "auto",
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto"
-          }}
-        >
+        <div style={{ width: "90%", height: "90%", padding: "5%" }}>
           <PageSpan color="white">
-            <ul style={{ textAlign: "left", lineHeight: "200%" }}>
-              <li>Enterance to KAA</li>
-              <li>Discount to events</li>
-              <li>Free shirt</li>
-            </ul>
+            One time membership fee for a "group of friends." General meetings
+            at the Shapell Lounge on Tuesdays at 7:40pm. Some benefits include: {" "}
           </PageSpan>
+          <div
+            style={{
+              width: "250px",
+              height: "auto",
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto"
+            }}
+          >
+            <PageSpan color="white">
+              <ul style={{ textAlign: "left", lineHeight: "200%" }}>
+                <li>Enterance to KAA</li>
+                <li>Discount to events</li>
+                <li>Free shirt</li>
+              </ul>
+            </PageSpan>
+          </div>
         </div>
       </Row>
     </Page>

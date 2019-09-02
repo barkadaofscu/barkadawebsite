@@ -18,7 +18,8 @@ function Viewpager() {
     sc: 1,
     display: "block",
     top: 0,
-    position: "relative"
+      position: "relative",
+      config: {mass: 1, tension: 210, friction: 20}
   }));
   const bind = useGesture(
     ({ down, delta: [xDelta], direction: [xDir], distance, cancel }) => {

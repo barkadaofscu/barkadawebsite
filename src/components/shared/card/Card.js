@@ -10,7 +10,7 @@ const Picture = styled.div`
   margin-left: 5vw;
   margin-bottom: 5vw;
   float: left;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     width: 21vw;
     height: 60vh;
     margin-left: 3vw;

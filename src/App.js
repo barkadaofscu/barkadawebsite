@@ -26,6 +26,7 @@ class App extends Component {
                 <Transition
                   native
                   items={location}
+                  delay={1000}
                   keys={location.pathname.split("/")[1]}
                   from={getAnimatedFrom(location.pathname)}
                   enter={getAnimatedEnter(location.pathname)}
