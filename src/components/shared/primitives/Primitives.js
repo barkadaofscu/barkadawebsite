@@ -55,14 +55,18 @@ export const Container = styled.div`
   }
 `;
 export const Content = styled.div`
-  width: 80vw;
+  width: 90vw;
   height: auto;
   margin-top: 5vh;
-  margin-left: 10vw;
+  margin-left: 5vw;
   text-align: left;
   textalign: center;
   color: "white";
   background: rgba(64, 64, 64, 0.8);
+  @media ${device.tablet} {
+    width: 80vw;
+    margin-left: 10vw;
+  }
 `;
 export const FixedColumn = styled.div`
   margin: 0;
@@ -139,9 +143,9 @@ export const SmallLogo = styled.img`
   }
 `;
 export const Title = styled.div`
-  width: 80vw;
+  width: 90vw;
   height: auto;
-  margin-left: 10vw;
+  margin-left: 5vw;
   margin-right: 10vw;
   margin-top: 10%;
   font-size: 28px;
@@ -151,6 +155,8 @@ export const Title = styled.div`
   color: white;
   background: linear-gradient(to right, #312aa9, #79acd0);
   @media ${device.tablet} {
+    width: 80vw;
+    margin-left: 10vw;
     padding-top: 24px;
     padding-bottom: 24px;
     font-size: 48px;

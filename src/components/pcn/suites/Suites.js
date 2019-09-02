@@ -48,7 +48,7 @@ function Viewpager() {
         display,
         position: "absolute",
         height: "90vh",
-        width: "80vw",
+        width: "90vw",
         willChange: "transform",
         transform: x.interpolate(x => `translate3d(${x}px,0,0)`)
       }}
@@ -186,8 +186,8 @@ class Suites extends Component {
         <MediaQuery query="(max-device-width: 1023px)">
           <div
             style={{
-              width: "80vw",
-              height: "80vh",
+              width: "90vw",
+              height: "90vh",
               display: "block",
               overflow: "hidden",
               willChange: "transform"
