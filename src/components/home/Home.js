@@ -39,7 +39,7 @@ class Home extends Component {
             >
                 <div style={{ height: "100vh", width: "100vw", overflowY: "hidden" }}>
                     <ImageFade data={photoArr} interval={5000}/>
-                    <Parallax ref="parallax" pages={5.2}>
+                    <Parallax ref="parallax" pages={6}>
                         <ParallaxLayer offset={0} speed={1}>
                             <div style={{ width: "100%", height: "100%", zIndex: 4 }}>
                                 <div style={{ width: "100%", height: "50%" }}>
