@@ -99,7 +99,7 @@ class Eotyd extends Component {
               <Content>
                 <div float="center" style={{ padding: "5%" }}>
                   <PageSpan color="white">
-                    Come join Barkada on June 8th at our annual End of the Year
+                    Come join Barkada for our annual End of the Year
                     Dinner where we celebrate the good times, new friendships,
                     and old friendships as we eat together, and send off the
                     graduating senior class. Bring your friends and Barkada fam

@@ -1,58 +1,80 @@
 import React from "react";
 import {
-  PageTitle,
-  PageTag,
-  PageSpan,
-  Container,
-  Column
+    PageTitle,
+    PageTag,
+    PageSpan,
+    Container,
+    Column,
+    Row
 } from "../../shared/primitives/Primitives";
 import about1 from "./about1.JPG";
+import about2 from "./about2.JPG";
 
 const About = () => (
-  <div
-    style={{
-      width: "100vw",
-      height: "auto",
-      position: "relative",
-      background: `linear-gradient(to right, #312AA9, #79ACD0)`,
-      textAlign: "left"
-    }}
-  >
-    <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-      <Column>
-        <Container float="left" style={{ marginTop: "5%" }}>
-          <PageTitle color="white" float="left">
-            About
-          </PageTitle>
-          <PageTag color="white">
-            Loosely translated, Barkada means: "a group of friends"
-          </PageTag>
-          <PageSpan color="white">
-            Founded by Gem & Butch Yabut and Ronald Martinez, Barkada was
-            established in 1983 and is one of the six founding organizations in
-            the Multicultural Center.
-          </PageSpan>
-          <PageSpan color="white">
-            The mission of Barkada of Santa Clara University is to promote the
-            awareness of the Filipino culture and community on the SCU campus
-            through education, networking, social justice, and social
-            activities/events while upholding its heritage, traditions, and
-            relationships.
-          </PageSpan>
+    <div style={{width: "100%", height: "100%", background: "white", paddingBottom: "48px", overflow: "hidden"}}>
+        <Container float="left" style={{marginTop: "48px"}}>
+            <PageTitle float="left">
+                About Us
+            </PageTitle>
+            <PageTag float="left">
+                In Tagalog, Barkada means: "a group of friends" but to us, it means so
+                much more.
+            </PageTag>
         </Container>
-      </Column>
-      <Column>
-        <img
-          src={about1}
-          style={{
-            width: "100%",
-            height: "100%",
-            verticalAlign: "bottom"
-          }}
-        />
-      </Column>
+        <Row>
+            <Column>
+                <Container float="left" style={{marginTop: "48px"}}>
+                    <PageTag float="left">
+                        Mission Statement
+                    </PageTag>
+                    <PageSpan >
+                        Our mission is to promote the awareness of the Filipino culture
+                        and community on the SCU campus through education, networking,
+                        social justice, and social activities/events. We also strive to
+                        uphold our heritage, traditions, and relationships.
+                    </PageSpan>
+                </Container>
+            </Column>
+            <Column>
+                <img
+                    src={about1}
+                    style={{
+                        width: "90%",
+                        height: "auto",
+                        marginTop: "48px",
+                        verticalAlign: "bottom",
+                        borderRadius: "12px"
+                    }}
+                />
+            </Column>
+        </Row>
+        <Row style={{paddingTop: "48px"}}>
+            <Column>
+                <img
+                    src={about2}
+                    style={{
+                        width: "90%",
+                        height: "auto",
+                        verticalAlign: "bottom",
+                        borderRadius: "12px"
+                    }}
+                />
+            </Column>
+            <Column>
+                <Container float="right" style={{ marginTop: "5%" }}>
+                    <PageTag float="right">
+                        Brief History
+                    </PageTag>
+                    <PageSpan>
+                        Barkada was established in 1983 by Gem Yabut, Butch Yabut, and
+                        Ronald Martinez. We are one of the six founding organizations
+                        within the Santa Clara University Multicultural Center. Today, we
+                        are one of the largest student-run cultural clubs on campus.{" "}
+                    </PageSpan>
+                </Container>
+            </Column>
+        </Row>
     </div>
-  </div>
 );
 
 export default About;

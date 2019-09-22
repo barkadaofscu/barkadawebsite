@@ -1,53 +1,55 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
-  Page,
-  PageTitle,
-  PageSpan,
-  PageTag,
-  Row,
-  FixedColumn
+    Page,
+    PageTitle,
+    PageSpan,
+    PageTag,
+    Row,
+    Container,
+    FixedColumn
 } from "../../shared/primitives/Primitives";
+import kaa from "./kaa.JPG"
 
 const Membership = () => {
-  return (
-    <Page style={{ background: `linear-gradient(to right, #312AA9, #79ACD0)` }}>
-      <div
-        style={{
-          width: "100vw",
-          overflow: "hidden"
-        }}
-      >
-        <Row style={{ marginTop: "24px" }}>
-          <PageTitle color="white">Membership</PageTitle>
-        </Row>
-      </div>
-      <Row>
-        <div style={{ width: "90%", height: "90%", padding: "5%" }}>
-          <PageSpan color="white">
-            One time membership fee for a "group of friends." General meetings
-            at the Shapell Lounge on Tuesdays at 7:40pm. Some benefits include: {" "}
-          </PageSpan>
-          <div
+    return (
+        <Page
             style={{
-              width: "250px",
-              height: "auto",
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto"
+                paddingTop: "48px",
+                paddingBottom: "48px",
+                background: "#FFFFFF"
             }}
-          >
-            <PageSpan color="white">
-              <ul style={{ textAlign: "left", lineHeight: "200%" }}>
-                <li>Enterance to KAA</li>
-                <li>Discount to events</li>
-                <li>Free shirt</li>
-              </ul>
-            </PageSpan>
-          </div>
-        </div>
-      </Row>
-    </Page>
-  );
+        >
+            <Container>
+                <PageTitle >Membership</PageTitle>
+            </Container>
+            <Container>
+                <PageSpan  style={{ padding: 0, marginBottom: 0 }}>
+                    Barkada hosts the Kuya Ate Ading program, a mentorship program that
+                    has brought lifetime friendships, endless love, and unforgettable
+                    memories.{" "}
+                    <Link to="/kaa" style={{color: "black"}}>
+                        (Click here more details on KAA)
+                    </Link>{" "}
+                        A one-year membership with comes with admission to this amazing
+                        program as well as discounts to our events and an exclusive shirt.
+                    </PageSpan>
+                </Container>
+                <img
+                    src={kaa}
+                    style={{
+                        width: "80%",
+                        height: "auto",
+                        borderRadius: "16px",
+                        marginLeft: "10%",
+                        marginRight: "10%",
+                        paddingTop: "48px",
+                        paddingBottom: "48px",
+                        verticalAlign: "bottom"
+                    }}
+                />
+            </Page>
+    );
 };
 
 export default Membership;

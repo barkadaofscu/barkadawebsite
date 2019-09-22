@@ -101,8 +101,9 @@ class Barrio extends Component {
               <Content>
                 <div style={{ padding: "5%" }}>
                   <PageSpan color="white">
-                    100% of the money we raise from Barrio Fiesta will go to
-                    Gawad Kalinga.
+                    Each year, we choose a charity to donate the proceeds of
+                    this event to. Last year, 100% of the money we raise from
+                    Barrio Fiesta went to Gawad Kalinga.
                   </PageSpan>
                   <PageSpan color="white">
                     "Gawad Kalinga,” translated in English means to “give care”,
@@ -116,10 +117,13 @@ class Barrio extends Component {
                     Entrepreneurship.
                   </PageSpan>
                   <PageSpan color="white">
-                    We are proud to support Gawad Kalinga every year through
-                    Barrio Fiesta. Also, be sure to check out their website for
-                    more information on their commitment to end poverty:{" "}
-                    <a style={{color: "white"}} href="http://www.gk1world.com/home">
+                    We are proud to support Gawad Kalinga through Barrio Fiesta.
+                    Also, be sure to check out their website for more
+                    information on their commitment to end poverty:{" "}
+                    <a
+                      style={{ color: "white" }}
+                      href="http://www.gk1world.com/home"
+                    >
                       http://www.gk1world.com/home{" "}
                     </a>
                   </PageSpan>

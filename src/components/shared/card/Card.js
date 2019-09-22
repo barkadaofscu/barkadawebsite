@@ -8,12 +8,12 @@ const Picture = styled.div`
   width: 90vw;
   height: 95vw;
   margin-left: 5vw;
-  margin-bottom: 5vw;
   float: left;
   @media ${device.tablet} {
-    width: 21vw;
-    height: 60vh;
-    margin-left: 3vw;
+    width: 20vw;
+    height: 50vh;
+    display: inline-block;
+    margin-left: 7.66vw;
     margin-right: 0vw;
   }
 `;
@@ -30,6 +30,7 @@ const Overlay = styled.div`
   height: 100%;
   width: 100%;
   opacity: 0;
+  border-radius: 16px;
   transition: 0.5s ease;
 
   &:hover {
@@ -43,38 +44,40 @@ const Description = styled.p`
   margin: 0;
   padding: 0;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 16px;
   padding: 16px;
 `;
 const Card = props => {
-  return (
-    <Link to={props.link} style={{ textDecoration: "none" }}>
-      <Picture>
-        <div
-          style={{
-            width: "100%",
-            height: "85%",
-            backgroundImage: `url(${props.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}
-        >
-          <Overlay>
-            <Description>{props.description}</Description>
-          </Overlay>
-        </div>
-        <div
-          style={{
-            width: "100%",
-            height: "auto",
-            textAlign: "center"
-          }}
-        >
-          <Title>{props.name}</Title>
-        </div>
-      </Picture>
-    </Link>
-  );
+    return (
+        <Link to={props.link} style={{ textDecoration: "none" }}>
+            <Picture>
+                <div
+                    style={{
+                        width: "100%",
+                        height: "85%",
+                        backgroundImage: `url(${props.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        borderRadius: "16px"
+                    }}
+                >
+                    <Overlay>
+                        <Description>{props.description}</Description>
+                    </Overlay>
+                </div>
+                <div
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                        textAlign: "center"
+                    }}
+                >
+                    <Title>{props.name}</Title>
+                </div>
+            </Picture>
+        </Link>
+    );
 };
 
 export default Card;

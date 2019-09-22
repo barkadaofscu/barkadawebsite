@@ -3,20 +3,22 @@ import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
 import { Icon } from "antd";
 import { Link } from "react-router-dom";
+import MediaQuery from "react-responsive";
 import {
   PageSpan,
   BoldSpan,
   PageTitle,
   Title,
   Content,
-  Container,
+    Container,
+    SmallLogo,
   Row,
   FixedColumn
 } from "../shared/primitives/Primitives";
 import ImageFade from "../shared/imagefade/ImageFade";
 import kaamponents from "./assets/kaamponents.png";
 import photoArr from "./assets/data";
-import logo from "./assets/logo.png";
+import logo from "../home/assets/logo.png";
 
 class Kaa extends Component {
   render() {
@@ -35,7 +37,30 @@ class Kaa extends Component {
         <div style={{ height: "100vh", width: "100vw", overflowY: "hidden" }}>
           <ImageFade data={photoArr} interval={5000} />
           <Parallax ref="parallax" pages={5}>
+
             <ParallaxLayer offset={0} speed={1}>
+              <div
+                style={{
+                  width: "100vw",
+                  height: "10vh",
+                  marginTop: "85vh"
+                }}
+              >
+                <p style={{ color: "white", fontSize: "24px", marginTop: 8 }}>
+                  Scroll
+                </p>
+                <Icon
+                  type="down"
+                  style={{ color: "white", fontSize: "28px" }}
+                />
+              </div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.5}>
+              <div style={{ width: "100%", height: "auto", marginTop: "24px" }}>
+                <SmallLogo src={logo} />
+              </div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.5}>
               <div
                 style={{
                   width: "100px",
@@ -56,36 +81,27 @@ class Kaa extends Component {
                       />
                     </FixedColumn>
                     <FixedColumn>
-                      <p
-                        style={{
-                          color: "white",
-                          fontSize: "24px",
-                          padding: 0,
-                          margin: 0
-                        }}
-                      >
-                        Home
-                      </p>
+                      <MediaQuery query="(min-device-width: 768px)">
+                        <p
+                          style={{
+                            color: "white",
+                            fontSize: "24px",
+                            padding: 0,
+                            margin: 0
+                          }}
+                        >
+                          Home
+                        </p>
+                      </MediaQuery>
                     </FixedColumn>
                   </Row>
                 </Link>
               </div>
             </ParallaxLayer>
-            <ParallaxLayer offset={0.3} speed={1}>
-              <Title style={{ padding: "0px", marginTop: 0, marginBottom: 0 }}>
-                <img
-                  src={logo}
-                  style={{ width: "auto", height: "5vh", padding: "2vh" }}
-                />
-              </Title>
-              <Content style={{ marginTop: 0 }}>
-                <PageTitle
-                  color="white"
-                  style={{ textAlign: "center", padding: "5%" }}
-                >
-                  KAA 2018
-                </PageTitle>
-              </Content>
+            <ParallaxLayer offset={0.4} speed={0.5}>
+              <PageTitle color="white" style={{ fontWeight: 300 }}>
+               KAA 
+              </PageTitle>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
               <Title>KAA What?</Title>
@@ -110,9 +126,12 @@ class Kaa extends Component {
                     Welcome to the Kuya Ate Ading Program!
                   </PageSpan>
                   <PageSpan color="white">
-                    KAA is the biggest big/little mentorship program on campus.
+                    KAA is Barkada's big/little mentorship program.
                     For years, the KAA program has brought lifetime friendships,
                     endless love, and unforgettable memories.
+                  </PageSpan>
+                  <PageSpan color="white">
+                      Kuya, Ate, and Ading are Tagalog words that mean:
                   </PageSpan>
                   <PageSpan color="white">
                     <BoldSpan>Kuya</BoldSpan> (KOO-yah) = Tagalog for big
@@ -136,12 +155,6 @@ class Kaa extends Component {
                       Barkada general meetings, every Tuesday at 7:40 PM
                     </BoldSpan>{" "}
                     in Shapell Lounge (MCC)!
-                  </PageSpan>
-                  <PageSpan color="white">
-                    <BoldSpan>How it works:</BoldSpan> After you turn in a KAA
-                    application form and your $20 membership dues, a fabulous
-                    KAAmmittee will match you with a big/little in Barkada based
-                    on your applications and potential compatibility.
                   </PageSpan>
                 </div>
               </Content>

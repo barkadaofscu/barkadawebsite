@@ -5,6 +5,7 @@ export const BoldHeader = styled.p`
   font-size: 28px;
   font-weight: bold;
   line-height: 150%;
+  color: ${props => (props.color ? props.color : "black")};
   margin: 0;
 `;
 export const BoldSpan = styled.p`
@@ -45,10 +46,10 @@ export const ColumnOne = styled.div`
   display: inline-block;
 `;
 export const Container = styled.div`
-  width: 80%;
+  width: 70%;
   height: auto;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   text-align: center;
   @media ${device.tablet} {
     text-align: ${props => props.float || "center"};
@@ -91,6 +92,7 @@ export const Page = styled.div`
   width: "100vw";
   height: "100%";
   background-color: white;
+  font-family: Tahoma;
   position: relative;
   z-index: 4;
   @media ${device.laptop} {
@@ -100,9 +102,11 @@ export const Page = styled.div`
   }
 `;
 export const PageSpan = styled.p`
+  font-family: Tahoma;
+  line-height: 150%;
   font-size: 18px;
   color: ${props => (props.color ? props.color : "black")};
-  font-weight: 300;
+  font-weight: 400;
 `;
 export const PageTag = styled.p`
   font-size: 24px;
@@ -113,10 +117,12 @@ export const PageTag = styled.p`
   text-align: inherit;
 `;
 export const PageTitle = styled.p`
-  font-size: 52px;
+  font-size: 56px;
+  font-family: Roboto;
   font-weight: bold;
   color: ${props => (props.color ? props.color : "black")};
   margin: 0;
+  padding-bottom: 24px;
   text-align: "center";
   @media ${device.laptop} {
     font-size: 60px;

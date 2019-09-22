@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  Page,
-  PageTitle,
-  PageTag,
-  Row,
-  Column,
-  FixedColumn,
-  PageSpan,
-  Container
+    Page,
+    PageTitle,
+    PageTag,
+    Row,
+    Column,
+    FixedColumn,
+    PageSpan,
+    Container
 } from "../../shared/primitives/Primitives";
 import blanket from "./blankets.JPG";
 import gk from "./gk.png";
@@ -15,99 +15,93 @@ import lead from "./lead.jpg";
 import linus from "./linus.jpg";
 
 const Outreach = () => {
-  return (
-    <div
-      style={{
-        width: "100vw",
-        height: "auto",
-        background: `linear-gradient(to right, #312AA9, #79ACD0)`
-      }}
-    >
-      <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-        <Column>
-          <img
-            src={blanket}
+    return (
+        <Page
             style={{
-              width: "100%",
-              height: "100%",
-              verticalAlign: "bottom"
+                paddingTop: "48px",
+                paddingBottom: "48px",
+                background: "white"
             }}
-          />
-        </Column>
-        <Column>
-          <Container float="right" style={{ marginTop: "5%" }}>
-            <PageTitle color="white" float="right">
-              Outreach
-            </PageTitle>
-            <PageTag color="white">
-              Barkada is proud to work with local communities in the bay area.
-            </PageTag>
-            <PageSpan color="white">
-              Organizations we've worked with in the past:
-            </PageSpan>
-            <div
-              style={{
-                width: "100%",
-                height: "45%"
-              }}
-            >
-              <FixedColumn width="33%">
-                <div
-                  style={{
+        >
+            <Container float="right" style={{marginTop: "48px"}}>
+                <PageTitle float="right">
+                    Outreach
+                </PageTitle>
+                <PageTag float="right">
+                    Barkada is proud to work with local communities in the bay area.
+                </PageTag>
+                <PageSpan>
+                    Contact us at scubarkada@gmail.com 
+                </PageSpan>
+            </Container>
+            <Container style={{width: "100%", marginLeft: "0%", marginRight: "0%", background: "white"}}>
+                <Row style={{width: "100%", marginLeft: "0%", marginRight: "0%"}}>
+                    <FixedColumn width="33%">
+                        <div
+                            style={{
+                                width: "150px",
+                                height: "150px",
+                                backgroundColor: "white",
+                                marginLeft: "auto",
+                                marginRight: "auto",
+                                marginTop: "24px",
+                                marginBottom: "24px"
+                            }}
+                        >
+                            <img
+                                src={gk}
+                                style={{ width: "100%", height: "auto", marginTop: "25px" }}
+                            />
+                        </div>
+                    </FixedColumn>
+                    <FixedColumn width="33%">
+                        <div
+                            style={{
+                                width: "150px",
+                                height: "150px",
+                                backgroundColor: "white",
+                                marginLeft: "auto",
+                                marginRight: "auto",
+                                marginTop: "24px",
+                                marginBottom: "24px"
+                            }}
+                        >
+                            <img src={lead} style={{ width: "100%", height: "auto" }} />
+                        </div>
+                    </FixedColumn>
+                    <FixedColumn width="33%">
+                        <div
+                            style={{
+                                width: "150px",
+                                height: "150px",
+                                backgroundColor: "white",
+                                marginLeft: "auto",
+                                marginRight: "auto",
+                                marginTop: "24px",
+                                marginBottom: "24px"
+                            }}
+                        >
+                            <img
+                                src={linus}
+                                style={{ width: "100%", height: "auto", marginTop: "20px" }}
+                            />
+                        </div>
+                    </FixedColumn>
+                </Row>
+            </Container>
+            <img
+                src={blanket}
+                style={{
                     width: "80%",
-                    height: "100%",
+                    height: "auto",
+                    borderRadius: "16px",
                     marginLeft: "10%",
-                    marginRight: "10%"
-                  }}
-                >
-                  <img src={gk} style={{ width: "100%", height: "auto" }} />
-                </div>
-              </FixedColumn>
-              <FixedColumn width="33%">
-                <div
-                  style={{
-                    width: "80%",
-                    height: "100%",
-                    marginLeft: "10%",
-                    marginRight: "10%"
-                  }}
-                >
-                  <img src={lead} style={{ width: "80%", height: "auto" }} />
-                </div>
-              </FixedColumn>
-              <FixedColumn width="33%">
-                <div
-                  style={{
-                    width: "80%",
-                    height: "100%",
-                    marginLeft: "10%",
-                    marginRight: "10%"
-                  }}
-                >
-                  <img src={linus} style={{ width: "100%", height: "auto" }} />
-                </div>
-              </FixedColumn>
-            </div>
-            <div
-              style={{
-                width: "100%",
-                height: "auto",
-                position: "relative",
-                  marginTop: "24px",
-                  paddingBottom: "48px"
-              }}
-            >
-              <p
-                style={{ color: "white", fontSize: 18, padding: 0, margin: 0 }}
-              >
-                scubarkada@gmail.com
-              </p>
-            </div>
-          </Container>
-        </Column>
-      </div>
-    </div>
-  );
+                    marginRight: "10%",
+                    verticalAlign: "bottom"
+                }}
+            />
+        </Page>
+    );
 };
 
 export default Outreach;

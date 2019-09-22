@@ -162,7 +162,6 @@ class Suites extends Component {
         style={{
           width: "100%",
           height: "auto",
-          paddingBottom: "24px"
         }}
       >
         <Container>

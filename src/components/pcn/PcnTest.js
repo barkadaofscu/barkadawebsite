@@ -3,7 +3,6 @@ import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
-import styled from "styled-components";
 import ImageFade from "../shared/imagefade";
 import MediaQuery from "react-responsive";
 import About from "./about/About";
@@ -106,8 +105,8 @@ class PcnTest extends Component {
               <p
                 style={{
                   color: "white",
-                  fontSize: 22,
-                  fontWeight: 300,
+                    fontSize: 24,
+                  fontWeight: 500,
                   padding: 0,
                   margin: 0
                 }}
