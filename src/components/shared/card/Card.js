@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { device } from "../../device";
 
 const Picture = styled.div`
-  width: 90vw;
-  height: 95vw;
+  width: 80vw;
+  height: 80vw;
   margin-left: 5vw;
   float: left;
   @media ${device.tablet} {
@@ -20,7 +20,7 @@ const Picture = styled.div`
 
 const Title = styled.p`
   font-size: 16px;
-  color: white;
+  color: black;
   padding: 18px;
   margin: 0;
 `;

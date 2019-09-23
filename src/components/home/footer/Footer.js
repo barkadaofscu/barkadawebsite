@@ -5,7 +5,7 @@ import { Icon } from "antd";
 const footerStyle = {
     width: "100%",
     height: "200px",
-    background: `rgba(64,64,64,1)`,
+    background: "#292F35",
     position: "relative",
     textAlign: "center",
     overflow: "hidden"
@@ -25,7 +25,7 @@ const Footer = () => {
                         width: "80%",
                         height: "auto",
                         marginTop: "50px",
-                        marginLeft: "10%"
+                        marginLeft: "10%",
                     }}
                 >
                     <ColumnOne width="25%">

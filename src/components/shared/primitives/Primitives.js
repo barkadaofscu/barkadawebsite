@@ -107,6 +107,9 @@ export const PageSpan = styled.p`
   font-size: 18px;
   color: ${props => (props.color ? props.color : "black")};
   font-weight: 400;
+  @media ${device.mobileL}{
+      font-size: 12px;
+  }
 `;
 export const PageTag = styled.p`
   font-size: 24px;
@@ -117,8 +120,8 @@ export const PageTag = styled.p`
   text-align: inherit;
 `;
 export const PageTitle = styled.p`
-  font-size: 56px;
-  font-family: Roboto;
+  font-size: 48px;
+  font-family: Tahoma;
   font-weight: bold;
   color: ${props => (props.color ? props.color : "black")};
   margin: 0;
