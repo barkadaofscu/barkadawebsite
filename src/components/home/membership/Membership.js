@@ -34,6 +34,14 @@ const Membership = () => {
           A one-year membership with comes with admission to this amazing
           program as well as discounts to our events and an exclusive shirt.
         </PageSpan>
+        <PageSpan>
+          <a
+            style={{ fontSize: "20px", color: "black" }}
+            href="https://scu.us9.list-manage.com/subscribe?u=6efd22bd01906260cd5c3ebc7&id=4f119c8ae4"
+          >
+            Sign Up for Our Newsletter!
+          </a>
+        </PageSpan>
       </Container>
       <img
         src={kaaBanner}
