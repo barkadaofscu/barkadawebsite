@@ -9,6 +9,7 @@
     "lodash-es": "^4.17.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-mailchimp-subscribe": "^2.1.0",
     "react-measure": "^2.3.0",
     "react-responsive": "^7.0.0",
     "react-responsive-carousel": "^3.1.50",
