@@ -92,7 +92,7 @@ export const Page = styled.div`
   width: "100vw";
   height: "100%";
   background-color: white;
-  font-family: Tahoma;
+  font-family: Helvetica;
   position: relative;
   z-index: 4;
   @media ${device.laptop} {
@@ -102,7 +102,7 @@ export const Page = styled.div`
   }
 `;
 export const PageSpan = styled.p`
-  font-family: Tahoma;
+  font-family: Helvetica;
   line-height: 150%;
   font-size: 18px;
   color: ${props => (props.color ? props.color : "black")};
@@ -121,7 +121,7 @@ export const PageTag = styled.p`
 `;
 export const PageTitle = styled.p`
   font-size: 48px;
-  font-family: Tahoma;
+  font-family: Helvetica;
   font-weight: bold;
   color: ${props => (props.color ? props.color : "black")};
   margin: 0;
