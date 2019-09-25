@@ -6,6 +6,8 @@ html, body, #app, #app>div {
 -webkit-overflow-scrolling: touch;
   overflow-y: hidden;
   overflow-x: hidden;
+    @media only screen and (max-width: 768px) {
+        .mc-banner { z-index: 9999 !important; }    }
 }
 .App {
   text-align: center;
