@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
     @media only screen and (max-width: 768px) {
-        .mc-banner { top: 50% !important; }
+        .mc-banner { display: none !important; }    
     }
 }
 code {
