@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    @media only screen and (max-width: 768px) {
+        .mc-banner { top: 50% !important; }
+    }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
