@@ -111,7 +111,7 @@ class PcnTest extends Component {
                   margin: 0
                 }}
               >
-                29th Annual Pilipino Culture Night
+                30th Annual Pilipino Culture Night
               </p>
               <PageTitle color="white" style={{ fontWeight: 300 }}>
                 Pagyakap Sa Pananaw
