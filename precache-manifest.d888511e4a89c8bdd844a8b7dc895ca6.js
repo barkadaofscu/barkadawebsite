@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7629d62b8382155abf12bb60d7568981",
+    "revision": "06149589cbd008dc3c4f80be660eda30",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "19f25781c0d654ff4038",
+    "revision": "9b745a16ee192cd7285b",
     "url": "/static/css/main.3097b35d.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.808d4b5e.chunk.js"
   },
   {
-    "revision": "19f25781c0d654ff4038",
-    "url": "/static/js/main.3ad0eb33.chunk.js"
+    "revision": "9b745a16ee192cd7285b",
+    "url": "/static/js/main.676a7fba.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "53d6a63bd94357e70996368f8f143b58",
-    "url": "/static/media/Colman Lin.53d6a63b.jpeg"
+    "revision": "3963fec9ccb20996e9561ead2292b366",
+    "url": "/static/media/Colman Lin.3963fec9.jpeg"
   },
   {
     "revision": "996cb725821fc9dd65326605569a10fd",
