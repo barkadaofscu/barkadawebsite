@@ -33,10 +33,10 @@ class About extends Component {
           <Container float="left">
             <FixedColumn>
               <PageSpan>
-                <BoldSpan>29th</BoldSpan> Pilipino Cultural Night
+                <BoldSpan>30th</BoldSpan> Pilipino Cultural Night
               </PageSpan>
               <PageSpan>
-                <BoldSpan>15</BoldSpan> traditional folk dances
+                <BoldSpan>14</BoldSpan> traditional folk dances
               </PageSpan>
               <PageSpan>
                 <BoldSpan>3</BoldSpan> modern dances
@@ -44,13 +44,13 @@ class About extends Component {
             </FixedColumn>
             <FixedColumn>
               <PageSpan>
-                <BoldSpan>85</BoldSpan> cast members
+                <BoldSpan>83</BoldSpan> cast members
               </PageSpan>
               <PageSpan>
-                <BoldSpan>19</BoldSpan> alumni teachers
+                <BoldSpan>22</BoldSpan> alumni teachers
               </PageSpan>
               <PageSpan>
-                <BoldSpan>353</BoldSpan> days to make this production come to
+                <BoldSpan>360</BoldSpan> days to make this production come to
                 life
               </PageSpan>
             </FixedColumn>

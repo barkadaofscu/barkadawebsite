@@ -114,7 +114,7 @@ class PcnTest extends Component {
                 30th Annual Pilipino Culture Night
               </p>
               <PageTitle color="white" style={{ fontWeight: 300 }}>
-                Pagyakap Sa Pananaw
+                Tulay Sa Nakaraan
               </PageTitle>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
