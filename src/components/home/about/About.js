@@ -7,6 +7,7 @@ import {
     Column,
     Row
 } from "../../shared/primitives/Primitives";
+import pdf from "../../../assets/barkadaconstitution.pdf"
 import about1 from "./about1.JPG";
 import about2 from "./about2.JPG";
 
@@ -33,6 +34,7 @@ const About = () => (
                         social justice, and social activities/events. We also strive to
                         uphold our heritage, traditions, and relationships.
                     </PageSpan>
+                    <a href={pdf}><PageSpan>Read our 2020 Constitution</PageSpan></a>
                 </Container>
             </Column>
             <Column>
