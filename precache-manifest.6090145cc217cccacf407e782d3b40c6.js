@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06149589cbd008dc3c4f80be660eda30",
+    "revision": "65c3bc4c1d6524518e117fa629fb018e",
     "url": "/index.html"
   },
   {
-    "revision": "82d6e41b306baccf8b2a",
+    "revision": "2f8a849b7447a7cab12b",
     "url": "/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "9b745a16ee192cd7285b",
+    "revision": "169290e0852262c4f388",
     "url": "/static/css/main.3097b35d.chunk.css"
   },
   {
-    "revision": "82d6e41b306baccf8b2a",
-    "url": "/static/js/2.808d4b5e.chunk.js"
+    "revision": "2f8a849b7447a7cab12b",
+    "url": "/static/js/2.86d91100.chunk.js"
   },
   {
-    "revision": "9b745a16ee192cd7285b",
-    "url": "/static/js/main.676a7fba.chunk.js"
+    "revision": "169290e0852262c4f388",
+    "url": "/static/js/main.1514e2f4.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "74291f593ee4594a5334e54e3449df53",
     "url": "/static/media/about2.74291f59.JPG"
+  },
+  {
+    "revision": "8c88527fa7e082a22ae38513d463d019",
+    "url": "/static/media/barkadaconstitution.8c88527f.pdf"
   },
   {
     "revision": "ac9f9e10c1be42208640474458d32c13",
