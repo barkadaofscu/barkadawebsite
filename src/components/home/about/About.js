@@ -8,6 +8,7 @@ import {
     Row
 } from "../../shared/primitives/Primitives";
 import pdf from "../../../assets/barkadaconstitution.pdf"
+import kscu from "../../../assets/Barkada_KSCU Statement.pdf"
 import about1 from "./about1.JPG";
 import about2 from "./about2.JPG";
 
@@ -73,6 +74,7 @@ const About = () => (
                         within the Santa Clara University Multicultural Center. Today, we
                         are one of the largest student-run cultural clubs on campus.{" "}
                     </PageSpan>
+                    <a href={kscu}><PageSpan>Barkada of SCU & KSCU 2020 Statement</PageSpan></a>
                 </Container>
             </Column>
         </Row>
