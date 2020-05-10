@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b81e0bfd5084de18b1466b619bf7a97",
+    "revision": "b99a89e6fe1fd34240ea5762687b297a",
     "url": "/index.html"
   },
   {
-    "revision": "3ecc4c4226d3cc10050a",
-    "url": "/static/css/2.240942cf.chunk.css"
+    "revision": "5cdb508b338c45f2a639",
+    "url": "/static/css/2.d409d1d9.chunk.css"
   },
   {
-    "revision": "f0f6f1a535cc95981895",
-    "url": "/static/css/main.3097b35d.chunk.css"
+    "revision": "df18ea4355e90cfec975",
+    "url": "/static/css/main.ae6c9e7c.chunk.css"
   },
   {
-    "revision": "3ecc4c4226d3cc10050a",
-    "url": "/static/js/2.7214f2d2.chunk.js"
+    "revision": "5cdb508b338c45f2a639",
+    "url": "/static/js/2.2def2d36.chunk.js"
   },
   {
-    "revision": "f0f6f1a535cc95981895",
-    "url": "/static/js/main.3c73185b.chunk.js"
+    "revision": "df18ea4355e90cfec975",
+    "url": "/static/js/main.0cf68db5.chunk.js"
   },
   {
-    "revision": "fdfcfda2d9b1bf31db52",
-    "url": "/static/js/runtime~main.c5541365.js"
+    "revision": "42ac5946195a7306e2a5",
+    "url": "/static/js/runtime~main.a8a9905a.js"
+  },
+  {
+    "revision": "a1a138dc24ac64c639184a8dd16a56a1",
+    "url": "/static/media/Barkada_KSCU Statement.a1a138dc.pdf"
   },
   {
     "revision": "3963fec9ccb20996e9561ead2292b366",
