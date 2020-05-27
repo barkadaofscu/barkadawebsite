@@ -2,6 +2,7 @@
 
 ## Structure in src folder
 
+```
 .
 ├── App.css
 ├── App.js
@@ -123,3 +124,4 @@
 ├── logo.svg
 ├── serviceWorker.js
 └── styles.css
+```
