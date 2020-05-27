@@ -15,6 +15,11 @@ import {
 } from "./components/shared/animation";
 import "./App.css";
 
+/*
+ * App.js is the main file that has routes to all other pages on the website
+ * Most likely wont be touching it unless adding a new page
+ */
+
 class App extends Component {
   render() {
     return (
@@ -37,7 +42,7 @@ class App extends Component {
                       <Route
                         exact
                         path="/"
-                        render={props => <Home {...props} style={style} />}
+                        render={props => <Home {...props} style={style} />} // Home component is the landing page
                       />
                       <Route
                         exact
