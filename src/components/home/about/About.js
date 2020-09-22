@@ -11,6 +11,7 @@ import pdf from "../../../assets/barkadaconstitution.pdf"
 import kscu from "../../../assets/Barkada_KSCU Statement.pdf"
 import about1 from "./about1.JPG";
 import about2 from "./about2.JPG";
+import board from "./board.gif";
 
 const About = () => (
     <div style={{width: "100%", height: "100%", background: "white", paddingBottom: "48px", overflow: "hidden"}}>
@@ -75,6 +76,40 @@ const About = () => (
                         are one of the largest student-run cultural clubs on campus.{" "}
                     </PageSpan>
                     <a href={kscu}><PageSpan>Barkada of SCU & KSCU 2020 Statement</PageSpan></a>
+                </Container>
+            </Column>
+        </Row>
+        <Row style={{paddingTop: "48px"}}>
+            <Column>
+                <img
+                    src={board}
+                    style={{
+                        width: "90%",
+                        height: "auto",
+                        verticalAlign: "bottom",
+                        borderRadius: "12px"
+                    }}
+                />
+            </Column>
+            <Column>
+                <Container float="right" style={{ marginTop: "5%" }}>
+                    <PageTag float="right">
+                        Barkada Board 2020-2021
+                    </PageTag>
+                    <PageSpan>
+                            <p><b>Co-Chairs:</b> Joshua Raymundo '22, Jeremy Reyes '22</p>
+                            <p><b>MCC Representative:</b> Taylor Kealoha '23</p>
+                            <p><b>Social Chair:</b> Vincent Joaquin '23</p>
+                            <p><b>Friendship Games Coordinator (Fall Quarter):</b> Gabi Sicat '21</p>
+                            <p><b>Public Relations Director:</b> Maddy Javier '23</p>
+                            <p><b>Visual Branding Chair:</b> Caitlin Lopez '23</p>
+                            <p><b>Finance Director:</b> Anne Paloma '23</p>
+                            <p><b>Cultural Director:</b> Jonathan Tablante '22</p>
+                            <p><b>Outreach Coordinator:</b> Trizha Aquino '21</p>
+                            <p><b>Historian:</b> Nicole Cruz '23</p>
+                            <p><b>PCN Directors:</b> Kiana Abrigana '21, Brenden Farrer '21</p>
+                            <p><b>Freshman Representatives</b>: TBD</p>{" "}
+                    </PageSpan>
                 </Container>
             </Column>
         </Row>
