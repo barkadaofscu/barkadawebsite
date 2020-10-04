@@ -79,7 +79,6 @@ const About = () => (
                 </Container>
             </Column>
         </Row>
-        </Row>
 <Row style={{paddingTop: "48px"}}>
     <Column>
         <img
