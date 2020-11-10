@@ -100,7 +100,7 @@ const About = () => (
                     <p><b>Co-Chairs:</b> Joshua Raymundo '22, Jeremy Reyes '22</p>
                     <p><b>MCC Representative:</b> Taylor Kealoha '23</p>
                     <p><b>Social Chair:</b> Vincent Joaquin '23</p>
-                    <p><b>Friendship Games Coordinator (Fall Quarter):</b> Gabi Sicat '21</p>
+                    <p><b>Friendship Games Coordinator:</b> Gabi Sicat '21</p>
                     <p><b>Public Relations Director:</b> Maddy Javier '23</p>
                     <p><b>Visual Branding Chair:</b> Caitlin Lopez '23</p>
                     <p><b>Finance Director:</b> Anne Paloma '23</p>
@@ -108,7 +108,7 @@ const About = () => (
                     <p><b>Outreach Coordinator:</b> Trizha Aquino '21</p>
                     <p><b>Historian:</b> Nicole Cruz '23</p>
                     <p><b>PCN Directors:</b> Kiana Abrigana '21, Brenden Farrer '21</p>
-                    <p><b>Freshman Representatives</b>: TBD</p>{" "}
+                    <p><b>Freshman Representatives</b>: Jaden Raymundo '24, Reanne Dela Cruz '24, Sabine Mejia '24</p>{" "}
             </PageSpan>
         </Container>
     </Column>
