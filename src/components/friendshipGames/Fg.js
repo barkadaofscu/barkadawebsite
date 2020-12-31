@@ -83,7 +83,7 @@ class Fg extends Component {
                   color="white"
                   style={{ textAlign: "center", padding: "5%" }}
                 >
-                  Friendship Games 2018
+                  Friendship Games 2019
                 </PageTitle>
               </Content>
             </ParallaxLayer>
@@ -93,14 +93,14 @@ class Fg extends Component {
                 <iframe
                   width="100%"
                   height="90%"
-                  src="https://www.youtube.com/embed/Ux1mblDoqbY"
+                  src="https://www.youtube.com/embed/8Qos147T9t4"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
                 <Container float="center">
                   <PageSpan color="white">
-                    <BoldSpan>Recap 2018</BoldSpan>
+                    <BoldSpan>Recap 2019</BoldSpan>
                   </PageSpan>
                 </Container>
               </Content>
