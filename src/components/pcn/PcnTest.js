@@ -118,7 +118,7 @@ class PcnTest extends Component {
               </PageTitle>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={3}>
-              <Title>PCN 2020 Tribute</Title>
+              <Title>PCN 2021</Title>
               <Content
                 style={{
                   height: "80vh",
