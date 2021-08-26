@@ -97,18 +97,18 @@ const About = () => (
                 Barkada Board 2020-2021
             </PageTag>
             <PageSpan>
-                    <p><b>Co-Chairs:</b> Joshua Raymundo '22, Jeremy Reyes '22</p>
-                    <p><b>MCC Representative:</b> Taylor Kealoha '23</p>
-                    <p><b>Social Chair:</b> Vincent Joaquin '23</p>
-                    <p><b>Friendship Games Coordinator:</b> Gabi Sicat '21</p>
-                    <p><b>Public Relations Director:</b> Maddy Javier '23</p>
-                    <p><b>Visual Branding Chair:</b> Caitlin Lopez '23</p>
-                    <p><b>Finance Director:</b> Anne Paloma '23</p>
+                    <p><b>Co-Chairs:</b> Taylor Kealoha '23, Vincent Joaquin '23</p>
+                    <p><b>MCC Representative:</b> Jaden Raymundo '24</p>
+                    <p><b>Social Chair:</b> Madeline Coquilla '24</p>
+                    <p><b>Events & Activites Coordinator:</b> Maddy Javier '23</p>
+                    <p><b>Public Relations Director:</b> Mikaela Davanay '23</p>
+                    <p><b>Visual Branding Chair:</b> Nicole Cruz '23</p>
+                    <p><b>Finance Director:</b> Nathan Lue '22</p>
                     <p><b>Cultural Director:</b> Jonathan Tablante '22</p>
-                    <p><b>Outreach Coordinator:</b> Trizha Aquino '21</p>
-                    <p><b>Historian:</b> Nicole Cruz '23</p>
-                    <p><b>PCN Directors:</b> Kiana Abrigana '21, Brenden Farrer '21</p>
-                    <p><b>Freshman Representatives</b>: Jaden Raymundo '24, Reanne Dela Cruz '24, Sabine Mejia '24</p>{" "}
+                    <p><b>Outreach Coordinator:</b> Ravi Kotamraju '24</p>
+                    <p><b>Historian:</b> Ky Monroe '23</p>
+                    <p><b>PCN Directors:</b> Farah Charisse Villanueva '21, Jeremy Victor Reyes '21, Jonathan Tablante '22</p>
+                    <p><b>Freshman Representatives</b>: TBD</p>{" "}
             </PageSpan>
         </Container>
     </Column>
